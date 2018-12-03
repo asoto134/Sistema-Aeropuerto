@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{68AAFB76-0D2E-43E5-8D83-4E86DFE8770D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aeropuerto_Munich_UI</RootNamespace>
+    <AssemblyName>Aeropuerto_Munich_UI</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Pantallas_Primarias\FRM_Inicio_Sesion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Primarias\FRM_Inicio_Sesion.Designer.cs">
+      <DependentUpon>FRM_Inicio_Sesion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Primarias\FRM_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Primarias\FRM_Menu.Designer.cs">
+      <DependentUpon>FRM_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Aerolineas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Aerolineas.Designer.cs">
+      <DependentUpon>FRM_TAB_Aerolineas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Estados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Estados.Designer.cs">
+      <DependentUpon>FRM_TAB_Estados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Aerolineas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Aerolineas.Designer.cs">
+      <DependentUpon>FRM_Editar_Aerolineas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Estados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Estados.Designer.cs">
+      <DependentUpon>FRM_Editar_Estados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Pantallas_Primarias\FRM_Inicio_Sesion.resx">
+      <DependentUpon>FRM_Inicio_Sesion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Primarias\FRM_Menu.resx">
+      <DependentUpon>FRM_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Aerolineas.resx">
+      <DependentUpon>FRM_TAB_Aerolineas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Estados.resx">
+      <DependentUpon>FRM_TAB_Estados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Aerolineas.resx">
+      <DependentUpon>FRM_Editar_Aerolineas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Estados.resx">
+      <DependentUpon>FRM_Editar_Estados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Guardar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_Sim_Alemania.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Salir.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_Sim_Alemania_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_Sim_Alemania_3.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Aerolineas.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Aviones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_CategoriaVuelos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Clientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Destinos.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Empleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Estados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Paises.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_TipoAviones.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_TipoClientes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_TipoEmpleados.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Usuarios.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Informacion.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Modificar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Refrescar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Eliminar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Home.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Recursos\Imagenes\img_btn_Cancelar.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Aeropuerto_BLL\Aeropuerto_BLL.csproj">
+      <Project>{7727972a-4e58-460a-a970-263c87e01ad8}</Project>
+      <Name>Aeropuerto_BLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Aeropuerto_DAL\Aeropuerto_DAL.csproj">
+      <Project>{09c10898-9759-4b9e-a593-74ad8afaeb24}</Project>
+      <Name>Aeropuerto_DAL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

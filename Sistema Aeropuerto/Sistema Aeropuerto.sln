@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "DAL", "DAL", "{E602A247-57FB-4CFE-8037-E3FC24539871}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BLL", "BLL", "{1690AA67-5F20-4FFD-8087-3369071FCA37}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UI", "UI", "{8C9F2D75-A994-4089-ADE1-ED154498CB95}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aeropuerto_Munich_UI", "Aeropuerto_Munich_UI\Aeropuerto_Munich_UI.csproj", "{68AAFB76-0D2E-43E5-8D83-4E86DFE8770D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aeropuerto_BLL", "Aeropuerto_BLL\Aeropuerto_BLL.csproj", "{7727972A-4E58-460A-A970-263C87E01AD8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Aeropuerto_DAL", "Aeropuerto_DAL\Aeropuerto_DAL.csproj", "{09C10898-9759-4B9E-A593-74AD8AFAEB24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{68AAFB76-0D2E-43E5-8D83-4E86DFE8770D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{68AAFB76-0D2E-43E5-8D83-4E86DFE8770D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{68AAFB76-0D2E-43E5-8D83-4E86DFE8770D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{68AAFB76-0D2E-43E5-8D83-4E86DFE8770D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7727972A-4E58-460A-A970-263C87E01AD8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7727972A-4E58-460A-A970-263C87E01AD8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7727972A-4E58-460A-A970-263C87E01AD8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7727972A-4E58-460A-A970-263C87E01AD8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09C10898-9759-4B9E-A593-74AD8AFAEB24}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09C10898-9759-4B9E-A593-74AD8AFAEB24}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09C10898-9759-4B9E-A593-74AD8AFAEB24}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09C10898-9759-4B9E-A593-74AD8AFAEB24}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{68AAFB76-0D2E-43E5-8D83-4E86DFE8770D} = {8C9F2D75-A994-4089-ADE1-ED154498CB95}
+		{7727972A-4E58-460A-A970-263C87E01AD8} = {1690AA67-5F20-4FFD-8087-3369071FCA37}
+		{09C10898-9759-4B9E-A593-74AD8AFAEB24} = {E602A247-57FB-4CFE-8037-E3FC24539871}
+	EndGlobalSection
+EndGlobal

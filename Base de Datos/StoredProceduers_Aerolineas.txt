@@ -1,0 +1,99 @@
+--Listar
+
+USE [DB_AEROPUERTO_PROGRA_III]
+GO
+
+Create Procedure sp_Listar_Aerolineas
+As
+Begin
+
+SELECT [IdAerolinea]
+      ,[NombreAerolinea]
+      ,[IdEstado]
+  FROM [dbo].[T_Aerolineas]
+  End
+GO
+
+--Filtrar
+
+USE [DB_AEROPUERTO_PROGRA_III]
+GO
+
+Create Procedure sp_Filtrar_Aerolineas
+
+(
+	@IdFiltro int
+)
+As
+Begin
+
+DELETE FROM [dbo].[T_Aerolineas]
+      WHERE IdAerolinea = @IdFiltro
+	  End
+
+GO
+
+--Insertar
+
+USE [DB_AEROPUERTO_PROGRA_III]
+GO
+
+Create Procedure sp_Insertar_Aerolineas
+(
+	@IdAerolinea int,
+    @NombreAerolinea varchar(90)
+)
+
+as
+begin
+
+INSERT INTO [dbo].[T_Aerolineas]
+           ([IdAerolinea],[NombreAerolinea])
+     VALUES
+           (@IdAerolinea, @NombreAerolinea)
+  End
+GO
+
+
+--Modificar
+
+USE [DB_AEROPUERTO_PROGRA_III]
+GO
+
+Create Procedure sp_Modificar_Aerolineas
+(
+	@IdAerolinea int,
+    @NombreAerolinea varchar(90)
+)
+
+As
+Begin
+	UPDATE [dbo].[T_Aerolineas]
+	SET 
+		[NombreAerolinea] = @NombreAerolinea
+
+
+	WHERE [IdAerolinea] = @IdAerolinea 
+  End
+GO
+
+
+
+--Eliminar
+
+USE [DB_AEROPUERTO_PROGRA_III]
+GO
+
+Create Procedure sp_Eliminar_Aerolineas
+
+(
+	@IdAerolinea int
+)
+As
+Begin
+
+DELETE FROM [dbo].[T_Aerolineas]
+      WHERE IdAerolinea = @IdAerolinea
+	  End
+
+GO
