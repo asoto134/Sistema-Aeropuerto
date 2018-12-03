@@ -88,7 +88,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             {
                 txt_ID.Enabled = false;
                 txt_ID.Text = OBJ_Editar_Estados.CIDEstado.ToString();
-                txt_Descrip.Text = OBJ_Editar_Estados.CIDEstado.ToString();
+                txt_Descrip.Text = string.Empty;
                 grp_Informacion.Text = "Modificar Estado";
             }
         }

@@ -130,14 +130,17 @@
   <data name="img_btn_Estados" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\Imagenes\img_btn_Estados.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="img_Sim_Alemania_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Imagenes\img_Sim_Alemania_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="img_btn_TipoEmpleados1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\Imagenes\img_btn_TipoEmpleados.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_btn_Guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Imagenes\img_btn_Guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_btn_Refrescar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Imagenes\img_btn_Refrescar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_btn_Destinos" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Imagenes\img_btn_Destinos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_btn_Cancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Imagenes\img_btn_Cancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_btn_Informacion" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\Imagenes\img_btn_Informacion.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -157,11 +160,11 @@
   <data name="img_btn_Clientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\Imagenes\img_btn_Clientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_btn_Refrescar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Imagenes\img_btn_Refrescar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_btn_Destinos" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Imagenes\img_btn_Destinos.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_Sim_Alemania" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Imagenes\img_Sim_Alemania.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_btn_Guardar" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Imagenes\img_btn_Guardar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_btn_TipoClientes" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\Imagenes\img_btn_TipoClientes.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -181,13 +184,13 @@
   <data name="img_btn_Salir" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\Imagenes\img_btn_Salir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_Sim_Alemania_2" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Imagenes\img_Sim_Alemania_2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_Sim_Alemania" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Imagenes\img_Sim_Alemania.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="img_btn_Paises" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Recursos\Imagenes\img_btn_Paises.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="img_btn_Cancelar" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Recursos\Imagenes\img_btn_Cancelar.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="img_btn_Añadir" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Recursos\Imagenes\img_btn_Añadir.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

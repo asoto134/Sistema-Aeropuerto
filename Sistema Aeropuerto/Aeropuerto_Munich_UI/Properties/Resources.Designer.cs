@@ -73,6 +73,16 @@ namespace Aeropuerto_Munich_UI.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap img_btn_Añadir {
+            get {
+                object obj = ResourceManager.GetObject("img_btn_Añadir", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap img_btn_Aviones {
             get {
                 object obj = ResourceManager.GetObject("img_btn_Aviones", resourceCulture);

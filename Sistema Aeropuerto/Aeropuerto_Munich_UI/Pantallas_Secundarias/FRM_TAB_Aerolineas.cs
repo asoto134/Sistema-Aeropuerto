@@ -22,24 +22,36 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
         cls_Aerolineas_DAL OBJ_Aereolineas_DAL = new cls_Aerolineas_DAL();
         cls_Aerolineas_BLL OBJ_Aereolineas_BLL = new cls_Aerolineas_BLL();
 
-        private void btn_AgregarModificar_Click(object sender, EventArgs e)
+        private void btn_Modificar_Click(object sender, EventArgs e)
         {
-            Pantallas_Terciarias.FRM_Editar_Aerolineas OBJ_Editar_Aerolineas = new Pantallas_Terciarias.FRM_Editar_Aerolineas();
-
-            if (dgv_Datos.Rows.Count == 0)
+            if (dgv_Datos.Rows.Count >= 1)
             {
-                OBJ_Aereolineas_DAL.CAccion = 'I';
+                Pantallas_Terciarias.FRM_Editar_Aerolineas OBJ_Editar_Aerolineas = new Pantallas_Terciarias.FRM_Editar_Aerolineas();
+
+                OBJ_Aereolineas_DAL.CAccion = 'U';
+                OBJ_Aereolineas_DAL.CIdAerolinea = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
+                OBJ_Aereolineas_DAL.SNombreAerolinea = dgv_Datos.SelectedRows[0].Cells[1].Value.ToString();
+                OBJ_Aereolineas_DAL.CIdEstado = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[2].Value.ToString());
+
                 OBJ_Editar_Aerolineas.OBJ_Editar_Aerolineas = OBJ_Aereolineas_DAL;
 
+                OBJ_Editar_Aerolineas.ShowDialog();
+                
+                CargarDatos();
             }
             else
             {
-                OBJ_Aereolineas_DAL.CAccion = 'U';
-                OBJ_Aereolineas_DAL.CIDAerolinea = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
-                OBJ_Aereolineas_DAL.SNombreAerolinea = dgv_Datos.SelectedRows[0].Cells[1].Value.ToString();
-                OBJ_Editar_Aerolineas.OBJ_Editar_Aerolineas = OBJ_Aereolineas_DAL;
-
+                MessageBox.Show("Debe tener una aerolínea seleccionada", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
+        }
+
+        private void btn_Añadir_Click(object sender, EventArgs e)
+        {
+            Pantallas_Terciarias.FRM_Editar_Aerolineas OBJ_Editar_Aerolineas = new Pantallas_Terciarias.FRM_Editar_Aerolineas();
+
+            OBJ_Aereolineas_DAL.CAccion = 'I';
+
+            OBJ_Editar_Aerolineas.OBJ_Editar_Aerolineas = OBJ_Aereolineas_DAL;
 
             OBJ_Editar_Aerolineas.ShowDialog();
 
@@ -61,7 +73,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             }
             else
             {
-                MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -109,6 +121,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
         {
             CargarDatos();
         }
+        
     }
 }
 

@@ -21,8 +21,11 @@ namespace Aeropuerto_Munich_UI.Pantallas_Primarias
         {
             FRM_Menu OBJ_Visualizador = new FRM_Menu();
 
-            OBJ_Visualizador.Show();
-            Hide();
+            this.Visible = false;
+
+            OBJ_Visualizador.ShowDialog();
+
+            this.Visible = true;
             
         }
 
