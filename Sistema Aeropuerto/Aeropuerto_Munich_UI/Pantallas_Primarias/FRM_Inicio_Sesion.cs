@@ -21,11 +21,10 @@ namespace Aeropuerto_Munich_UI.Pantallas_Primarias
         {
             FRM_Menu OBJ_Visualizador = new FRM_Menu();
 
-            this.Visible = false;
+            this.Hide();
 
             OBJ_Visualizador.ShowDialog();
 
-            this.Visible = true;
             
         }
 
@@ -38,6 +37,8 @@ namespace Aeropuerto_Munich_UI.Pantallas_Primarias
         {
             Close();
         }
+
+
 
         private void txt_Contraseña_TextChanged(object sender, EventArgs e)
         {

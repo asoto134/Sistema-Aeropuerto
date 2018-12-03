@@ -26,11 +26,11 @@ namespace Aeropuerto_Munich_UI.Pantallas_Primarias
         {
             Pantallas_Secundarias.FRM_TAB_Aerolineas OBJ_TAB_Aerolineas = new Pantallas_Secundarias.FRM_TAB_Aerolineas();
 
-            this.Visible = false;
+            this.Hide();
 
             OBJ_TAB_Aerolineas.ShowDialog();
-
-            this.Visible = true;
+            
+            
         }
 
         private void btn_Aviones_Click(object sender, EventArgs e)
@@ -62,8 +62,9 @@ namespace Aeropuerto_Munich_UI.Pantallas_Primarias
         {
             Pantallas_Secundarias.FRM_TAB_Estados OBJ_TAB_Estados = new Pantallas_Secundarias.FRM_TAB_Estados();
 
-            OBJ_TAB_Estados.Show();
-            Hide();
+            this.Hide();
+            OBJ_TAB_Estados.ShowDialog();
+            
         }
 
         private void btn_Paises_Click(object sender, EventArgs e)
@@ -103,7 +104,8 @@ namespace Aeropuerto_Munich_UI.Pantallas_Primarias
 
         private void btn_Salir_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Close();
+            Application.Exit();
         }
     }
 }

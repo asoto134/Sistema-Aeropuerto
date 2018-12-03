@@ -261,7 +261,7 @@
             // 
             // splitContainer2.Panel1
             // 
-            this.splitContainer2.Panel1.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.splitContainer2.Panel1.BackColor = System.Drawing.Color.White;
             this.splitContainer2.Panel1.Controls.Add(this.btn_Info);
             this.splitContainer2.Panel1.Controls.Add(this.btn_Salir);
             this.splitContainer2.Panel1.Controls.Add(this.label2);
@@ -313,7 +313,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.label2.Location = new System.Drawing.Point(86, 21);
+            this.label2.Location = new System.Drawing.Point(61, 21);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(530, 25);
             this.label2.TabIndex = 15;
