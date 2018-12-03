@@ -7,9 +7,6 @@ using System.Data;
 
 namespace Aeropuerto_DAL.Cat_Man
 {
-
-    //test
-
     public class cls_Aerolineas_DAL
     {
          public DataTable OBJ_DataTable = new DataTable();
