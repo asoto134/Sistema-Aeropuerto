@@ -11,7 +11,7 @@ namespace Aeropuerto_DAL.Cat_Man
     {
          public DataTable OBJ_DataTable = new DataTable();
 
-        private char _cIDAerolinea, _cAccion, _cIdEstado;
+        private char _cIdAerolinea, _cAccion, _cIdEstado;
         private string _sError, _sNombreAerolinea;
 
         public char CAccion
@@ -27,18 +27,6 @@ namespace Aeropuerto_DAL.Cat_Man
             }
         }
 
-        public char CIDAerolinea
-        {
-            get
-            {
-                return _cIDAerolinea;
-            }
-
-            set
-            {
-                _cIDAerolinea = value;
-            }
-        }
 
         public string SNombreAerolinea
         {
@@ -57,25 +45,38 @@ namespace Aeropuerto_DAL.Cat_Man
         {
             get
             {
-                return SError1;
-            }
-
-            set
-            {
-                SError1 = value;
-            }
-        }
-
-        public string SError1
-        {
-            get
-            {
                 return _sError;
             }
 
             set
             {
                 _sError = value;
+            }
+        }
+
+        public char CIdEstado
+        {
+            get
+            {
+                return _cIdEstado;
+            }
+
+            set
+            {
+                _cIdEstado = value;
+            }
+        }
+
+        public char CIdAerolinea
+        {
+            get
+            {
+                return _cIdAerolinea;
+            }
+
+            set
+            {
+                _cIdAerolinea = value;
             }
         }
     }

@@ -313,7 +313,7 @@ namespace Aeropuerto_BLL.BD
 
                     OBJ_DataBase_DAL.OBJ_Command.CommandType = CommandType.StoredProcedure;
 
-                    OBJ_DataBase_DAL.OBJ_Command.ExecuteNonQuery();
+                    OBJ_DataBase_DAL.SScalarValue = OBJ_DataBase_DAL.OBJ_Command.ExecuteScalar().ToString();
 
                     OBJ_DataBase_DAL.SError = string.Empty;
                 }

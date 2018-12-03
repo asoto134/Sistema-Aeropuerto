@@ -44,8 +44,6 @@
     <Compile Include="BD\cls_DataBase_BLL.cs" />
     <Compile Include="Cat_Man\cls_Aerolineas_BLL.cs" />
     <Compile Include="Cat_Man\cls_Estados_BLL.cs" />
-    <Compile Include="Cat_Man\cls_Tipo_Clientes_BLL.cs" />
-    <Compile Include="Cat_Man\cls_Tipo_Empleados_BLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

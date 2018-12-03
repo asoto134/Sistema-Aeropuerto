@@ -113,8 +113,10 @@ namespace Aeropuerto_BLL.Cat_Man
                 OBJ_DataBase_DAL.SSP_Nombre = "sp_Modificar_Aerolineas";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IDAerolinea", "4", OBJ_Aerolineas_DAL.CIDAerolinea);
+
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdAerolinea", "4", OBJ_Aerolineas_DAL.CIdAerolinea);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@NombreAerolinea", "2", OBJ_Aerolineas_DAL.SNombreAerolinea);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_Aerolineas_DAL.CIdEstado);
 
                 OBJ_DataBase_BLL.Execute_NonQuery(ref OBJ_DataBase_DAL);
 
@@ -146,22 +148,23 @@ namespace Aeropuerto_BLL.Cat_Man
                 OBJ_DataBase_DAL.SSP_Nombre = "sp_Insertar_Aerolineas";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IDAerolinea", "4", OBJ_Aerolineas_DAL.CIDAerolinea);
+                
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@NombreAerolinea", "2", OBJ_Aerolineas_DAL.SNombreAerolinea);
-                //OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_Aerolineas_DAL);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_Aerolineas_DAL);                
 
-                OBJ_DataBase_BLL.Execute_NonQuery(ref OBJ_DataBase_DAL);
+                OBJ_DataBase_BLL.Execute_Scalar(ref OBJ_DataBase_DAL);
 
                 if (OBJ_DataBase_DAL.SError == string.Empty)
                 {
                     OBJ_Aerolineas_DAL.SError = string.Empty;
+                    OBJ_Aerolineas_DAL.CAccion = 'U';
+                    OBJ_Aerolineas_DAL.CIdAerolinea = Convert.ToChar(OBJ_DataBase_DAL.SScalarValue);
                 }
                 else
                 {
                     OBJ_Aerolineas_DAL.SError = OBJ_DataBase_DAL.SError;
-                }
-
-                OBJ_Aerolineas_DAL.CAccion = 'U';
+                    OBJ_Aerolineas_DAL.CAccion = 'I';                    
+                }                
 
             }
             catch (Exception Error)
