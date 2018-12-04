@@ -55,3 +55,6 @@ C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Estados.resources
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Properties.Resources.resources
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.csproj.GenerateResource.Cache
+C:\Users\Laboratorio\Source\Repos\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\bin\Debug\Aeropuerto_Munich_UI.exe.config
+C:\Users\Laboratorio\Source\Repos\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.exe
+C:\Users\Laboratorio\Source\Repos\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.pdb
