@@ -45,6 +45,7 @@
     <Compile Include="Cat_Man\cls_Aerolineas_BLL.cs" />
     <Compile Include="Cat_Man\Cls_Aviones_BLL.cs" />
     <Compile Include="Cat_Man\Cls_CategoriasVuelos_BLL.cs" />
+    <Compile Include="Cat_Man\cls_Cliente_BLL.cs" />
     <Compile Include="Cat_Man\cls_Estados_BLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

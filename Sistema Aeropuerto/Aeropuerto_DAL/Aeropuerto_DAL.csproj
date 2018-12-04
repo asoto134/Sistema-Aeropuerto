@@ -44,6 +44,7 @@
     <Compile Include="Cat_Man\cls_Aerolineas_DAL.cs" />
     <Compile Include="Cat_Man\Cls_Aviones_DAL.cs" />
     <Compile Include="Cat_Man\Cls_CategoriasVuelos_DAL.cs" />
+    <Compile Include="Cat_Man\cls_Cliente_DAL.cs" />
     <Compile Include="Cat_Man\cls_Estados_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
