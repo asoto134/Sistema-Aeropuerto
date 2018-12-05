@@ -5,40 +5,27 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 
-
 namespace Aeropuerto_DAL.Cat_Man
 {
     public class cls_Tipo_Clientes_DAL
     {
+        
         public DataTable OBJ_DataTable = new DataTable();
 
-        private int _iIDTipoCliente;
-        private char _cIDEstado, _cAccion;
+        private int _iIdTipoCliente;
+        private char _cAccion, _cIdEstado;
         private string _sError, _sTipoCliente, _sDescripcion;
 
-        public int IIDTipoCliente
+        public int IIdTipoCliente
         {
             get
             {
-                return _iIDTipoCliente;
+                return _iIdTipoCliente;
             }
 
             set
             {
-                _iIDTipoCliente = value;
-            }
-        }
-
-        public char CIDEstado
-        {
-            get
-            {
-                return _cIDEstado;
-            }
-
-            set
-            {
-                _cIDEstado = value;
+                _iIdTipoCliente = value;
             }
         }
 
@@ -52,6 +39,19 @@ namespace Aeropuerto_DAL.Cat_Man
             set
             {
                 _cAccion = value;
+            }
+        }
+
+        public char CIdEstado
+        {
+            get
+            {
+                return _cIdEstado;
+            }
+
+            set
+            {
+                _cIdEstado = value;
             }
         }
 

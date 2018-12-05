@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Data; 
+using System.Data;
 
 namespace Aeropuerto_DAL.Cat_Man
 {
@@ -11,33 +11,20 @@ namespace Aeropuerto_DAL.Cat_Man
     {
         public DataTable OBJ_DataTable = new DataTable();
 
-        private int _iIDTipoEmpleado;
-        private char _cIDEstado, _cAccion;
-        private string _sError, _sDescripcionTipo;
+        private int _iIdTipoEmpleado;
+        private char _cAccion, _cIdEstado;
+        private string _sError, _sDescTipo;
 
-        public int IIDTipoEmpleado
+        public int IIdTipoEmpleado
         {
             get
             {
-                return _iIDTipoEmpleado;
+                return _iIdTipoEmpleado;
             }
 
             set
             {
-                _iIDTipoEmpleado = value;
-            }
-        }
-
-        public char CIDEstado
-        {
-            get
-            {
-                return _cIDEstado;
-            }
-
-            set
-            {
-                _cIDEstado = value;
+                _iIdTipoEmpleado = value;
             }
         }
 
@@ -54,6 +41,19 @@ namespace Aeropuerto_DAL.Cat_Man
             }
         }
 
+        public char CIdEstado
+        {
+            get
+            {
+                return _cIdEstado;
+            }
+
+            set
+            {
+                _cIdEstado = value;
+            }
+        }
+
         public string SError
         {
             get
@@ -67,16 +67,16 @@ namespace Aeropuerto_DAL.Cat_Man
             }
         }
 
-        public string SDescripcionTipo
+        public string SDescTipo
         {
             get
             {
-                return _sDescripcionTipo;
+                return _sDescTipo;
             }
 
             set
             {
-                _sDescripcionTipo = value;
+                _sDescTipo = value;
             }
         }
     }

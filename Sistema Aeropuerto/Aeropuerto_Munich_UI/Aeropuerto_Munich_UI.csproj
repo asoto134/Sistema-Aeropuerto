@@ -88,12 +88,6 @@
     <Compile Include="Pantallas_Secundarias\FRM_TAB_Cliente.Designer.cs">
       <DependentUpon>FRM_TAB_Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pantallas_Secundarias\FRM_TAB_Clientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pantallas_Secundarias\FRM_TAB_Clientes.Designer.cs">
-      <DependentUpon>FRM_TAB_Clientes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pantallas_Secundarias\FRM_TAB_Destinos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -172,12 +166,6 @@
     <Compile Include="Pantallas_Terciarias\FRM_Editar_Cliente.Designer.cs">
       <DependentUpon>FRM_Editar_Cliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="Pantallas_Terciarias\FRM_Editar_Clientes.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Pantallas_Terciarias\FRM_Editar_Clientes.Designer.cs">
-      <DependentUpon>FRM_Editar_Clientes.cs</DependentUpon>
-    </Compile>
     <Compile Include="Pantallas_Terciarias\FRM_Editar_Destinos.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -252,9 +240,6 @@
     <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Cliente.resx">
       <DependentUpon>FRM_TAB_Cliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Clientes.resx">
-      <DependentUpon>FRM_TAB_Clientes.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Destinos.resx">
       <DependentUpon>FRM_TAB_Destinos.cs</DependentUpon>
     </EmbeddedResource>
@@ -293,9 +278,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Cliente.resx">
       <DependentUpon>FRM_Editar_Cliente.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Clientes.resx">
-      <DependentUpon>FRM_Editar_Clientes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Destinos.resx">
       <DependentUpon>FRM_Editar_Destinos.cs</DependentUpon>
