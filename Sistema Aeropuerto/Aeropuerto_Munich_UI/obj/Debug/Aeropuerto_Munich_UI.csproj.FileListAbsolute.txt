@@ -64,7 +64,6 @@ C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aer
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Aviones.resources
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Categorias_Vuelos.resources
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Cliente.resources
-C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Clientes.resources
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Destinos.resources
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Empleados.resources
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Paises.resources
@@ -76,7 +75,6 @@ C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Aviones.resources
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Categorias_Vuelos.resources
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Cliente.resources
-C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Clientes.resources
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Destinos.resources
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Empleados.resources
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Paises.resources

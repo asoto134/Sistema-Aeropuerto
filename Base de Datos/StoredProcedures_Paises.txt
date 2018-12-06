@@ -22,7 +22,7 @@ USE [DB_AEROPUERTO_PROGRA_III]
 GO
 Create procedure sp_Filtar_Paises
 (
-@Pais varchar(85)
+@Filtro varchar(85)
 )
 as
 Begin
@@ -32,7 +32,7 @@ SELECT [IdPais]
       ,[CodigoAreaPais] as [Código Área]
       ,[IdEstado]       as [Estado]
   FROM [dbo].[T_Paises]
-  Where ltrim(rtrim(NombrePais)) like '%'+ltrim(rtrim(@Pais))+'%'
+  Where NombrePais like '%'+@Filtro+'%'
 End
 GO
 

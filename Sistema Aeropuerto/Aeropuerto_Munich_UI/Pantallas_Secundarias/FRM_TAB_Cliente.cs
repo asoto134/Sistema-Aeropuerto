@@ -44,11 +44,6 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             }
         }
 
-        private void btn_Modificar_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void btn_Añadir_Click(object sender, EventArgs e)
         {
             Pantallas_Terciarias.FRM_Editar_Cliente Obj_Editar_Cliente = new Pantallas_Terciarias.FRM_Editar_Cliente();
@@ -83,10 +78,6 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             Obj_Menu.Show();
             this.Close();
         }
-
-        private void btn_Eliminar_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }

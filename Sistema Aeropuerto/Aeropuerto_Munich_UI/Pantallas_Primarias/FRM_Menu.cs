@@ -30,32 +30,51 @@ namespace Aeropuerto_Munich_UI.Pantallas_Primarias
 
             OBJ_TAB_Aerolineas.ShowDialog();
             
-            
         }
 
         private void btn_Aviones_Click(object sender, EventArgs e)
         {
+            Pantallas_Secundarias.FRM_TAB_Aviones OBJ_TAB_Aviones = new Pantallas_Secundarias.FRM_TAB_Aviones();
 
+            this.Hide();
+
+            OBJ_TAB_Aviones.ShowDialog();
         }
 
         private void btn_CategoriasVuelos_Click(object sender, EventArgs e)
         {
+            Pantallas_Secundarias.FRM_TAB_Categorias_Vuelos OBJ_TAB_Categorias_Vuelos = new Pantallas_Secundarias.FRM_TAB_Categorias_Vuelos();
 
+            this.Hide();
+
+            OBJ_TAB_Categorias_Vuelos.ShowDialog();
         }
 
         private void btn_Clientes_Click(object sender, EventArgs e)
         {
+            Pantallas_Secundarias.FRM_TAB_Cliente OBJ_TAB_Cliente = new Pantallas_Secundarias.FRM_TAB_Cliente();
 
+            this.Hide();
+
+            OBJ_TAB_Cliente.ShowDialog();
         }
 
         private void btn_Destinos_Click(object sender, EventArgs e)
         {
+            Pantallas_Secundarias.FRM_TAB_Destinos OBJ_TAB_Destinos = new Pantallas_Secundarias.FRM_TAB_Destinos();
 
+            this.Hide();
+
+            OBJ_TAB_Destinos.ShowDialog();
         }
 
         private void btn_Empleados_Click(object sender, EventArgs e)
         {
+            Pantallas_Secundarias.FRM_TAB_Empleados OBJ_TAB_Empleados = new Pantallas_Secundarias.FRM_TAB_Empleados();
 
+            this.Hide();
+
+            OBJ_TAB_Empleados.ShowDialog();
         }
 
         private void btn_Estados_Click(object sender, EventArgs e)
@@ -69,32 +88,56 @@ namespace Aeropuerto_Munich_UI.Pantallas_Primarias
 
         private void btn_Paises_Click(object sender, EventArgs e)
         {
+            Pantallas_Secundarias.FRM_TAB_Paises OBJ_TAB_Paises = new Pantallas_Secundarias.FRM_TAB_Paises();
 
+            this.Hide();
+
+            OBJ_TAB_Paises.ShowDialog();
         }
 
         private void btn_Tip_Aviones_Click(object sender, EventArgs e)
         {
+            Pantallas_Secundarias.FRM_TAB_Aviones OBJ_TAB_Aviones = new Pantallas_Secundarias.FRM_TAB_Aviones();
 
+            this.Hide();
+
+            OBJ_TAB_Aviones.ShowDialog();
         }
 
         private void btn_Tip_Clientes_Click(object sender, EventArgs e)
         {
+            Pantallas_Secundarias.FRM_TAB_Tipos_Clientes OBJ_TAB_Tipos_Clientes = new Pantallas_Secundarias.FRM_TAB_Tipos_Clientes();
 
+            this.Hide();
+
+            OBJ_TAB_Tipos_Clientes.ShowDialog();
         }
 
         private void btn_Tip_Empleados_Click(object sender, EventArgs e)
         {
+            Pantallas_Secundarias.FRM_TAB_Tipos_Empleados OBJ_TAB_Tipos_Empleados = new Pantallas_Secundarias.FRM_TAB_Tipos_Empleados();
 
+            this.Hide();
+
+            OBJ_TAB_Tipos_Empleados.ShowDialog();
         }
 
         private void btn_Usuarios_Click(object sender, EventArgs e)
         {
+            Pantallas_Secundarias.FRM_TAB_Usuarios OBJ_TAB_Usuarios = new Pantallas_Secundarias.FRM_TAB_Usuarios();
 
+            this.Hide();
+
+            OBJ_TAB_Usuarios.ShowDialog();
         }
 
         private void btn_Vuelos_Click(object sender, EventArgs e)
         {
+            Pantallas_Secundarias.FRM_TAB_Vuelos OBJ_TAB_Vuelos = new Pantallas_Secundarias.FRM_TAB_Vuelos();
 
+            this.Hide();
+
+            OBJ_TAB_Vuelos.ShowDialog();
         }
 
         private void btn_Info_Click(object sender, EventArgs e)
