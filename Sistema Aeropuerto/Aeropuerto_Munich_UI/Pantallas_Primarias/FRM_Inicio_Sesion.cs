@@ -30,7 +30,11 @@ namespace Aeropuerto_Munich_UI.Pantallas_Primarias
 
         private void btn_Crear_Click(object sender, EventArgs e)
         {
+            FRM_Crear_Usuario OBJ_Visualizador = new FRM_Crear_Usuario();
 
+            this.Hide();
+                
+            OBJ_Visualizador.ShowDialog();
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)

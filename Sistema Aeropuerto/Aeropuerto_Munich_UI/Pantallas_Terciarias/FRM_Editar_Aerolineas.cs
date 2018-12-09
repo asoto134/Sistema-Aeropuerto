@@ -93,33 +93,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
         {
             CargarDatosForm();
         }
-
-
-        private void CamposNumericos_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((char.IsNumber(e.KeyChar)) || (e.KeyChar == 8))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-        private void CamposNoNumericos_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((char.IsLetter(e.KeyChar)) || (e.KeyChar == 8))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
+        
         private void txt_Descrip_TextChanged(object sender, EventArgs e)
         {
             if (txt_Nombre.Text == string.Empty || txt_ID.Text == string.Empty)

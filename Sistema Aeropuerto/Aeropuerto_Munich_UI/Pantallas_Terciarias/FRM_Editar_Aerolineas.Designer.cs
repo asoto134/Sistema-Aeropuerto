@@ -110,7 +110,6 @@
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(100, 21);
             this.txt_ID.TabIndex = 2;
-            this.txt_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CamposNumericos_KeyPress);
             // 
             // txt_Nombre
             // 
@@ -121,7 +120,6 @@
             this.txt_Nombre.Size = new System.Drawing.Size(249, 21);
             this.txt_Nombre.TabIndex = 3;
             this.txt_Nombre.TextChanged += new System.EventHandler(this.txt_Descrip_TextChanged);
-            this.txt_Nombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.CamposNoNumericos_KeyPress);
             // 
             // label1
             // 

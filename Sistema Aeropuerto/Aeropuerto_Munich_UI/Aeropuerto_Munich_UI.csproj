@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Pantallas_Primarias\FRM_Crear_Usuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Primarias\FRM_Crear_Usuario.Designer.cs">
+      <DependentUpon>FRM_Crear_Usuario.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas_Primarias\FRM_Inicio_Sesion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -64,11 +70,35 @@
     <Compile Include="Pantallas_Secundarias\FRM_TAB_Aerolineas.Designer.cs">
       <DependentUpon>FRM_TAB_Aerolineas.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Aviones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Aviones.Designer.cs">
+      <DependentUpon>FRM_TAB_Aviones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Categorias_Vuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Categorias_Vuelos.Designer.cs">
+      <DependentUpon>FRM_TAB_Categorias_Vuelos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas_Secundarias\FRM_TAB_Cliente.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pantallas_Secundarias\FRM_TAB_Cliente.Designer.cs">
       <DependentUpon>FRM_TAB_Cliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Destinos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Destinos.Designer.cs">
+      <DependentUpon>FRM_TAB_Destinos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Empleados.Designer.cs">
+      <DependentUpon>FRM_TAB_Empleados.cs</DependentUpon>
     </Compile>
     <Compile Include="Pantallas_Secundarias\FRM_TAB_Estados.cs">
       <SubType>Form</SubType>
@@ -76,11 +106,59 @@
     <Compile Include="Pantallas_Secundarias\FRM_TAB_Estados.Designer.cs">
       <DependentUpon>FRM_TAB_Estados.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Paises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Paises.Designer.cs">
+      <DependentUpon>FRM_TAB_Paises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Tipos_Aviones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Tipos_Aviones.Designer.cs">
+      <DependentUpon>FRM_TAB_Tipos_Aviones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Tipos_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Tipos_Clientes.Designer.cs">
+      <DependentUpon>FRM_TAB_Tipos_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Tipos_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Tipos_Empleados.Designer.cs">
+      <DependentUpon>FRM_TAB_Tipos_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Usuarios.Designer.cs">
+      <DependentUpon>FRM_TAB_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Vuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Secundarias\FRM_TAB_Vuelos.Designer.cs">
+      <DependentUpon>FRM_TAB_Vuelos.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas_Terciarias\FRM_Editar_Aerolineas.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pantallas_Terciarias\FRM_Editar_Aerolineas.Designer.cs">
       <DependentUpon>FRM_Editar_Aerolineas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Aviones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Aviones.Designer.cs">
+      <DependentUpon>FRM_Editar_Aviones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Categorias_Vuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Categorias_Vuelos.Designer.cs">
+      <DependentUpon>FRM_Editar_Categorias_Vuelos.cs</DependentUpon>
     </Compile>
     <Compile Include="Pantallas_Terciarias\FRM_Editar_Cliente.cs">
       <SubType>Form</SubType>
@@ -88,11 +166,59 @@
     <Compile Include="Pantallas_Terciarias\FRM_Editar_Cliente.Designer.cs">
       <DependentUpon>FRM_Editar_Cliente.cs</DependentUpon>
     </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Destinos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Destinos.Designer.cs">
+      <DependentUpon>FRM_Editar_Destinos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Empleados.Designer.cs">
+      <DependentUpon>FRM_Editar_Empleados.cs</DependentUpon>
+    </Compile>
     <Compile Include="Pantallas_Terciarias\FRM_Editar_Estados.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Pantallas_Terciarias\FRM_Editar_Estados.Designer.cs">
       <DependentUpon>FRM_Editar_Estados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Paises.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Paises.Designer.cs">
+      <DependentUpon>FRM_Editar_Paises.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Tipos_Aviones.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Tipos_Aviones.Designer.cs">
+      <DependentUpon>FRM_Editar_Tipos_Aviones.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Tipos_Clientes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Tipos_Clientes.Designer.cs">
+      <DependentUpon>FRM_Editar_Tipos_Clientes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Tipos_Empleados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Tipos_Empleados.Designer.cs">
+      <DependentUpon>FRM_Editar_Tipos_Empleados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Usuarios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Usuarios.Designer.cs">
+      <DependentUpon>FRM_Editar_Usuarios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Vuelos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pantallas_Terciarias\FRM_Editar_Vuelos.Designer.cs">
+      <DependentUpon>FRM_Editar_Vuelos.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -105,20 +231,80 @@
     <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Aerolineas.resx">
       <DependentUpon>FRM_TAB_Aerolineas.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Aviones.resx">
+      <DependentUpon>FRM_TAB_Aviones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Categorias_Vuelos.resx">
+      <DependentUpon>FRM_TAB_Categorias_Vuelos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Cliente.resx">
       <DependentUpon>FRM_TAB_Cliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Destinos.resx">
+      <DependentUpon>FRM_TAB_Destinos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Empleados.resx">
+      <DependentUpon>FRM_TAB_Empleados.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Estados.resx">
       <DependentUpon>FRM_TAB_Estados.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Paises.resx">
+      <DependentUpon>FRM_TAB_Paises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Tipos_Aviones.resx">
+      <DependentUpon>FRM_TAB_Tipos_Aviones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Tipos_Clientes.resx">
+      <DependentUpon>FRM_TAB_Tipos_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Tipos_Empleados.resx">
+      <DependentUpon>FRM_TAB_Tipos_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Usuarios.resx">
+      <DependentUpon>FRM_TAB_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Secundarias\FRM_TAB_Vuelos.resx">
+      <DependentUpon>FRM_TAB_Vuelos.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Aerolineas.resx">
       <DependentUpon>FRM_Editar_Aerolineas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Aviones.resx">
+      <DependentUpon>FRM_Editar_Aviones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Categorias_Vuelos.resx">
+      <DependentUpon>FRM_Editar_Categorias_Vuelos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Cliente.resx">
       <DependentUpon>FRM_Editar_Cliente.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Destinos.resx">
+      <DependentUpon>FRM_Editar_Destinos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Empleados.resx">
+      <DependentUpon>FRM_Editar_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Estados.resx">
       <DependentUpon>FRM_Editar_Estados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Paises.resx">
+      <DependentUpon>FRM_Editar_Paises.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Tipos_Aviones.resx">
+      <DependentUpon>FRM_Editar_Tipos_Aviones.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Tipos_Clientes.resx">
+      <DependentUpon>FRM_Editar_Tipos_Clientes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Tipos_Empleados.resx">
+      <DependentUpon>FRM_Editar_Tipos_Empleados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Usuarios.resx">
+      <DependentUpon>FRM_Editar_Usuarios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pantallas_Terciarias\FRM_Editar_Vuelos.resx">
+      <DependentUpon>FRM_Editar_Vuelos.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -230,7 +416,7 @@
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
   </Target>
-  <Target Name="AfterBuild">
+  <Target Name="AfterBuild"> 
   </Target>
   -->
 </Project>
