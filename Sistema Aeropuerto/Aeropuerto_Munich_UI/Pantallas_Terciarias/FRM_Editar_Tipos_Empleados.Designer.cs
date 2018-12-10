@@ -33,12 +33,10 @@
             this.btn_Salir = new System.Windows.Forms.Button();
             this.btn_Guardar = new System.Windows.Forms.Button();
             this.grp_Informacion = new System.Windows.Forms.GroupBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txt_Descripcion = new System.Windows.Forms.TextBox();
             this.cmb_Estados = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
             this.txt_ID = new System.Windows.Forms.TextBox();
-            this.txt_TipoCliente = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
@@ -70,6 +68,7 @@
             this.btn_Salir.Size = new System.Drawing.Size(52, 45);
             this.btn_Salir.TabIndex = 4;
             this.btn_Salir.UseVisualStyleBackColor = false;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // btn_Guardar
             // 
@@ -84,16 +83,15 @@
             this.btn_Guardar.Size = new System.Drawing.Size(47, 41);
             this.btn_Guardar.TabIndex = 5;
             this.btn_Guardar.UseVisualStyleBackColor = false;
+            this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
             // grp_Informacion
             // 
             this.grp_Informacion.BackColor = System.Drawing.SystemColors.ControlLightLight;
-            this.grp_Informacion.Controls.Add(this.label4);
             this.grp_Informacion.Controls.Add(this.txt_Descripcion);
             this.grp_Informacion.Controls.Add(this.cmb_Estados);
             this.grp_Informacion.Controls.Add(this.label3);
             this.grp_Informacion.Controls.Add(this.txt_ID);
-            this.grp_Informacion.Controls.Add(this.txt_TipoCliente);
             this.grp_Informacion.Controls.Add(this.label1);
             this.grp_Informacion.Controls.Add(this.label2);
             this.grp_Informacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -104,19 +102,10 @@
             this.grp_Informacion.TabStop = false;
             this.grp_Informacion.Text = "Datos";
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 16);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Tipo Cliente:";
-            // 
             // txt_Descripcion
             // 
             this.txt_Descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_Descripcion.Location = new System.Drawing.Point(127, 97);
+            this.txt_Descripcion.Location = new System.Drawing.Point(127, 78);
             this.txt_Descripcion.MaxLength = 90;
             this.txt_Descripcion.Name = "txt_Descripcion";
             this.txt_Descripcion.Size = new System.Drawing.Size(249, 21);
@@ -148,15 +137,6 @@
             this.txt_ID.Size = new System.Drawing.Size(100, 21);
             this.txt_ID.TabIndex = 2;
             // 
-            // txt_TipoCliente
-            // 
-            this.txt_TipoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_TipoCliente.Location = new System.Drawing.Point(127, 60);
-            this.txt_TipoCliente.MaxLength = 90;
-            this.txt_TipoCliente.Name = "txt_TipoCliente";
-            this.txt_TipoCliente.Size = new System.Drawing.Size(249, 21);
-            this.txt_TipoCliente.TabIndex = 3;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -169,7 +149,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(29, 100);
+            this.label2.Location = new System.Drawing.Point(29, 81);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(95, 16);
             this.label2.TabIndex = 1;
@@ -188,6 +168,7 @@
             this.Name = "FRM_Editar_Tipos_Empleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_Editar_Tipos_Empleados";
+            this.Load += new System.EventHandler(this.FRM_Editar_Tipo_Clientes_Load);
             this.groupBox2.ResumeLayout(false);
             this.grp_Informacion.ResumeLayout(false);
             this.grp_Informacion.PerformLayout();
@@ -201,12 +182,10 @@
         private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.Button btn_Guardar;
         private System.Windows.Forms.GroupBox grp_Informacion;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txt_Descripcion;
         private System.Windows.Forms.ComboBox cmb_Estados;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_ID;
-        private System.Windows.Forms.TextBox txt_TipoCliente;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
     }

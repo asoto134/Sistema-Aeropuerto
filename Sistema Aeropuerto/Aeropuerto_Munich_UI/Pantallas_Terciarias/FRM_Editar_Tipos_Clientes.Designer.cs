@@ -33,6 +33,7 @@
             this.btn_Salir = new System.Windows.Forms.Button();
             this.btn_Guardar = new System.Windows.Forms.Button();
             this.grp_Informacion = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.txt_Descripcion = new System.Windows.Forms.TextBox();
             this.cmb_Estados = new System.Windows.Forms.ComboBox();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,7 +41,6 @@
             this.txt_TipoCliente = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.grp_Informacion.SuspendLayout();
             this.SuspendLayout();
@@ -106,6 +106,15 @@
             this.grp_Informacion.TabStop = false;
             this.grp_Informacion.Text = "Datos";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(28, 62);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(96, 16);
+            this.label4.TabIndex = 7;
+            this.label4.Text = "Tipo Cliente:";
+            // 
             // txt_Descripcion
             // 
             this.txt_Descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -114,7 +123,6 @@
             this.txt_Descripcion.Name = "txt_Descripcion";
             this.txt_Descripcion.Size = new System.Drawing.Size(249, 21);
             this.txt_Descripcion.TabIndex = 6;
-            this.txt_Descripcion.TextChanged += new System.EventHandler(this.txt_Descrip_TextChanged);
             // 
             // cmb_Estados
             // 
@@ -168,15 +176,6 @@
             this.label2.Size = new System.Drawing.Size(95, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Descripción:";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(28, 62);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 16);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Tipo Cliente:";
             // 
             // FRM_Editar_Tipos_Clientes
             // 

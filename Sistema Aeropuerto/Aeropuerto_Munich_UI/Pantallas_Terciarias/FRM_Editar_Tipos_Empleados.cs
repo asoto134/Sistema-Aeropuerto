@@ -35,7 +35,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
-            if (txt_TipoCliente.Text == string.Empty || txt_ID.Text == string.Empty)
+            if (txt_Descripcion.Text == string.Empty || txt_ID.Text == string.Empty)
             {
                 MessageBox.Show("Debe completar los datos antes de continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
@@ -98,19 +98,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
         {
             CargarDatosForm();
         }
-
-        private void txt_Descrip_TextChanged(object sender, EventArgs e)
-        {
-            if (txt_TipoCliente.Text == string.Empty || txt_ID.Text == string.Empty)
-            {
-                btn_Guardar.Enabled = false;
-            }
-            else
-            {
-                btn_Guardar.Enabled = true;
-            }
-        }
-
+        
         #endregion
 
         #region METODOS
@@ -123,7 +111,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             {
                 txt_ID.Enabled = true;
                 txt_ID.Text = string.Empty;
-                txt_TipoCliente.Text = string.Empty;
+                txt_Descripcion.Text = string.Empty;
                 cmb_Estados.SelectedValue = "-";
                 grp_Informacion.Text = "Insertar un Tipo de Empleado:";
             }

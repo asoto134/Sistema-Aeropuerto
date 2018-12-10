@@ -98,19 +98,8 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
         {
             CargarDatosForm();
         }
-
-        private void txt_Descrip_TextChanged(object sender, EventArgs e)
-        {
-            if (txt_TipoCliente.Text == string.Empty || txt_ID.Text == string.Empty)
-            {
-                btn_Guardar.Enabled = false;
-            }
-            else
-            {
-                btn_Guardar.Enabled = true;
-            }
-        }
         
+
         #endregion
 
         #region METODOS
