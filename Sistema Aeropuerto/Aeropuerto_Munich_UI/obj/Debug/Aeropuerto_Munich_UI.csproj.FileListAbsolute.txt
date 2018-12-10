@@ -83,3 +83,40 @@ C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Tipos_Empleados.resources
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Usuarios.resources
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Vuelos.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\bin\Debug\Aeropuerto_Munich_UI.exe
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\bin\Debug\Aeropuerto_Munich_UI.pdb
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\bin\Debug\Aeropuerto_BLL.dll
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\bin\Debug\Aeropuerto_DAL.dll
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\bin\Debug\Aeropuerto_BLL.pdb
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\bin\Debug\Aeropuerto_DAL.pdb
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.csprojResolveAssemblyReference.cache
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Primarias.FRM_Inicio_Sesion.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Primarias.FRM_Menu.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Aerolineas.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Aviones.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Categorias_Vuelos.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Cliente.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Destinos.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Empleados.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Estados.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Paises.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Tipos_Aviones.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Tipos_Clientes.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Tipos_Empleados.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Usuarios.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Secundarias.FRM_TAB_Vuelos.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Aerolineas.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Aviones.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Categorias_Vuelos.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Cliente.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Destinos.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Empleados.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Estados.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Paises.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Tipos_Aviones.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Tipos_Clientes.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Tipos_Empleados.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Usuarios.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Vuelos.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Properties.Resources.resources
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.csproj.GenerateResource.Cache

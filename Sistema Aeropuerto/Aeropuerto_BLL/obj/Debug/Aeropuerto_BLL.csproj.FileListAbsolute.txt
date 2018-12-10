@@ -19,3 +19,10 @@ C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_BLL\obj\Debug\Aeropuerto_BLL.csprojResolveAssemblyReference.cache
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_BLL\obj\Debug\Aeropuerto_BLL.dll
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_BLL\obj\Debug\Aeropuerto_BLL.pdb
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_BLL\bin\Debug\Aeropuerto_BLL.dll
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_BLL\bin\Debug\Aeropuerto_BLL.pdb
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_BLL\bin\Debug\Aeropuerto_DAL.dll
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_BLL\bin\Debug\Aeropuerto_DAL.pdb
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_BLL\obj\Debug\Aeropuerto_BLL.csprojResolveAssemblyReference.cache
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_BLL\obj\Debug\Aeropuerto_BLL.dll
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_BLL\obj\Debug\Aeropuerto_BLL.pdb

@@ -13,3 +13,8 @@ C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_DAL\obj\Debug\Aeropuerto_DAL.csprojResolveAssemblyReference.cache
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_DAL\obj\Debug\Aeropuerto_DAL.dll
 C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_DAL\obj\Debug\Aeropuerto_DAL.pdb
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_DAL\bin\Debug\Aeropuerto_DAL.dll
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_DAL\bin\Debug\Aeropuerto_DAL.pdb
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_DAL\obj\Debug\Aeropuerto_DAL.csprojResolveAssemblyReference.cache
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_DAL\obj\Debug\Aeropuerto_DAL.dll
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_DAL\obj\Debug\Aeropuerto_DAL.pdb
