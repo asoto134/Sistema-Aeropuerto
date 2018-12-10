@@ -16,19 +16,24 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
     {
         #region VARIABLES GLOBALES
 
-            cls_Aerolineas_BLL OBJ_Aerolineas_BLL = new cls_Aerolineas_BLL();
-            public cls_Aerolineas_DAL OBJ_Editar_Aerolineas;
+        cls_Aerolineas_BLL OBJ_Aerolineas_BLL = new cls_Aerolineas_BLL();
+        public cls_Aerolineas_DAL OBJ_Editar_Aerolineas;
 
-            cls_Estados_BLL OBJ_Estados_BLL = new cls_Estados_BLL();
-            cls_Estados_DAL OBJ_Estados_DAL = new cls_Estados_DAL();
+        cls_Estados_BLL OBJ_Estados_BLL = new cls_Estados_BLL();
+        cls_Estados_DAL OBJ_Estados_DAL = new cls_Estados_DAL();
 
         #endregion
 
         #region EVENTOS
+
+
         public FRM_Editar_Aerolineas()
         {
             InitializeComponent();
         }
+
+        
+    
 
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
