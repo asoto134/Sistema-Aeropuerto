@@ -41,7 +41,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
             if (cmb_Estados.SelectedValue.ToString() == "-")
             {
-                MessageBox.Show("DEBE SELECCIONAR UN ESTADO PARA GUARDAR LA INFORMACIÓN","Alerta",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
+                MessageBox.Show("Debe seleccionar un estado antes de continuar", "Alerta",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
             }
             else
             {
@@ -59,13 +59,11 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                     if (OBJ_Editar_Tipo_Clientes_DAL.SError == string.Empty)
                     {
-                        MessageBox.Show("Se guardó exitosamente el tipo de cliente", "EXITO",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Se guardó exitosamente el tipo de cliente", "Guardado de tipo de cliente", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Se presentó un error a la hora de guardar el tipo de cliente. \n \n Error [ " + OBJ_Editar_Tipo_Clientes_DAL.SError + " ].", "ERROR",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Se presentó un error a la hora de guardar el tipo de cliente. \n \n Error [ " + OBJ_Editar_Tipo_Clientes_DAL.SError + " ].", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
                 else
@@ -74,13 +72,11 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                     if (OBJ_Editar_Tipo_Clientes_DAL.SError == string.Empty)
                     {
-                        MessageBox.Show("Se modificó exitosamente el tipo de cliente", "EXITO",
-                            MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Se modificó exitosamente el tipo de cliente", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Se presentó un error a la hora de modificar el tipo de cliente. \n \n Error [ " + OBJ_Editar_Tipo_Clientes_DAL.SError + " ].", "ERROR",
-                            MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        MessageBox.Show("Se presentó un error a la hora de modificar el tipo de cliente. \n \n Error [ " + OBJ_Editar_Tipo_Clientes_DAL.SError + " ].", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
 
@@ -136,14 +132,14 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                 cmb_Estados.DataSource = null;
                 cmb_Estados.DataSource = OBJ_Estados_DAL.OBJ_DataTable;
 
-                OBJ_Estados_DAL.OBJ_DataTable.Rows.Add("-", "-- SELECCIONAR UN ESTADO --");
+                OBJ_Estados_DAL.OBJ_DataTable.Rows.Add("-", "-- No se ha seleccionado un estado --");
 
                 cmb_Estados.DisplayMember = "Descripcion";
                 cmb_Estados.ValueMember = "IdEstado";
             }
             else
             {
-                MessageBox.Show("SE PRESENTO UN ERROR A LA HORA DE CARGAR EL COMBO DE ESTADOS.\n\nERROR: [ " + OBJ_Estados_DAL.SError + " ].", "ERROR",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                MessageBox.Show("Se ha presentado un error al cargar los estados.\n\n Error: [ " + OBJ_Estados_DAL.SError + " ].", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
 
         }

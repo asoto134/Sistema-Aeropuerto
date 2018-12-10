@@ -41,7 +41,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             }
             else
             {
-                MessageBox.Show("Debe tener un tipo de empleado seleccionada", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("Debe tener un tipo de empleado seleccionado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
         }
 
@@ -69,7 +69,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             {
                 OBJ_Tipo_Empleados_BLL.Eliminar(ref OBJ_Tipo_Empleados_DAL, dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
 
-                MessageBox.Show("Se ha eliminado exitósamente", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("El dato que ha seleccionado se ha eliminado exitósamente", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
             }
             else
             {
@@ -90,7 +90,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
         }
 
 
-        private void FRM_TAB_Paises_Load(object sender, EventArgs e)
+        private void FRM_TAB_Tipo_Empleados_Load(object sender, EventArgs e)
         {
             CargarDatos();
         }

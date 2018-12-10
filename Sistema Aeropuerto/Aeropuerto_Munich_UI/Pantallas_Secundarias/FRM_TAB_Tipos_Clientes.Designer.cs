@@ -263,7 +263,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRM_TAB_Tipos_Clientes";
             this.Text = "FRM_TAB_Tipos_Clientes";
-            this.Load += new System.EventHandler(this.FRM_TAB_Paises_Load);
+            this.Load += new System.EventHandler(this.FRM_TAB_Tipos_Clientes_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Datos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

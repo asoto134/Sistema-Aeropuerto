@@ -41,6 +41,8 @@
             this.txt_TipoCliente = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.grp_Informacion.SuspendLayout();
             this.SuspendLayout();
@@ -48,6 +50,8 @@
             // groupBox2
             // 
             this.groupBox2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.groupBox2.Controls.Add(this.label6);
+            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.btn_Salir);
             this.groupBox2.Controls.Add(this.btn_Guardar);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -65,7 +69,7 @@
             this.btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Salir.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_Salir.Location = new System.Drawing.Point(334, 30);
+            this.btn_Salir.Location = new System.Drawing.Point(238, 28);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(52, 45);
             this.btn_Salir.TabIndex = 4;
@@ -80,7 +84,7 @@
             this.btn_Guardar.Enabled = false;
             this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Guardar.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_Guardar.Location = new System.Drawing.Point(132, 32);
+            this.btn_Guardar.Location = new System.Drawing.Point(31, 32);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(47, 41);
             this.btn_Guardar.TabIndex = 5;
@@ -177,6 +181,24 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Descripción:";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(93, 44);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 16);
+            this.label5.TabIndex = 8;
+            this.label5.Text = "Guardar";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(296, 42);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 16);
+            this.label6.TabIndex = 9;
+            this.label6.Text = "Cancelar";
+            // 
             // FRM_Editar_Tipos_Clientes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -191,6 +213,7 @@
             this.Text = "FRM_Editar_Tipos_Clientes";
             this.Load += new System.EventHandler(this.FRM_Editar_Tipo_Clientes_Load);
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.grp_Informacion.ResumeLayout(false);
             this.grp_Informacion.PerformLayout();
             this.ResumeLayout(false);
@@ -211,5 +234,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_Descripcion;
         private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -264,7 +264,7 @@
             this.Name = "FRM_TAB_Tipos_Empleados";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_TAB_Tipos_Empleados";
-            this.Load += new System.EventHandler(this.FRM_TAB_Paises_Load);
+            this.Load += new System.EventHandler(this.FRM_TAB_Tipo_Empleados_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgv_Datos)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
