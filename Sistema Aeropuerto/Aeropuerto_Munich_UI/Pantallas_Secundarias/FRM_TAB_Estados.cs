@@ -104,5 +104,6 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
                 MessageBox.Show("No se ha podido cargar los datos. \n\n Error: [ " +OBJ_Estados_DAL.SError+ " ]");
             }
         }
+        
     }
 }
