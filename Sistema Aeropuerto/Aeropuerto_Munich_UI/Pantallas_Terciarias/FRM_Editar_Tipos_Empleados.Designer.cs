@@ -30,7 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_Editar_Tipos_Empleados));
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
             this.btn_Salir = new System.Windows.Forms.Button();
+            this.label5 = new System.Windows.Forms.Label();
             this.btn_Guardar = new System.Windows.Forms.Button();
             this.grp_Informacion = new System.Windows.Forms.GroupBox();
             this.txt_Descripcion = new System.Windows.Forms.TextBox();
@@ -39,8 +41,6 @@
             this.txt_ID = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.grp_Informacion.SuspendLayout();
             this.SuspendLayout();
@@ -60,6 +60,15 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Controles";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(296, 45);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(70, 16);
+            this.label6.TabIndex = 11;
+            this.label6.Text = "Cancelar";
+            // 
             // btn_Salir
             // 
             this.btn_Salir.BackColor = System.Drawing.Color.Transparent;
@@ -74,12 +83,20 @@
             this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(91, 45);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(64, 16);
+            this.label5.TabIndex = 10;
+            this.label5.Text = "Guardar";
+            // 
             // btn_Guardar
             // 
             this.btn_Guardar.BackColor = System.Drawing.Color.Transparent;
             this.btn_Guardar.BackgroundImage = global::Aeropuerto_Munich_UI.Properties.Resources.img_btn_Guardar;
             this.btn_Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Guardar.Enabled = false;
             this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Guardar.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Guardar.Location = new System.Drawing.Point(32, 33);
@@ -158,24 +175,6 @@
             this.label2.Size = new System.Drawing.Size(95, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Descripción:";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(296, 45);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(70, 16);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Cancelar";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(91, 45);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(64, 16);
-            this.label5.TabIndex = 10;
-            this.label5.Text = "Guardar";
             // 
             // FRM_Editar_Tipos_Empleados
             // 

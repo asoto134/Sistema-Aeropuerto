@@ -48,7 +48,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                 OBJ_Tipo_Clientes_BLL = new cls_Tipo_Clientes_BLL();
 
-                OBJ_Editar_Tipo_Clientes_DAL.IIdTipoCliente = Convert.ToChar(txt_ID.Text.ToString());
+                OBJ_Editar_Tipo_Clientes_DAL.IIdTipoCliente = Convert.ToInt32(txt_ID.Text.ToString());
                 OBJ_Editar_Tipo_Clientes_DAL.STipoCliente = txt_TipoCliente.Text;
                 OBJ_Editar_Tipo_Clientes_DAL.SDescripcion = txt_Descripcion.Text;
                 OBJ_Editar_Tipo_Clientes_DAL.CIdEstado = Convert.ToChar(cmb_Estados.SelectedValue.ToString());
