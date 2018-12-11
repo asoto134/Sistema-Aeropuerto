@@ -7,14 +7,13 @@ using System.Data;
 
 namespace Aeropuerto_DAL.Cat_Man
 {
-    public class cls_Aerolineas_DAL
+   public  class cls_CategoriasVuelos_DAL
     {
-         public DataTable OBJ_DataTable = new DataTable();
+        public DataTable OBJ_DataTable = new DataTable();
+        private int _cIdCategoria;
 
-        private int _cIdAerolinea;
-
-        private char _cAccion, _cIdEstado;
-        private string _sError, _sNombreAerolinea;
+        private char  _cAccion, _cIdEstado;
+        private string _sError, _sDescCategoria;
 
         public char CAccion
         {
@@ -29,17 +28,31 @@ namespace Aeropuerto_DAL.Cat_Man
             }
         }
 
+   
 
-        public string SNombreAerolinea
+        public char CIdEstado
         {
             get
             {
-                return _sNombreAerolinea;
+                return _cIdEstado;
             }
 
             set
             {
-                _sNombreAerolinea = value;
+                _cIdEstado = value;
+            }
+        }
+
+        public string SDescCategoria
+        {
+            get
+            {
+                return _sDescCategoria;
+            }
+
+            set
+            {
+                _sDescCategoria = value;
             }
         }
 
@@ -56,31 +69,17 @@ namespace Aeropuerto_DAL.Cat_Man
             }
         }
 
-        public char CIdEstado
+        public int CIdCategoria
         {
             get
             {
-                return _cIdEstado;
+                return _cIdCategoria;
             }
 
             set
             {
-                _cIdEstado = value;
-            }
-        }
-
-        public int CIdAerolinea
-        {
-            get
-            {
-                return _cIdAerolinea;
-            }
-
-            set
-            {
-                _cIdAerolinea = value;
+                _cIdCategoria = value;
             }
         }
     }
 }
-
