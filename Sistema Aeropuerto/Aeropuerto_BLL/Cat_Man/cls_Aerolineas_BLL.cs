@@ -83,7 +83,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 OBJ_DataBase_DAL.SNombreTabla = "Aerolineas";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IDAerolinea", "4", sDato);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@ELIMINAR", "1", sDato);
 
                 OBJ_DataBase_BLL.Execute_NonQuery(ref OBJ_DataBase_DAL);
 
@@ -114,7 +114,7 @@ namespace Aeropuerto_BLL.Cat_Man
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
 
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdAerolinea", "4", OBJ_Aerolineas_DAL.CIdAerolinea);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdAerolinea", "1", OBJ_Aerolineas_DAL.CIdAerolinea);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@NombreAerolinea", "2", OBJ_Aerolineas_DAL.SNombreAerolinea);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_Aerolineas_DAL.CIdEstado);
 
@@ -158,7 +158,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 {
                     OBJ_Aerolineas_DAL.SError = string.Empty;
                     OBJ_Aerolineas_DAL.CAccion = 'U';
-                    OBJ_Aerolineas_DAL.CIdAerolinea = Convert.ToChar(OBJ_DataBase_DAL.SScalarValue);
+                    OBJ_Aerolineas_DAL.CIdAerolinea = Convert.ToInt32(OBJ_DataBase_DAL.SScalarValue);
                 }
                 else
                 {
