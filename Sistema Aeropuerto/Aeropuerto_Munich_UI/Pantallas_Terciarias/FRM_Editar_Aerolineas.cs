@@ -16,24 +16,19 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
     {
         #region VARIABLES GLOBALES
 
-        cls_Aerolineas_BLL OBJ_Aerolineas_BLL = new cls_Aerolineas_BLL();
-        public cls_Aerolineas_DAL OBJ_Editar_Aerolineas;
+            cls_Aerolineas_BLL OBJ_Aerolineas_BLL = new cls_Aerolineas_BLL();
+            public cls_Aerolineas_DAL OBJ_Editar_Aerolineas;
 
-        cls_Estados_BLL OBJ_Estados_BLL = new cls_Estados_BLL();
-        cls_Estados_DAL OBJ_Estados_DAL = new cls_Estados_DAL();
+            cls_Estados_BLL OBJ_Estados_BLL = new cls_Estados_BLL();
+            cls_Estados_DAL OBJ_Estados_DAL = new cls_Estados_DAL();
 
         #endregion
 
         #region EVENTOS
-
-
         public FRM_Editar_Aerolineas()
         {
             InitializeComponent();
         }
-
-        
-    
 
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
@@ -49,7 +44,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                 OBJ_Aerolineas_BLL = new cls_Aerolineas_BLL();
 
-                OBJ_Editar_Aerolineas.CIdAerolinea = Convert.ToChar(txt_ID.Text.ToString());
+                OBJ_Editar_Aerolineas.CIdAerolinea = Convert.ToInt32(txt_ID.Text.ToString());
                 OBJ_Editar_Aerolineas.SNombreAerolinea = txt_Nombre.Text;
                 OBJ_Editar_Aerolineas.CIdEstado = Convert.ToChar(cmb_Estados.SelectedValue.ToString());
 
@@ -98,7 +93,33 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
         {
             CargarDatosForm();
         }
-        
+
+
+        private void CamposNumericos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((char.IsNumber(e.KeyChar)) || (e.KeyChar == 8))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+
+        }
+        private void CamposNoNumericos_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if ((char.IsLetter(e.KeyChar)) || (e.KeyChar == 8))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+
+        }
+
         private void txt_Descrip_TextChanged(object sender, EventArgs e)
         {
             if (txt_Nombre.Text == string.Empty || txt_ID.Text == string.Empty)
