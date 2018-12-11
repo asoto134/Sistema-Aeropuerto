@@ -168,7 +168,7 @@
             this.btn_Eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Eliminar.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_Eliminar.Location = new System.Drawing.Point(47, 293);
+            this.btn_Eliminar.Location = new System.Drawing.Point(48, 300);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(65, 69);
             this.btn_Eliminar.TabIndex = 3;
@@ -207,7 +207,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(17, 490);
+            this.label1.Location = new System.Drawing.Point(17, 470);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(132, 16);
             this.label1.TabIndex = 11;
@@ -215,7 +215,7 @@
             // 
             // txt_Filtrar
             // 
-            this.txt_Filtrar.Location = new System.Drawing.Point(155, 489);
+            this.txt_Filtrar.Location = new System.Drawing.Point(155, 470);
             this.txt_Filtrar.Name = "txt_Filtrar";
             this.txt_Filtrar.Size = new System.Drawing.Size(232, 20);
             this.txt_Filtrar.TabIndex = 10;
@@ -225,7 +225,7 @@
             this.btn_Filtrar.BackColor = System.Drawing.Color.Transparent;
             this.btn_Filtrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Filtrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Filtrar.Location = new System.Drawing.Point(393, 484);
+            this.btn_Filtrar.Location = new System.Drawing.Point(393, 470);
             this.btn_Filtrar.Name = "btn_Filtrar";
             this.btn_Filtrar.Size = new System.Drawing.Size(111, 28);
             this.btn_Filtrar.TabIndex = 9;
@@ -241,11 +241,11 @@
             this.dgv_Datos.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dgv_Datos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgv_Datos.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this.dgv_Datos.Location = new System.Drawing.Point(12, 33);
+            this.dgv_Datos.Location = new System.Drawing.Point(12, 12);
             this.dgv_Datos.MultiSelect = false;
             this.dgv_Datos.Name = "dgv_Datos";
             this.dgv_Datos.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgv_Datos.Size = new System.Drawing.Size(492, 437);
+            this.dgv_Datos.Size = new System.Drawing.Size(492, 435);
             this.dgv_Datos.TabIndex = 8;
             // 
             // FRM_TAB_Aerolineas
