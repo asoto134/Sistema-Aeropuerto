@@ -25,7 +25,10 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
         cls_Aerolineas_BLL OBJ_Aerolineas_BLL = new cls_Aerolineas_BLL();
         cls_Aerolineas_DAL OBJ_Aerolineas_DAL = new cls_Aerolineas_DAL();
 
-       
+        cls_Tipo_Aviones_BLL OBJ_Tipo_Aviones_BLL = new cls_Tipo_Aviones_BLL();
+        cls_Tipo_Aviones_DAL OBJ_Tipo_Aviones_DAL = new cls_Tipo_Aviones_DAL();
+
+
 
         #endregion
 
@@ -52,8 +55,8 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                 OBJ_Editar_Aviones.SIdAvion = txt_ID_avion.Text.ToString();
                 OBJ_Editar_Aviones.SNomAvion = txt_Nombre_Avion.Text;
                 OBJ_Editar_Aviones.SDescAvion = txt_Desc_Avion.Text;
-                OBJ_Editar_Aviones.CIdAerolinea = Convert.ToChar(cmb_id_Aerolinea.SelectedValue.ToString());
-                OBJ_Editar_Aviones.SIdTipoAvion = cmb_Tip_Avion.SelectedValue.ToString();
+                OBJ_Editar_Aviones.IIdAerolinea = Convert.ToInt32(cmb_id_Aerolinea.SelectedValue.ToString());
+                OBJ_Editar_Aviones.SIdTipoAvion = cmb_IdTip_Avion.SelectedValue.ToString();
                 OBJ_Editar_Aviones.CIdEstado = Convert.ToChar(cmb_Estados.SelectedValue.ToString());
 
                 if (OBJ_Editar_Aviones.CAccion == 'I')
@@ -143,7 +146,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                 txt_Nombre_Avion.Text = string.Empty;
                 txt_Desc_Avion.Text = string.Empty;
                 cmb_id_Aerolinea.SelectedValue = "0";
-                cmb_Tip_Avion.SelectedValue = "-";
+                cmb_IdTip_Avion.SelectedValue = "-";
                 cmb_Estados.SelectedValue = "-";
                 grp_Informacion.Text = "Insertar Aviones";
             }
@@ -152,8 +155,9 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                 txt_ID_avion.Enabled = false;
                 txt_ID_avion.Text = OBJ_Editar_Aviones.SIdAvion.ToString();
                 txt_Nombre_Avion.Text = OBJ_Editar_Aviones.SNomAvion.ToString();
-                cmb_id_Aerolinea.SelectedValue = OBJ_Editar_Aviones.CIdAerolinea.ToString();
-                cmb_Tip_Avion.SelectedValue = OBJ_Editar_Aviones.SIdTipoAvion.ToString();
+                txt_Desc_Avion.Text = OBJ_Editar_Aviones.SDescAvion.ToString();
+                cmb_id_Aerolinea.SelectedValue = OBJ_Editar_Aviones.IIdAerolinea.ToString();
+                cmb_IdTip_Avion.SelectedValue = OBJ_Editar_Aviones.SIdTipoAvion.ToString();
                 cmb_Estados.SelectedValue = OBJ_Editar_Aviones.CIdEstado.ToString();
                 grp_Informacion.Text = "Modificar Aviones";
             }
@@ -161,7 +165,8 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
         private void CargarCombos()
         {
-            OBJ_Estados_BLL.Listar(ref OBJ_Estados_DAL);
+            #region Combo_Estados
+            OBJ_Estados_BLL.Listar_Combo(ref OBJ_Estados_DAL);
 
             if (OBJ_Estados_DAL.SError == string.Empty)
             {
@@ -181,31 +186,35 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                                 MessageBoxIcon.Error);
             }
 
-            //Tabla Tipo de Avion:
+            #endregion
+
+            #region Combo_Tipo_Aviones
 
 
-            //OBJ_Estados_BLL.Listar(ref OBJ_Estados_DAL);
+            OBJ_Tipo_Aviones_BLL.Listar_Combo(ref OBJ_Tipo_Aviones_DAL);
 
-            //if (OBJ_Estados_DAL.SError == string.Empty)
-            //{
-            //    cmb_Estados.DataSource = null;
-            //    cmb_Estados.DataSource = OBJ_Estados_DAL.OBJ_DataTable;
+            if (OBJ_Tipo_Aviones_DAL.SError == string.Empty)
+            {
+                cmb_IdTip_Avion.DataSource = null;
+                cmb_IdTip_Avion.DataSource = OBJ_Tipo_Aviones_DAL.OBJ_DataTable;
 
-            //    OBJ_Estados_DAL.OBJ_DataTable.Rows.Add("-", "-- SELECCIONAR UN ESTADO --");
+                OBJ_Tipo_Aviones_DAL.OBJ_DataTable.Rows.Add("-", "-- SELECCIONAR UN TIPO DE AVION --");
 
-            //    cmb_Estados.DisplayMember = "Descripcion";
-            //    cmb_Estados.ValueMember = "IdEstado";
-            //}
-            //else
-            //{
-            //    MessageBox.Show("SE PRESENTO UN ERROR A LA HORA DE CARGAR EL COMBO DE ESTADOS.\n\nERROR: [ " + OBJ_Estados_DAL.SError + " ].",
-            //                    "ERROR",
-            //                    MessageBoxButtons.OK,
-            //                    MessageBoxIcon.Error);
-            //}
+                cmb_IdTip_Avion.DisplayMember = "NombreTipoAvion";
+                cmb_IdTip_Avion.ValueMember = "IdTipoAvion";
+            }
+            else
+            {
+                MessageBox.Show("SE PRESENTO UN ERROR A LA HORA DE CARGAR EL COMBO DE ESTADOS.\n\nERROR: [ " + OBJ_Estados_DAL.SError + " ].",
+                                "ERROR",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
+            #endregion
 
+            #region Combo_Aerolines
 
-            OBJ_Aerolineas_BLL.Listar(ref OBJ_Aerolineas_DAL);
+            OBJ_Aerolineas_BLL.Listar_Combo(ref OBJ_Aerolineas_DAL);
 
             if (OBJ_Aerolineas_DAL.SError == string.Empty)
             {
@@ -224,10 +233,11 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Error);
             }
+            #endregion
 
         }
 
-        #endregion
+#endregion
 
 
     }

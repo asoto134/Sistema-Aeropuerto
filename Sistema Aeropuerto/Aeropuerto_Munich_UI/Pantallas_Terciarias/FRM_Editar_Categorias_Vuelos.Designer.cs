@@ -52,7 +52,7 @@
             this.groupBox2.Location = new System.Drawing.Point(9, 226);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(491, 105);
-            this.groupBox2.TabIndex = 9;
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Controles";
             // 
@@ -66,7 +66,7 @@
             this.btn_Salir.Location = new System.Drawing.Point(281, 32);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(52, 45);
-            this.btn_Salir.TabIndex = 4;
+            this.btn_Salir.TabIndex = 2;
             this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
@@ -75,13 +75,13 @@
             this.btn_Guardar.BackColor = System.Drawing.Color.Transparent;
             this.btn_Guardar.BackgroundImage = global::Aeropuerto_Munich_UI.Properties.Resources.img_btn_Guardar;
             this.btn_Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Guardar.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Guardar.Location = new System.Drawing.Point(151, 34);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(47, 41);
-            this.btn_Guardar.TabIndex = 5;
-            this.btn_Guardar.UseVisualStyleBackColor = true;
+            this.btn_Guardar.TabIndex = 1;
+            this.btn_Guardar.UseVisualStyleBackColor = false;
             this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
             // grp_Informacion
@@ -107,7 +107,7 @@
             this.cmb_Estados.Location = new System.Drawing.Point(215, 113);
             this.cmb_Estados.Name = "cmb_Estados";
             this.cmb_Estados.Size = new System.Drawing.Size(249, 24);
-            this.cmb_Estados.TabIndex = 5;
+            this.cmb_Estados.TabIndex = 3;
             // 
             // lbl_Estado
             // 
@@ -115,17 +115,19 @@
             this.lbl_Estado.Location = new System.Drawing.Point(148, 121);
             this.lbl_Estado.Name = "lbl_Estado";
             this.lbl_Estado.Size = new System.Drawing.Size(61, 16);
-            this.lbl_Estado.TabIndex = 4;
+            this.lbl_Estado.TabIndex = 0;
             this.lbl_Estado.Text = "Estado:";
             // 
             // txt_ID_Categoria
             // 
+            this.txt_ID_Categoria.Enabled = false;
             this.txt_ID_Categoria.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_ID_Categoria.Location = new System.Drawing.Point(215, 46);
-            this.txt_ID_Categoria.MaxLength = 1;
+            this.txt_ID_Categoria.MaxLength = 10;
             this.txt_ID_Categoria.Name = "txt_ID_Categoria";
             this.txt_ID_Categoria.Size = new System.Drawing.Size(100, 21);
-            this.txt_ID_Categoria.TabIndex = 2;
+            this.txt_ID_Categoria.TabIndex = 1;
+            this.txt_ID_Categoria.Tag = "Número autogenerado por el sistema";
             // 
             // txt_Desc_Categoria
             // 
@@ -134,7 +136,7 @@
             this.txt_Desc_Categoria.MaxLength = 90;
             this.txt_Desc_Categoria.Name = "txt_Desc_Categoria";
             this.txt_Desc_Categoria.Size = new System.Drawing.Size(249, 21);
-            this.txt_Desc_Categoria.TabIndex = 3;
+            this.txt_Desc_Categoria.TabIndex = 2;
             // 
             // lbl_Id_Categoria
             // 
@@ -151,7 +153,7 @@
             this.lbl_Desc_Categoria.Location = new System.Drawing.Point(20, 83);
             this.lbl_Desc_Categoria.Name = "lbl_Desc_Categoria";
             this.lbl_Desc_Categoria.Size = new System.Drawing.Size(189, 16);
-            this.lbl_Desc_Categoria.TabIndex = 1;
+            this.lbl_Desc_Categoria.TabIndex = 0;
             this.lbl_Desc_Categoria.Text = "Descripción de Categoria:";
             // 
             // FRM_Editar_Categorias_Vuelos
@@ -165,7 +167,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRM_Editar_Categorias_Vuelos";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_Editar_Categorias_Vuelos";
             this.Load += new System.EventHandler(this.FRM_Editar_Categorias_Vuelos_Load);
             this.groupBox2.ResumeLayout(false);
