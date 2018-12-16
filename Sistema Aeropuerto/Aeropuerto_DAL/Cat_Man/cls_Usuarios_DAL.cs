@@ -11,8 +11,21 @@ namespace Aeropuerto_DAL.Cat_Man
     {
         public DataTable OBJ_DataTable = new DataTable();
 
-        private char _cIDEstado;
-        private string _sError, _sUsername, _sPassword, _sIdEstado;
+        private char _cIDEstado, _cAccion;
+        private string _sError, _sUsername, _sPassword, _sIdEmpleado ;
+
+        public char CAccion
+        {
+            get
+            {
+                return _cAccion;
+            }
+
+            set
+            {
+                _cAccion = value;
+            }
+        }
 
         public char cIDEstado
         {
@@ -40,16 +53,16 @@ namespace Aeropuerto_DAL.Cat_Man
             }
         }
 
-        public string sIdEstado
+        public string sIdEmpleado
         {
             get
             {
-                return _sIdEstado;
+                return _sIdEmpleado;
             }
 
             set
             {
-                _sIdEstado = value;
+                _sIdEmpleado = value;
             }
         }
 

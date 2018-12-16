@@ -104,70 +104,73 @@ namespace Aeropuerto_BLL.Cat_Man
             }
         }
 
-        //public void Modificar(ref cls_Estados_DAL OBJ_Estados_DAL)
-        //{
-        //    try
-        //    {
-        //        cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
-        //        cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
+        public void Modificar(ref cls_Usuarios_DAL OBJ_Usuarios_DAL)
+        {
+            try
+            {
+                cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
+                cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-        //        OBJ_DataBase_DAL.SSP_Nombre = "sp_Modificar_Estados";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_Modificar_Usuarios";
 
-        //        OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
-        //        OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IDEstado", "4", OBJ_Estados_DAL.CIDEstado);
-        //        OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Descripcion", "2", OBJ_Estados_DAL.SDescripcion);
+                OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Username", "2", OBJ_Usuarios_DAL.sUsername);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Password", "2", OBJ_Usuarios_DAL.sPassword);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_Usuarios_DAL.cIDEstado);
 
-        //        OBJ_DataBase_BLL.Execute_NonQuery(ref OBJ_DataBase_DAL);
+                OBJ_DataBase_BLL.Execute_NonQuery(ref OBJ_DataBase_DAL);
 
-        //        if (OBJ_DataBase_DAL.SError == string.Empty)
-        //        {
-        //            OBJ_Estados_DAL.SError = string.Empty;
-        //        }
-        //        else
-        //        {
-        //            OBJ_Estados_DAL.SError = OBJ_DataBase_DAL.SError;
-        //        }
+                if (OBJ_DataBase_DAL.SError == string.Empty)
+                {
+                    OBJ_Usuarios_DAL.sError = string.Empty;
+                }
+                else
+                {
+                    OBJ_Usuarios_DAL.sError = OBJ_DataBase_DAL.SError;
+                }
 
-        //        OBJ_Estados_DAL.CAccion = 'U';
+                OBJ_Usuarios_DAL.CAccion = 'U';
 
-        //    }
-        //    catch (Exception Error)
-        //    {
-        //        OBJ_Estados_DAL.SError = Error.Message.ToString();
-        //    }
-        //}
+            }
+            catch (Exception Error)
+            {
+                OBJ_Usuarios_DAL.sError = Error.Message.ToString();
+            }
+        }
 
-        //public void Insertar(ref cls_Estados_DAL OBJ_Estados_DAL)
-        //{
-        //    try
-        //    {
-        //        cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
-        //        cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
+        public void Insertar(ref cls_Usuarios_DAL OBJ_Usuarios_DAL)
+        {
+            try
+            {
+                cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
+                cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-        //        OBJ_DataBase_DAL.SSP_Nombre = "sp_Insertar_Estados";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_Insertar_Usuarios";
 
-        //        OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
-        //        OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IDEstado", "4", OBJ_Estados_DAL.CIDEstado);
-        //        OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Descripcion", "2", OBJ_Estados_DAL.SDescripcion);
+                OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Username", "2", OBJ_Usuarios_DAL.sUsername);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Password", "2", OBJ_Usuarios_DAL.sPassword);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEmpleado", "2", OBJ_Usuarios_DAL.sIdEmpleado);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_Usuarios_DAL.cIDEstado);
 
-        //        OBJ_DataBase_BLL.Execute_NonQuery(ref OBJ_DataBase_DAL);
+                OBJ_DataBase_BLL.Execute_NonQuery(ref OBJ_DataBase_DAL);
 
-        //        if (OBJ_DataBase_DAL.SError == string.Empty)
-        //        {
-        //            OBJ_Estados_DAL.SError = string.Empty;
-        //        }
-        //        else
-        //        {
-        //            OBJ_Estados_DAL.SError = OBJ_DataBase_DAL.SError;
-        //        }
+                if (OBJ_DataBase_DAL.SError == string.Empty)
+                {
+                    OBJ_Usuarios_DAL.sError = string.Empty;
+                }
+                else
+                {
+                    OBJ_Usuarios_DAL.sError = OBJ_DataBase_DAL.SError;
+                }
 
-        //        OBJ_Estados_DAL.CAccion = 'U';
+                OBJ_Usuarios_DAL.CAccion = 'U';
 
-        //    }
-        //    catch (Exception Error)
-        //    {
-        //        OBJ_Estados_DAL.SError = Error.Message.ToString();
-        //    }
-        //}
+            }
+            catch (Exception Error)
+            {
+                OBJ_Usuarios_DAL.sError = Error.Message.ToString();
+            }
+        }
     }
 }

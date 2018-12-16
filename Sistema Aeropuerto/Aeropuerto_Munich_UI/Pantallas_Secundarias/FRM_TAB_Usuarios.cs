@@ -25,37 +25,40 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
 
         private void btn_Modificar_Click(object sender, EventArgs e)
         {
-            //if (dgv_Datos.Rows.Count >= 1)
-            //{
-            //    Pantallas_Terciarias.FRM_Editar_Estados OBJ_Editar_Estados = new Pantallas_Terciarias.FRM_Editar_Estados();
+            if (dgv_Datos.Rows.Count >= 1)
+            {
+                Pantallas_Terciarias.FRM_Editar_Usuarios OBJ_Editar_Usuarios = new Pantallas_Terciarias.FRM_Editar_Usuarios();
 
-            //    OBJ_Estados_DAL.CAccion = 'U';
-            //    OBJ_Estados_DAL.CIDEstado = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
-            //    OBJ_Estados_DAL.SDescripcion = dgv_Datos.SelectedRows[0].Cells[1].Value.ToString();
+                OBJ_Usuarios_DAL.CAccion = 'U';
+                OBJ_Usuarios_DAL.sUsername = dgv_Datos.SelectedRows[0].Cells[0].Value.ToString();
+                OBJ_Usuarios_DAL.sIdEmpleado = dgv_Datos.SelectedRows[0].Cells[1].Value.ToString();
+                OBJ_Usuarios_DAL.cIDEstado = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[2].Value.ToString());
 
-            //    OBJ_Editar_Estados.OBJ_Editar_Estados = OBJ_Estados_DAL;
+                OBJ_Editar_Usuarios.OBJ_Editar_Usuarios = OBJ_Usuarios_DAL;
 
-            //    OBJ_Editar_Estados.ShowDialog();
+                OBJ_Editar_Usuarios.ShowDialog();
 
-            //    CargarDatos();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Debe tener un estado seleccionado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            //}
+                txt_Filtrar.Text = string.Empty;
+                CargarDatos();
+            }
+            else
+            {
+                MessageBox.Show("Debe tener un usuario seleccionado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
         }
 
         private void btn_Añadir_Click(object sender, EventArgs e)
         {
-            //Pantallas_Terciarias.FRM_Editar_Estados OBJ_Editar_Estados = new Pantallas_Terciarias.FRM_Editar_Estados();
+            Pantallas_Terciarias.FRM_Editar_Usuarios OBJ_Editar_Usuarios = new Pantallas_Terciarias.FRM_Editar_Usuarios();
 
-            //OBJ_Estados_DAL.CAccion = 'I';
+            OBJ_Usuarios_DAL.CAccion = 'I';
 
-            //OBJ_Editar_Estados.OBJ_Editar_Estados = OBJ_Estados_DAL;
+            OBJ_Editar_Usuarios.OBJ_Editar_Usuarios = OBJ_Usuarios_DAL;
 
-            //OBJ_Editar_Estados.ShowDialog();
+            OBJ_Editar_Usuarios.ShowDialog();
 
-            //CargarDatos();
+            txt_Filtrar.Text = string.Empty;
+            CargarDatos();
         }
 
         private void btn_Refrescar_Click(object sender, EventArgs e)
