@@ -11,6 +11,34 @@ namespace Aeropuerto_BLL.Cat_Man
 {
     public class cls_Estados_BLL
     {
+        public void Listar_Combo(ref cls_Estados_DAL OBJ_Estados_DAL)
+        {
+            try
+            {
+                cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
+                cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
+
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_combo_Estados";
+                OBJ_DataBase_DAL.SNombreTabla = "Estados";
+
+                OBJ_DataBase_BLL.Execute_DataAdapter(ref OBJ_DataBase_DAL);
+
+                if (OBJ_DataBase_DAL.SError == string.Empty)
+                {
+                    OBJ_Estados_DAL.OBJ_DataTable = OBJ_DataBase_DAL.OBJ_DataSet.Tables[0];
+                    OBJ_Estados_DAL.SError = string.Empty;
+                }
+                else
+                {
+                    OBJ_Estados_DAL.SError = OBJ_DataBase_DAL.SError;
+                }
+
+            }
+            catch (Exception Error)
+            {
+                OBJ_Estados_DAL.SError = Error.Message.ToString();
+            }
+        }
         public void Listar(ref cls_Estados_DAL OBJ_Estados_DAL)
         {
             try
