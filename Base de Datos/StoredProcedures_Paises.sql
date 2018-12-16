@@ -4,6 +4,10 @@
 
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
+
+IF OBJECT_ID('[dbo].[sp_Listar_Paises]') IS NOT NULL DROP PROCEDURE [dbo].sp_Listar_Paises
+GO
+
 Create procedure sp_Listar_Paises
 as
 Begin
@@ -20,6 +24,10 @@ GO
 
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
+
+IF OBJECT_ID('[dbo].[sp_Filtar_Paises]') IS NOT NULL DROP PROCEDURE [dbo].sp_Filtar_Paises
+GO
+
 Create procedure sp_Filtar_Paises
 (
 @Filtro varchar(85)
@@ -40,6 +48,10 @@ GO
 
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
+
+IF OBJECT_ID('[dbo].[sp_Eliminar_Paises]') IS NOT NULL DROP PROCEDURE [dbo].sp_Eliminar_Paises
+GO
+
 Create procedure sp_Eliminar_Paises
 (
 @IdPais int
@@ -56,6 +68,10 @@ GO
 
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
+
+IF OBJECT_ID('[dbo].[sp_Modificar_Paises]') IS NOT NULL DROP PROCEDURE [dbo].sp_Modificar_Paises
+GO
+
 Create procedure sp_Modificar_Paises
 (
 @IdPais         int,
@@ -79,6 +95,10 @@ GO
 
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
+
+IF OBJECT_ID('[dbo].[sp_Insertar_Pais]') IS NOT NULL DROP PROCEDURE [dbo].sp_Insertar_Pais
+GO
+
 CREATE PROCEDURE sp_Insertar_Pais
 (
 	@NombrePais varchar(85),

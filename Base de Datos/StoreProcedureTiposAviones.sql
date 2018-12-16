@@ -1,5 +1,9 @@
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
+
+IF OBJECT_ID('[dbo].[sp_ListarTiposAviones]') IS NOT NULL DROP PROCEDURE [dbo].sp_ListarTiposAviones
+GO
+
 Create procedure sp_ListarTiposAviones
 as
 Begin
@@ -19,6 +23,10 @@ GO
 
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
+
+IF OBJECT_ID('[dbo].[sp_FiltrarTiposAviones]') IS NOT NULL DROP PROCEDURE [dbo].[sp_FiltrarTiposAviones]
+GO
+
 Create procedure [dbo].[sp_FiltrarTiposAviones]
 (
  @IdTipoAvion varchar(07)
@@ -34,11 +42,15 @@ SELECT [IdTipoAvion]
   FROM [dbo].[T_TiposAviones]
   Where IdTipoAvion = @IdTipoAvion
 End
-
+GO
 -- Modificar
 
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
+
+IF OBJECT_ID('[dbo].[sp_ModificarTiposAviones]') IS NOT NULL DROP PROCEDURE [dbo].sp_ModificarTiposAviones
+GO
+
 Create procedure sp_ModificarTiposAviones
 (
  @IdTipoAvion        varchar(07),
@@ -64,6 +76,10 @@ GO
 
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
+
+IF OBJECT_ID('[dbo].[sp_EliminarTiposAviones]') IS NOT NULL DROP PROCEDURE [dbo].[sp_EliminarTiposAviones]
+GO
+
 Create procedure [dbo].[sp_EliminarTiposAviones]
 (
  @IdTipoAvion varchar(07)
@@ -78,9 +94,13 @@ GO
 
 -- Insertar
 
-USE [DB_AEROPUERTO_PROGRA_III]
+USE [DB_AEROPUERTO_PROGRA_III]
+GO
 
-ALTER procedure [dbo].[sp_Insertar_TiposAviones]
+IF OBJECT_ID('[dbo].[sp_Insertar_TiposAviones]') IS NOT NULL DROP PROCEDURE [dbo].sp_Insertar_TiposAviones
+GO
+
+CREATE procedure [dbo].[sp_Insertar_TiposAviones]
 (
   
   @IdTipoAvion varchar(7),

@@ -3,6 +3,9 @@
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
 
+IF OBJECT_ID('[dbo].[sp_Listar_Aerolineas]') IS NOT NULL DROP PROCEDURE [dbo].sp_Listar_Aerolineas
+GO
+
 Create Procedure sp_Listar_Aerolineas
 As
 Begin
@@ -18,6 +21,9 @@ GO
 --Filtrar
 
 USE [DB_AEROPUERTO_PROGRA_III]
+GO
+
+IF OBJECT_ID('[dbo].[sp_Filtrar_Aerolineas]') IS NOT NULL DROP PROCEDURE [dbo].sp_Filtrar_Aerolineas
 GO
 
 Create Procedure sp_Filtrar_Aerolineas
@@ -39,6 +45,9 @@ GO
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
 
+IF OBJECT_ID('[dbo].[sp_Insertar_Aerolineas]') IS NOT NULL DROP PROCEDURE [dbo].[sp_Insertar_Aerolineas]
+GO
+
 Create Procedure [dbo].[sp_Insertar_Aerolineas]
 (	
     @NombreAerolinea varchar(90),
@@ -57,11 +66,13 @@ begin
 	FROM [dbo].[T_Aerolineas]
 
   End
-
+GO
 --Modificar
 
 USE [DB_AEROPUERTO_PROGRA_III]
+GO
 
+IF OBJECT_ID('[dbo].[sp_Modificar_Aerolineas]') IS NOT NULL DROP PROCEDURE [dbo].sp_Modificar_Aerolineas
 GO
 
 Create Procedure sp_Modificar_Aerolineas
@@ -86,6 +97,9 @@ GO
 --Eliminar
 
 USE [DB_AEROPUERTO_PROGRA_III]
+GO
+
+IF OBJECT_ID('[dbo].[sp_Eliminar_Aerolineas]') IS NOT NULL DROP PROCEDURE [dbo].sp_Eliminar_Aerolineas
 GO
 
 Create Procedure sp_Eliminar_Aerolineas
