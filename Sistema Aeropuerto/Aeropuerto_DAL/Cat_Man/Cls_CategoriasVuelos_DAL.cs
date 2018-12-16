@@ -11,7 +11,9 @@ namespace Aeropuerto_DAL.Cat_Man
     {
         public DataTable OBJ_DataTable = new DataTable();
 
-        private char _cIdCategoria, _cAccion, _cIdEstado;
+        private int _iIdCategoria;
+
+        private char  _cAccion, _cIdEstado;
         private string _sError, _sDescCategoria;
 
         public char CAccion
@@ -27,18 +29,7 @@ namespace Aeropuerto_DAL.Cat_Man
             }
         }
 
-        public char CIdCategoria
-        {
-            get
-            {
-                return _cIdCategoria;
-            }
 
-            set
-            {
-                _cIdCategoria = value;
-            }
-        }
 
         public char CIdEstado
         {
@@ -76,6 +67,19 @@ namespace Aeropuerto_DAL.Cat_Man
             set
             {
                 _sError = value;
+            }
+        }
+
+        public int IIdCategoria
+        {
+            get
+            {
+                return _iIdCategoria;
+            }
+
+            set
+            {
+                _iIdCategoria = value;
             }
         }
     }
