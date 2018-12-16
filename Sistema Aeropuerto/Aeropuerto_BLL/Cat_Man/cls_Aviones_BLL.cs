@@ -84,7 +84,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 OBJ_DataBase_DAL.SNombreTabla = "Aviones";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdAvion", "2", sDato);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@ELIMINAR", "2", sDato);
 
                 OBJ_DataBase_BLL.Execute_NonQuery(ref OBJ_DataBase_DAL);
 
@@ -117,7 +117,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdAvion", "2", OBJ_Aviones_DAL.SIdAvion);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@NomAvion", "2", OBJ_Aviones_DAL.SNomAvion);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@DescAvion", "2", OBJ_Aviones_DAL.SDescAvion);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdAerolinea", "1", OBJ_Aviones_DAL.CIdAerolinea);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdAerolinea", "1", OBJ_Aviones_DAL.IIdAerolinea);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdTipoAvion", "2", OBJ_Aviones_DAL.SIdTipoAvion);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_Aviones_DAL.CIdEstado);
 
@@ -156,7 +156,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdAvion", "2", OBJ_Aviones_DAL.SIdAvion);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@NomAvion", "2", OBJ_Aviones_DAL.SNomAvion);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@DescAvion", "2", OBJ_Aviones_DAL.SDescAvion);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdAerolinea", "1", OBJ_Aviones_DAL.CIdAerolinea);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdAerolinea", "1", OBJ_Aviones_DAL.IIdAerolinea);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdTipoAvion", "2", OBJ_Aviones_DAL.SIdTipoAvion);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_Aviones_DAL.CIdEstado);
 
