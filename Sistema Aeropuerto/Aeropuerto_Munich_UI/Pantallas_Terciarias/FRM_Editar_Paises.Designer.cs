@@ -78,7 +78,6 @@
             this.btn_Guardar.BackColor = System.Drawing.Color.Transparent;
             this.btn_Guardar.BackgroundImage = global::Aeropuerto_Munich_UI.Properties.Resources.img_btn_Guardar;
             this.btn_Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Guardar.Enabled = false;
             this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Guardar.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Guardar.Location = new System.Drawing.Point(113, 32);
@@ -131,19 +130,21 @@
             // 
             this.txt_Codigo_Area.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_Codigo_Area.Location = new System.Drawing.Point(127, 107);
-            this.txt_Codigo_Area.MaxLength = 90;
+            this.txt_Codigo_Area.MaxLength = 5;
             this.txt_Codigo_Area.Name = "txt_Codigo_Area";
             this.txt_Codigo_Area.Size = new System.Drawing.Size(249, 21);
             this.txt_Codigo_Area.TabIndex = 7;
+            this.txt_Codigo_Area.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Codigo_Pais_KeyPress);
             // 
             // txt_Codigo_Pais
             // 
             this.txt_Codigo_Pais.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_Codigo_Pais.Location = new System.Drawing.Point(127, 80);
-            this.txt_Codigo_Pais.MaxLength = 90;
+            this.txt_Codigo_Pais.MaxLength = 4;
             this.txt_Codigo_Pais.Name = "txt_Codigo_Pais";
             this.txt_Codigo_Pais.Size = new System.Drawing.Size(249, 21);
             this.txt_Codigo_Pais.TabIndex = 6;
+            this.txt_Codigo_Pais.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Codigo_Pais_KeyPress);
             // 
             // cmb_Estados
             // 
@@ -170,6 +171,7 @@
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(100, 21);
             this.txt_ID.TabIndex = 2;
+            this.txt_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Codigo_Pais_KeyPress);
             // 
             // txt_Nombre
             // 
@@ -184,11 +186,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(20, 24);
+            this.label1.Location = new System.Drawing.Point(56, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 16);
+            this.label1.Size = new System.Drawing.Size(62, 16);
             this.label1.TabIndex = 0;
-            this.label1.Text = "ID Aerolínea:";
+            this.label1.Text = "ID País:";
             // 
             // label2
             // 
@@ -203,12 +205,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(437, 324);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.grp_Informacion);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FRM_Editar_Paises";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_Editar_Paises";
+            this.Load += new System.EventHandler(this.FRM_Editar_Paises_Load);
             this.Enter += new System.EventHandler(this.FRM_Editar_Paises_Load);
             this.groupBox2.ResumeLayout(false);
             this.grp_Informacion.ResumeLayout(false);

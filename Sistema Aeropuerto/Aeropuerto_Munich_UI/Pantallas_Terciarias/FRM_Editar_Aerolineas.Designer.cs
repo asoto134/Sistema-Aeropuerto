@@ -33,12 +33,12 @@
             this.btn_Salir = new System.Windows.Forms.Button();
             this.btn_Guardar = new System.Windows.Forms.Button();
             this.grp_Informacion = new System.Windows.Forms.GroupBox();
+            this.cmb_Estados = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.txt_ID = new System.Windows.Forms.TextBox();
             this.txt_Nombre = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cmb_Estados = new System.Windows.Forms.ComboBox();
             this.groupBox2.SuspendLayout();
             this.grp_Informacion.SuspendLayout();
             this.SuspendLayout();
@@ -68,14 +68,13 @@
             this.btn_Salir.Size = new System.Drawing.Size(52, 45);
             this.btn_Salir.TabIndex = 4;
             this.btn_Salir.UseVisualStyleBackColor = false;
-            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click_1);
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // btn_Guardar
             // 
             this.btn_Guardar.BackColor = System.Drawing.Color.Transparent;
             this.btn_Guardar.BackgroundImage = global::Aeropuerto_Munich_UI.Properties.Resources.img_btn_Guardar;
             this.btn_Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Guardar.Enabled = false;
             this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Guardar.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Guardar.Location = new System.Drawing.Point(113, 32);
@@ -100,7 +99,24 @@
             this.grp_Informacion.Size = new System.Drawing.Size(415, 189);
             this.grp_Informacion.TabIndex = 8;
             this.grp_Informacion.TabStop = false;
-            this.grp_Informacion.Text = "Datos";            
+            this.grp_Informacion.Text = "Datos";
+            // 
+            // cmb_Estados
+            // 
+            this.cmb_Estados.FormattingEnabled = true;
+            this.cmb_Estados.Location = new System.Drawing.Point(127, 115);
+            this.cmb_Estados.Name = "cmb_Estados";
+            this.cmb_Estados.Size = new System.Drawing.Size(249, 24);
+            this.cmb_Estados.TabIndex = 5;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(51, 121);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 16);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Estado:";
             // 
             // txt_ID
             // 
@@ -119,7 +135,6 @@
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(249, 21);
             this.txt_Nombre.TabIndex = 3;
-            this.txt_Nombre.TextChanged += new System.EventHandler(this.txt_Descrip_TextChanged);
             // 
             // label1
             // 
@@ -138,23 +153,6 @@
             this.label2.Size = new System.Drawing.Size(67, 16);
             this.label2.TabIndex = 1;
             this.label2.Text = "Nombre:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 121);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 16);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Estado:";
-            // 
-            // cmb_Estados
-            // 
-            this.cmb_Estados.FormattingEnabled = true;
-            this.cmb_Estados.Location = new System.Drawing.Point(127, 115);
-            this.cmb_Estados.Name = "cmb_Estados";
-            this.cmb_Estados.Size = new System.Drawing.Size(249, 24);
-            this.cmb_Estados.TabIndex = 5;
             // 
             // FRM_Editar_Aerolineas
             // 

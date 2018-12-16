@@ -30,7 +30,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
                 Pantallas_Terciarias.FRM_Editar_Paises OBJ_Editar_Paises = new Pantallas_Terciarias.FRM_Editar_Paises();
 
                 OBJ_Paises_DAL.CAccion = 'U';
-                OBJ_Paises_DAL.IPaises = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
+                OBJ_Paises_DAL.IIdPais = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
                 OBJ_Paises_DAL.SNombrePais = dgv_Datos.SelectedRows[0].Cells[1].Value.ToString();
                 OBJ_Paises_DAL.CCodigoISOPais = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[2].Value.ToString());
                 OBJ_Paises_DAL.CCodigoAreaPais = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[3].Value.ToString());
@@ -121,7 +121,8 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             }
         }
 
-       
+
 
     }
 }
+

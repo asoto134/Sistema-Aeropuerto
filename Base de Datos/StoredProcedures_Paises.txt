@@ -1,4 +1,4 @@
---Tabla T_Paises
+Ôªø--Tabla T_Paises
 
 --Listar
 
@@ -8,9 +8,9 @@ Create procedure sp_Listar_Paises
 as
 Begin
 SELECT [IdPais]
-      ,[NombrePais] as [Nombre PaÌs]
-      ,[CodigoISOPais] as [CÛdigo ISO]
-      ,[CodigoAreaPais] as [CÛdigo ¡rea]
+      ,[NombrePais] as [Nombre Pa√≠s]
+      ,[CodigoISOPais] as [C√≥digo ISO]
+      ,[CodigoAreaPais] as [C√≥digo √Årea]
       ,[IdEstado]       as [Estado]
   FROM [dbo].[T_Paises]
 End
@@ -27,9 +27,9 @@ Create procedure sp_Filtar_Paises
 as
 Begin
 SELECT [IdPais]
-      ,[NombrePais] as [Nombre PaÌs]
-      ,[CodigoISOPais] as [CÛdigo ISO]
-      ,[CodigoAreaPais] as [CÛdigo ¡rea]
+      ,[NombrePais] as [Nombre Pa√≠s]
+      ,[CodigoISOPais] as [C√≥digo ISO]
+      ,[CodigoAreaPais] as [C√≥digo √Årea]
       ,[IdEstado]       as [Estado]
   FROM [dbo].[T_Paises]
   Where NombrePais like '%'+@Filtro+'%'
@@ -74,3 +74,32 @@ Begin
   Where IdPais = @IdPais
 End
 GO
+
+-- Insertar
+
+USE [DB_AEROPUERTO_PROGRA_III]
+GO
+CREATE PROCEDURE sp_Insertar_Pais
+(
+	@NombrePais varchar(85),
+	@CodigoISOPais char(4),
+	@CodigoAreaPais char(5),
+	@IdEstado char(1)
+)
+AS 
+BEGIN
+INSERT INTO [dbo].[T_Paises]
+           ([NombrePais],
+		    [CodigoISOPais]
+           ,[CodigoAreaPais]
+           ,[IdEstado])
+     VALUES
+           (@NombrePais
+		    ,@CodigoISOPais
+		    ,@CodigoAreaPais 
+ 	 	    ,@IdEstado)
+	SELECT MAX([IdPais])
+	FROM [dbo].[T_Paises]
+End
+GO
+

@@ -10,6 +10,7 @@ Begin
 SELECT [IdAerolinea]
       ,[NombreAerolinea]
       ,[IdEstado]
+
   FROM [dbo].[T_Aerolineas]
   End
 GO
@@ -38,46 +39,49 @@ GO
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
 
-Create Procedure sp_Insertar_Aerolineas
-(
-	@IdAerolinea int,
-    @NombreAerolinea varchar(90)
+Create Procedure [dbo].[sp_Insertar_Aerolineas]
+(	
+    @NombreAerolinea varchar(90),
+	@IdEstado CHAR(1)
 )
 
 as
 begin
 
-INSERT INTO [dbo].[T_Aerolineas]
-           ([IdAerolinea],[NombreAerolinea])
+	INSERT INTO [dbo].[T_Aerolineas]
+           ([NombreAerolinea], [IdEstado])
      VALUES
-           (@IdAerolinea, @NombreAerolinea)
-  End
-GO
+           (@NombreAerolinea, @IdEstado)
 
+	SELECT MAX([IdAerolinea])
+	FROM [dbo].[T_Aerolineas]
+
+  End
 
 --Modificar
 
 USE [DB_AEROPUERTO_PROGRA_III]
+
 GO
 
 Create Procedure sp_Modificar_Aerolineas
 (
 	@IdAerolinea int,
-    @NombreAerolinea varchar(90)
+    @NombreAerolinea varchar(90),
+	@IdEstado char(1)
 )
 
 As
 Begin
 	UPDATE [dbo].[T_Aerolineas]
 	SET 
-		[NombreAerolinea] = @NombreAerolinea
+		[NombreAerolinea] = @NombreAerolinea,
+		[IdEstado] = @IdEstado
 
 
 	WHERE [IdAerolinea] = @IdAerolinea 
   End
 GO
-
-
 
 --Eliminar
 

@@ -9,17 +9,17 @@ using Aeropuerto_BLL.BD;
 
 namespace Aeropuerto_BLL.Cat_Man
 {
-   public class Cls_CategoriasVuelos_BLL
+   public class cls_CategoriasVuelos_BLL
     {
-        public void Listar(ref Cls_CategoriasVuelos_DAL OBJ_CategoriasVuelos_DAL)
+        public void Listar(ref cls_CategoriasVuelos_DAL OBJ_CategoriasVuelos_DAL)
         {
             try
             {
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "SP_LISTAR_T_CATEGORIASVUELOS";
-                OBJ_DataBase_DAL.SNombreTabla = "CategoriasVuelos";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_Listar_CategoriaVuelos";
+                OBJ_DataBase_DAL.SNombreTabla = "Categorias Vuelos";
 
                 OBJ_DataBase_BLL.Execute_DataAdapter(ref OBJ_DataBase_DAL);
 
@@ -40,15 +40,15 @@ namespace Aeropuerto_BLL.Cat_Man
             }
         }
 
-        public void Filtrar(ref Cls_CategoriasVuelos_DAL OBJ_CategoriasVuelos_DAL, string sFiltro)
+        public void Filtrar(ref cls_CategoriasVuelos_DAL OBJ_CategoriasVuelos_DAL, string sFiltro)
         {
             try
             {
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "SP_FILTRAR_T_CATEGORIASVUELOS";
-                OBJ_DataBase_DAL.SNombreTabla = "CategoriasVuelos";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_Filtrar_CategoriaVuelos";
+                OBJ_DataBase_DAL.SNombreTabla = "Categorias Vuelos";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Filtro", "2", sFiltro);
@@ -72,18 +72,18 @@ namespace Aeropuerto_BLL.Cat_Man
             }
         }
 
-        public void Eliminar(ref Cls_CategoriasVuelos_DAL OBJ_CategoriasVuelos_DAL, string sDato)
+        public void Eliminar(ref cls_CategoriasVuelos_DAL OBJ_CategoriasVuelos_DAL, string sDato)
         {
             try
             {
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "SP_ELIMINAR_T_CATEGORIASVUELOS";
-                OBJ_DataBase_DAL.SNombreTabla = "CategoriasVuelos";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_Eliminar_CategoriaVuelos";
+                OBJ_DataBase_DAL.SNombreTabla = "Categorias Vuelos";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdCategoria", "1", sDato);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@ELIMINAR", "1", sDato);
 
                 OBJ_DataBase_BLL.Execute_NonQuery(ref OBJ_DataBase_DAL);
 
@@ -103,14 +103,14 @@ namespace Aeropuerto_BLL.Cat_Man
             }
         }
 
-        public void Modificar(ref Cls_CategoriasVuelos_DAL OBJ_CategoriasVuelos_DAL)
+        public void Modificar(ref cls_CategoriasVuelos_DAL OBJ_CategoriasVuelos_DAL)
         {
             try
             {
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "SP_MODIFICAR_T_CATEGORIASVUELOS";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_Modificar_CategoriasVuelos";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
 
@@ -138,19 +138,19 @@ namespace Aeropuerto_BLL.Cat_Man
             }
         }
 
-        public void Insertar(ref Cls_CategoriasVuelos_DAL OBJ_CategoriasVuelos_DAL)
+        public void Insertar(ref cls_CategoriasVuelos_DAL OBJ_CategoriasVuelos_DAL)
         {
             try
             {
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "SP_INSERTAR_T_CATEGORIASVUELOS";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_Insertar_CategoriaVuelos";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
 
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@DescCategoria", "2", OBJ_CategoriasVuelos_DAL.SDescCategoria);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_CategoriasVuelos_DAL);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_CategoriasVuelos_DAL.CIdEstado);
 
                 OBJ_DataBase_BLL.Execute_Scalar(ref OBJ_DataBase_DAL);
 

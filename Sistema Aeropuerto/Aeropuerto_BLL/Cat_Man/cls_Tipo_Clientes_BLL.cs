@@ -80,7 +80,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "sp_Eliminar_Aerolineas";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_Eliminar_Tipo_Clientes";
                 OBJ_DataBase_DAL.SNombreTabla = "Aerolineas";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
@@ -111,7 +111,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "sp_Modificar_Aerolineas";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_Modificar_Tipo_Clientes";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
 
@@ -147,13 +147,13 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "sp_Insertar_Aerolineas";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_Insertar_Tipo_Clientes";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
 
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@TipoCliente", "2", OBJ_Tipo_Clientes_DAL.STipoCliente);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Descripcion", "2", OBJ_Tipo_Clientes_DAL.SDescripcion);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_Tipo_Clientes_DAL);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_Tipo_Clientes_DAL.CIdEstado);
 
                 OBJ_DataBase_BLL.Execute_Scalar(ref OBJ_DataBase_DAL);
 

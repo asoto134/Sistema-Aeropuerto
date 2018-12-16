@@ -35,6 +35,7 @@
             this.btn_Filtrar = new System.Windows.Forms.Button();
             this.dgv_Datos = new System.Windows.Forms.DataGridView();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.btn_Añadir = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -45,7 +46,7 @@
             this.btn_Salir = new System.Windows.Forms.Button();
             this.btn_Eliminar = new System.Windows.Forms.Button();
             this.btn_Refrescar = new System.Windows.Forms.Button();
-            this.btn_AgregarModificar = new System.Windows.Forms.Button();
+            this.btn_Modificar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -57,6 +58,7 @@
             // splitContainer1
             // 
             this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.splitContainer1.IsSplitterFixed = true;
             this.splitContainer1.Location = new System.Drawing.Point(0, 0);
             this.splitContainer1.Name = "splitContainer1";
             // 
@@ -71,8 +73,8 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.Controls.Add(this.groupBox1);
-            this.splitContainer1.Size = new System.Drawing.Size(658, 528);
-            this.splitContainer1.SplitterDistance = 511;
+            this.splitContainer1.Size = new System.Drawing.Size(673, 526);
+            this.splitContainer1.SplitterDistance = 522;
             this.splitContainer1.TabIndex = 0;
             // 
             // label1
@@ -96,7 +98,7 @@
             // 
             this.btn_Filtrar.BackColor = System.Drawing.Color.Transparent;
             this.btn_Filtrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_Filtrar.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_Filtrar.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Filtrar.Location = new System.Drawing.Point(393, 488);
             this.btn_Filtrar.Name = "btn_Filtrar";
             this.btn_Filtrar.Size = new System.Drawing.Size(111, 28);
@@ -123,6 +125,7 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.btn_Añadir);
             this.groupBox1.Controls.Add(this.panel3);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.panel2);
@@ -133,21 +136,35 @@
             this.groupBox1.Controls.Add(this.btn_Salir);
             this.groupBox1.Controls.Add(this.btn_Eliminar);
             this.groupBox1.Controls.Add(this.btn_Refrescar);
-            this.groupBox1.Controls.Add(this.btn_AgregarModificar);
-            this.groupBox1.Font = new System.Drawing.Font("Adobe Fan Heiti Std B", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(-4, 0);
+            this.groupBox1.Controls.Add(this.btn_Modificar);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(-9, 1);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(140, 525);
-            this.groupBox1.TabIndex = 0;
+            this.groupBox1.Size = new System.Drawing.Size(158, 525);
+            this.groupBox1.TabIndex = 23;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Herramientas";
+            // 
+            // btn_Añadir
+            // 
+            this.btn_Añadir.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Añadir.BackgroundImage = global::Aeropuerto_Munich_UI.Properties.Resources.img_btn_Añadir;
+            this.btn_Añadir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Añadir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Añadir.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_Añadir.Location = new System.Drawing.Point(11, 32);
+            this.btn_Añadir.Name = "btn_Añadir";
+            this.btn_Añadir.Size = new System.Drawing.Size(60, 57);
+            this.btn_Añadir.TabIndex = 12;
+            this.btn_Añadir.UseVisualStyleBackColor = false;
+            this.btn_Añadir.Click += new System.EventHandler(this.btn_Añadir_Click);
             // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Black;
             this.panel3.Location = new System.Drawing.Point(0, 407);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(141, 1);
+            this.panel3.Size = new System.Drawing.Size(164, 1);
             this.panel3.TabIndex = 11;
             // 
             // label5
@@ -155,7 +172,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(19, 499);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(110, 16);
+            this.label5.Size = new System.Drawing.Size(130, 16);
             this.label5.TabIndex = 10;
             this.label5.Text = "Pantalla Principal";
             // 
@@ -164,7 +181,7 @@
             this.panel2.BackColor = System.Drawing.Color.Black;
             this.panel2.Location = new System.Drawing.Point(0, 273);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(140, 1);
+            this.panel2.Size = new System.Drawing.Size(163, 1);
             this.panel2.TabIndex = 9;
             // 
             // panel1
@@ -172,24 +189,24 @@
             this.panel1.BackColor = System.Drawing.Color.Black;
             this.panel1.Location = new System.Drawing.Point(0, 147);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(140, 1);
+            this.panel1.Size = new System.Drawing.Size(163, 1);
             this.panel1.TabIndex = 8;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(46, 368);
+            this.label4.Location = new System.Drawing.Point(49, 372);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 16);
+            this.label4.Size = new System.Drawing.Size(64, 16);
             this.label4.TabIndex = 7;
             this.label4.Text = "Eliminar";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(40, 231);
+            this.label3.Location = new System.Drawing.Point(42, 237);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(63, 16);
+            this.label3.Size = new System.Drawing.Size(76, 16);
             this.label3.TabIndex = 6;
             this.label3.Text = "Refrescar";
             // 
@@ -198,7 +215,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(8, 107);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(127, 16);
+            this.label2.Size = new System.Drawing.Size(147, 16);
             this.label2.TabIndex = 5;
             this.label2.Text = "Agregar O Modificar";
             // 
@@ -209,7 +226,7 @@
             this.btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Salir.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_Salir.Location = new System.Drawing.Point(42, 427);
+            this.btn_Salir.Location = new System.Drawing.Point(50, 426);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(59, 59);
             this.btn_Salir.TabIndex = 4;
@@ -223,7 +240,7 @@
             this.btn_Eliminar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Eliminar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Eliminar.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_Eliminar.Location = new System.Drawing.Point(38, 296);
+            this.btn_Eliminar.Location = new System.Drawing.Point(47, 293);
             this.btn_Eliminar.Name = "btn_Eliminar";
             this.btn_Eliminar.Size = new System.Drawing.Size(65, 69);
             this.btn_Eliminar.TabIndex = 3;
@@ -237,32 +254,32 @@
             this.btn_Refrescar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.btn_Refrescar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Refrescar.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_Refrescar.Location = new System.Drawing.Point(38, 161);
+            this.btn_Refrescar.Location = new System.Drawing.Point(44, 161);
             this.btn_Refrescar.Name = "btn_Refrescar";
             this.btn_Refrescar.Size = new System.Drawing.Size(65, 67);
             this.btn_Refrescar.TabIndex = 2;
             this.btn_Refrescar.UseVisualStyleBackColor = false;
             this.btn_Refrescar.Click += new System.EventHandler(this.btn_Refrescar_Click);
             // 
-            // btn_AgregarModificar
+            // btn_Modificar
             // 
-            this.btn_AgregarModificar.BackColor = System.Drawing.Color.Transparent;
-            this.btn_AgregarModificar.BackgroundImage = global::Aeropuerto_Munich_UI.Properties.Resources.img_btn_Modificar;
-            this.btn_AgregarModificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_AgregarModificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_AgregarModificar.ForeColor = System.Drawing.Color.Transparent;
-            this.btn_AgregarModificar.Location = new System.Drawing.Point(38, 37);
-            this.btn_AgregarModificar.Name = "btn_AgregarModificar";
-            this.btn_AgregarModificar.Size = new System.Drawing.Size(64, 67);
-            this.btn_AgregarModificar.TabIndex = 1;
-            this.btn_AgregarModificar.UseVisualStyleBackColor = false;
-            this.btn_AgregarModificar.Click += new System.EventHandler(this.btn_AgregarModificar_Click);
+            this.btn_Modificar.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Modificar.BackgroundImage = global::Aeropuerto_Munich_UI.Properties.Resources.img_btn_Modificar;
+            this.btn_Modificar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Modificar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Modificar.ForeColor = System.Drawing.Color.Transparent;
+            this.btn_Modificar.Location = new System.Drawing.Point(94, 32);
+            this.btn_Modificar.Name = "btn_Modificar";
+            this.btn_Modificar.Size = new System.Drawing.Size(50, 59);
+            this.btn_Modificar.TabIndex = 1;
+            this.btn_Modificar.UseVisualStyleBackColor = false;
+            this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
             // 
             // FRM_TAB_Estados
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(658, 528);
+            this.ClientSize = new System.Drawing.Size(673, 526);
             this.Controls.Add(this.splitContainer1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -285,21 +302,22 @@
         #endregion
 
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.DataGridView dgv_Datos;
-        private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txt_Filtrar;
         private System.Windows.Forms.Button btn_Filtrar;
+        private System.Windows.Forms.DataGridView dgv_Datos;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Button btn_Añadir;
+        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button btn_Salir;
         private System.Windows.Forms.Button btn_Eliminar;
         private System.Windows.Forms.Button btn_Refrescar;
-        private System.Windows.Forms.Button btn_AgregarModificar;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Button btn_Modificar;
     }
 }
