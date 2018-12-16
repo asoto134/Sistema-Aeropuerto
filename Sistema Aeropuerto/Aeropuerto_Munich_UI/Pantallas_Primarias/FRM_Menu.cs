@@ -52,11 +52,9 @@ namespace Aeropuerto_Munich_UI.Pantallas_Primarias
 
         private void btn_Clientes_Click(object sender, EventArgs e)
         {
-            Pantallas_Secundarias.FRM_TAB_Cliente OBJ_TAB_Cliente = new Pantallas_Secundarias.FRM_TAB_Cliente();
-
+            Pantallas_Secundarias.FRM_TAB_Cliente Obj_TAB_Cliente = new Pantallas_Secundarias.FRM_TAB_Cliente();
+            Obj_TAB_Cliente.Show();
             this.Hide();
-
-            OBJ_TAB_Cliente.ShowDialog();
         }
 
         private void btn_Destinos_Click(object sender, EventArgs e)
@@ -70,11 +68,9 @@ namespace Aeropuerto_Munich_UI.Pantallas_Primarias
 
         private void btn_Empleados_Click(object sender, EventArgs e)
         {
-            Pantallas_Secundarias.FRM_TAB_Empleados OBJ_TAB_Empleados = new Pantallas_Secundarias.FRM_TAB_Empleados();
-
+            Pantallas_Secundarias.FRM_TAB_Destinos Obj_TAB_Cliente = new Pantallas_Secundarias.FRM_TAB_Destinos();
+            Obj_TAB_Cliente.Show();
             this.Hide();
-
-            OBJ_TAB_Empleados.ShowDialog();
         }
 
         private void btn_Estados_Click(object sender, EventArgs e)
