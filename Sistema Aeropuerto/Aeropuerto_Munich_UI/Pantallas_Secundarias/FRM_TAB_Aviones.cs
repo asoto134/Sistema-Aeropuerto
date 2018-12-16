@@ -32,7 +32,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
                 OBJ_Aviones_DAL.SIdAvion = dgv_Datos.SelectedRows[0].Cells[0].Value.ToString();
                 OBJ_Aviones_DAL.SNomAvion = dgv_Datos.SelectedRows[0].Cells[1].Value.ToString();
                 OBJ_Aviones_DAL.SDescAvion = dgv_Datos.SelectedRows[0].Cells[2].Value.ToString();
-                OBJ_Aviones_DAL.CIdAerolinea = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[3].Value.ToString());
+                OBJ_Aviones_DAL.IIdAerolinea = Convert.ToInt32(dgv_Datos.SelectedRows[0].Cells[3].Value.ToString());
                 OBJ_Aviones_DAL.SIdTipoAvion = dgv_Datos.SelectedRows[0].Cells[4].Value.ToString();
                 OBJ_Aviones_DAL.CIdEstado = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[5].Value.ToString());
 
@@ -44,7 +44,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             }
             else
             {
-                MessageBox.Show("Debe tener un avión seleccionado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("Debe tener un Avión seleccionado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
         }
 
@@ -72,7 +72,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             {
                 OBJ_Aviones_BLL.Eliminar(ref OBJ_Aviones_DAL, dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
 
-                MessageBox.Show("Se ha eliminado exitósamente", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("¿Esta seguro de eliminar los datos seleccionados?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             }
             else
             {

@@ -29,7 +29,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
                 Pantallas_Terciarias.FRM_Editar_Aerolineas OBJ_Editar_Aerolineas = new Pantallas_Terciarias.FRM_Editar_Aerolineas();
 
                 OBJ_Aereolineas_DAL.CAccion = 'U';
-                OBJ_Aereolineas_DAL.CIdAerolinea = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
+                OBJ_Aereolineas_DAL.IIdAerolinea = Convert.ToInt32(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
                 OBJ_Aereolineas_DAL.SNombreAerolinea = dgv_Datos.SelectedRows[0].Cells[1].Value.ToString();
                 OBJ_Aereolineas_DAL.CIdEstado = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[2].Value.ToString());
 
@@ -49,6 +49,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
         {
             Pantallas_Terciarias.FRM_Editar_Aerolineas OBJ_Editar_Aerolineas = new Pantallas_Terciarias.FRM_Editar_Aerolineas();
 
+            
             OBJ_Aereolineas_DAL.CAccion = 'I';
 
             OBJ_Editar_Aerolineas.OBJ_Editar_Aerolineas = OBJ_Aereolineas_DAL;
@@ -69,7 +70,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             {
                 OBJ_Aereolineas_BLL.Eliminar(ref OBJ_Aereolineas_DAL, dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
 
-                MessageBox.Show("Se ha eliminado exitósamente", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                MessageBox.Show("¿Esta seguro de eliminar los datos seleccionados?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             }
             else
             {
