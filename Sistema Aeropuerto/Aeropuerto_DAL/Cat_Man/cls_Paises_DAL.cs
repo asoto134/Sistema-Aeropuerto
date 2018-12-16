@@ -11,20 +11,20 @@ namespace Aeropuerto_DAL.Cat_Man
     {
         public DataTable OBJ_DataTable = new DataTable();
 
-        private int _iPaises;
+        private int _iIdPais;
         private char _cAccion, _cCodigoISOPais, _cCodigoAreaPais, _cIdEstado;
         private string _sError, _sNombrePais;
 
-        public int IPaises
+        public int IIdPais
         {
             get
             {
-                return _iPaises;
+                return _iIdPais;
             }
 
             set
             {
-                _iPaises = value;
+                _iIdPais = value;
             }
         }
 

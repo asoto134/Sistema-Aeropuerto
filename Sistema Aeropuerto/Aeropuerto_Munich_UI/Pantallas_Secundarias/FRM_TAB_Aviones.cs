@@ -44,7 +44,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             }
             else
             {
-                MessageBox.Show("Debe tener un Avión seleccionado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("Debe tener un avión seleccionado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
         }
 

@@ -131,7 +131,7 @@
             // txt_Desc_Avion
             // 
             this.txt_Desc_Avion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_Desc_Avion.Location = new System.Drawing.Point(184, 121);
+            this.txt_Desc_Avion.Location = new System.Drawing.Point(184, 117);
             this.txt_Desc_Avion.MaxLength = 90;
             this.txt_Desc_Avion.Name = "txt_Desc_Avion";
             this.txt_Desc_Avion.Size = new System.Drawing.Size(231, 21);
@@ -175,7 +175,7 @@
             // lbl_Desc_Avion
             // 
             this.lbl_Desc_Avion.AutoSize = true;
-            this.lbl_Desc_Avion.Location = new System.Drawing.Point(9, 121);
+            this.lbl_Desc_Avion.Location = new System.Drawing.Point(9, 119);
             this.lbl_Desc_Avion.Name = "lbl_Desc_Avion";
             this.lbl_Desc_Avion.Size = new System.Drawing.Size(160, 16);
             this.lbl_Desc_Avion.TabIndex = 4;

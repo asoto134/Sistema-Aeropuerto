@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FRM_TAB_Aviones));
             this.dgv_Datos = new System.Windows.Forms.DataGridView();
             this.btn_Añadir = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -251,13 +252,15 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(673, 526);
+            this.BackColor = System.Drawing.Color.White;
+            this.ClientSize = new System.Drawing.Size(666, 528);
             this.Controls.Add(this.dgv_Datos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_Filtrar);
             this.Controls.Add(this.btn_Filtrar);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRM_TAB_Aviones";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_TAB_Aviones";

@@ -75,14 +75,13 @@
             this.btn_Guardar.BackColor = System.Drawing.Color.Transparent;
             this.btn_Guardar.BackgroundImage = global::Aeropuerto_Munich_UI.Properties.Resources.img_btn_Guardar;
             this.btn_Guardar.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btn_Guardar.Enabled = false;
-            this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Guardar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btn_Guardar.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Guardar.Location = new System.Drawing.Point(151, 34);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(47, 41);
             this.btn_Guardar.TabIndex = 5;
-            this.btn_Guardar.UseVisualStyleBackColor = false;
+            this.btn_Guardar.UseVisualStyleBackColor = true;
             this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
             // grp_Informacion
@@ -166,6 +165,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRM_Editar_Categorias_Vuelos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_Editar_Categorias_Vuelos";
             this.Load += new System.EventHandler(this.FRM_Editar_Categorias_Vuelos_Load);
             this.groupBox2.ResumeLayout(false);

@@ -1,4 +1,4 @@
---Tabla T_Paises
+﻿--Tabla T_Paises
 
 --Listar
 
@@ -86,16 +86,20 @@ CREATE PROCEDURE sp_Insertar_Pais
 	@CodigoAreaPais char(5),
 	@IdEstado char(1)
 )
-AS BEGIN
+AS 
+BEGIN
 INSERT INTO [dbo].[T_Paises]
-           ([NombrePais],[CodigoISOPais]
+           ([NombrePais],
+		    [CodigoISOPais]
            ,[CodigoAreaPais]
            ,[IdEstado])
      VALUES
-           (@NombrePais,@CodigoISOPais
-		   ,@CodigoAreaPais, @IdEstado)
+           (@NombrePais
+		    ,@CodigoISOPais
+		    ,@CodigoAreaPais 
+ 	 	    ,@IdEstado)
 	SELECT MAX([IdPais])
 	FROM [dbo].[T_Paises]
-	END
+End
 GO
 

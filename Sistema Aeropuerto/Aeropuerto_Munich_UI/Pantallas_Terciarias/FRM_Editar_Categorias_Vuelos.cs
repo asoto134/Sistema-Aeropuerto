@@ -44,7 +44,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                 OBJ_CategoriasVuelos_BLL = new cls_CategoriasVuelos_BLL();
 
-                OBJ_Editar_CategoriasVuelos.CIdCategoria = Convert.ToInt32(txt_ID_Categoria.Text.ToString());
+                OBJ_Editar_CategoriasVuelos.CIdCategoria = Convert.ToChar(txt_ID_Categoria.Text.ToString());
                 OBJ_Editar_CategoriasVuelos.SDescCategoria = txt_Desc_Categoria.Text;
                 OBJ_Editar_CategoriasVuelos.CIdEstado = Convert.ToChar(cmb_Estados.SelectedValue.ToString());
 

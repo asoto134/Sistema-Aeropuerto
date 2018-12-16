@@ -35,6 +35,10 @@
             this.btn_Salir = new System.Windows.Forms.Button();
             this.btn_Guardar = new System.Windows.Forms.Button();
             this.grp_Informacion = new System.Windows.Forms.GroupBox();
+            this.txt_CantidadPeso = new System.Windows.Forms.TextBox();
+            this.txt_CantidadPasa = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.txt_DescrAvion = new System.Windows.Forms.TextBox();
             this.cmb_Estados = new System.Windows.Forms.ComboBox();
@@ -43,10 +47,6 @@
             this.txt_TipoAvion = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.txt_CantidadPasa = new System.Windows.Forms.TextBox();
-            this.txt_CantidadPeso = new System.Windows.Forms.TextBox();
             this.groupBox2.SuspendLayout();
             this.grp_Informacion.SuspendLayout();
             this.SuspendLayout();
@@ -96,6 +96,7 @@
             this.btn_Salir.Size = new System.Drawing.Size(52, 45);
             this.btn_Salir.TabIndex = 4;
             this.btn_Salir.UseVisualStyleBackColor = false;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // btn_Guardar
             // 
@@ -109,6 +110,7 @@
             this.btn_Guardar.Size = new System.Drawing.Size(47, 41);
             this.btn_Guardar.TabIndex = 5;
             this.btn_Guardar.UseVisualStyleBackColor = false;
+            this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
             // grp_Informacion
             // 
@@ -133,14 +135,52 @@
             this.grp_Informacion.TabStop = false;
             this.grp_Informacion.Text = "Datos";
             // 
+            // txt_CantidadPeso
+            // 
+            this.txt_CantidadPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_CantidadPeso.Location = new System.Drawing.Point(198, 185);
+            this.txt_CantidadPeso.MaxLength = 90;
+            this.txt_CantidadPeso.Name = "txt_CantidadPeso";
+            this.txt_CantidadPeso.Size = new System.Drawing.Size(249, 21);
+            this.txt_CantidadPeso.TabIndex = 11;
+            this.txt_CantidadPeso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CantidadPeso_KeyPress);
+            // 
+            // txt_CantidadPasa
+            // 
+            this.txt_CantidadPasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.txt_CantidadPasa.Location = new System.Drawing.Point(198, 143);
+            this.txt_CantidadPasa.MaxLength = 90;
+            this.txt_CantidadPasa.Name = "txt_CantidadPasa";
+            this.txt_CantidadPasa.Size = new System.Drawing.Size(249, 21);
+            this.txt_CantidadPasa.TabIndex = 10;
+            this.txt_CantidadPasa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Numeros_KeyPress);
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(9, 145);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(185, 16);
+            this.label8.TabIndex = 9;
+            this.label8.Text = "Capacidad de Pasajeros:";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(45, 187);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(150, 16);
+            this.label7.TabIndex = 8;
+            this.label7.Text = "Capacidad de Peso:";
+            // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(86, 63);
+            this.label4.Location = new System.Drawing.Point(56, 63);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(109, 16);
+            this.label4.Size = new System.Drawing.Size(136, 16);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Tipo de Avión:";
+            this.label4.Text = "Nombre del Avión:";
             // 
             // txt_DescrAvion
             // 
@@ -176,6 +216,7 @@
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(100, 21);
             this.txt_ID.TabIndex = 2;
+            this.txt_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Numeros_KeyPress);
             // 
             // txt_TipoAvion
             // 
@@ -204,42 +245,6 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "Descripción:";
             // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(45, 187);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(150, 16);
-            this.label7.TabIndex = 8;
-            this.label7.Text = "Capacidad de Peso:";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(9, 145);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(185, 16);
-            this.label8.TabIndex = 9;
-            this.label8.Text = "Capacidad de Pasajeros:";
-            // 
-            // txt_CantidadPasa
-            // 
-            this.txt_CantidadPasa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_CantidadPasa.Location = new System.Drawing.Point(198, 143);
-            this.txt_CantidadPasa.MaxLength = 90;
-            this.txt_CantidadPasa.Name = "txt_CantidadPasa";
-            this.txt_CantidadPasa.Size = new System.Drawing.Size(249, 21);
-            this.txt_CantidadPasa.TabIndex = 10;
-            // 
-            // txt_CantidadPeso
-            // 
-            this.txt_CantidadPeso.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
-            this.txt_CantidadPeso.Location = new System.Drawing.Point(198, 185);
-            this.txt_CantidadPeso.MaxLength = 90;
-            this.txt_CantidadPeso.Name = "txt_CantidadPeso";
-            this.txt_CantidadPeso.Size = new System.Drawing.Size(249, 21);
-            this.txt_CantidadPeso.TabIndex = 11;
-            // 
             // FRM_Editar_Tipos_Aviones
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -254,6 +259,7 @@
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_Editar_Tipos_Aviones";
+            this.Load += new System.EventHandler(this.FRM_Editar_Tipos_Aviones_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.grp_Informacion.ResumeLayout(false);

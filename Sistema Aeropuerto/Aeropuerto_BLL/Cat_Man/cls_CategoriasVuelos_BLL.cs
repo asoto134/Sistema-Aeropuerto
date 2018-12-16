@@ -19,7 +19,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
                 OBJ_DataBase_DAL.SSP_Nombre = "sp_Listar_CategoriaVuelos";
-                OBJ_DataBase_DAL.SNombreTabla = "CategoriasVuelos";
+                OBJ_DataBase_DAL.SNombreTabla = "Categorias Vuelos";
 
                 OBJ_DataBase_BLL.Execute_DataAdapter(ref OBJ_DataBase_DAL);
 
@@ -48,7 +48,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
                 OBJ_DataBase_DAL.SSP_Nombre = "sp_Filtrar_CategoriaVuelos";
-                OBJ_DataBase_DAL.SNombreTabla = "CategoriasVuelos";
+                OBJ_DataBase_DAL.SNombreTabla = "Categorias Vuelos";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Filtro", "2", sFiltro);
@@ -80,10 +80,10 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
                 OBJ_DataBase_DAL.SSP_Nombre = "sp_Eliminar_CategoriaVuelos";
-                OBJ_DataBase_DAL.SNombreTabla = "CategoriasVuelos";
+                OBJ_DataBase_DAL.SNombreTabla = "Categorias Vuelos";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdCategoria", "1", sDato);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@ELIMINAR", "1", sDato);
 
                 OBJ_DataBase_BLL.Execute_NonQuery(ref OBJ_DataBase_DAL);
 
@@ -150,7 +150,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
 
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@DescCategoria", "2", OBJ_CategoriasVuelos_DAL.SDescCategoria);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_CategoriasVuelos_DAL);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_CategoriasVuelos_DAL.CIdEstado);
 
                 OBJ_DataBase_BLL.Execute_Scalar(ref OBJ_DataBase_DAL);
 
@@ -158,7 +158,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 {
                     OBJ_CategoriasVuelos_DAL.SError = string.Empty;
                     OBJ_CategoriasVuelos_DAL.CAccion = 'U';
-                    OBJ_CategoriasVuelos_DAL.CIdCategoria = Convert.ToInt32(OBJ_DataBase_DAL.SScalarValue);
+                    OBJ_CategoriasVuelos_DAL.CIdCategoria = Convert.ToChar(OBJ_DataBase_DAL.SScalarValue);
                 }
                 else
                 {

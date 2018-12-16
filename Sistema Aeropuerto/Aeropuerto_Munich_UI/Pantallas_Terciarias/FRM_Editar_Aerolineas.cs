@@ -32,12 +32,13 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
+            if (txt_Nombre.Text == string.Empty)
+            {
+                MessageBox.Show("Debe completar la información para poder continuar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
             if (cmb_Estados.SelectedValue.ToString() == "-")
             {
-                MessageBox.Show("DEBE SELECCIONAR UN ESTADO PARA GUARDAR LA INFORMACIÓN", 
-                                "ALERTA",
-                                MessageBoxButtons.OK, 
-                                MessageBoxIcon.Asterisk);
+                MessageBox.Show("DEBE SELECCIONAR UN ESTADO PARA GUARDAR LA INFORMACIÓN", "ALERTA",MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
             }
             else
             {
@@ -94,48 +95,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             CargarDatosForm();
         }
 
-
-        private void CamposNumericos_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((char.IsNumber(e.KeyChar)) || (e.KeyChar == 8))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-        private void CamposNoNumericos_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((char.IsLetter(e.KeyChar)) || (e.KeyChar == 8))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void txt_Descrip_TextChanged(object sender, EventArgs e)
-        {
-            if (txt_Nombre.Text == string.Empty || txt_ID.Text == string.Empty)
-            {
-                btn_Guardar.Enabled = false;
-            }
-            else
-            {
-                btn_Guardar.Enabled = true;
-            }
-        }
-
-        private void btn_Salir_Click_1(object sender, EventArgs e)
-        {
-            this.Close();
-        }
+        
 
         private void FRM_Editar_Aerolineas_Load(object sender, EventArgs e)
         {

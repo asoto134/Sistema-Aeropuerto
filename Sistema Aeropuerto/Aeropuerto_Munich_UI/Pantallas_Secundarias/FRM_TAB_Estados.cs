@@ -19,28 +19,40 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             InitializeComponent();
         }
 
+
         cls_Estados_DAL OBJ_Estados_DAL = new cls_Estados_DAL();
         cls_Estados_BLL OBJ_Estados_BLL = new cls_Estados_BLL();
 
-        private void btn_AgregarModificar_Click(object sender, EventArgs e)
+        private void btn_Modificar_Click(object sender, EventArgs e)
         {
-            Pantallas_Terciarias.FRM_Editar_Estados OBJ_Editar_Estados = new Pantallas_Terciarias.FRM_Editar_Estados();
-
-            if (dgv_Datos.Rows.Count == 0)
+            if (dgv_Datos.Rows.Count >= 1)
             {
-                OBJ_Estados_DAL.CAccion = 'I';
-                OBJ_Editar_Estados.OBJ_Editar_Estados = OBJ_Estados_DAL;
+                Pantallas_Terciarias.FRM_Editar_Estados OBJ_Editar_Estados = new Pantallas_Terciarias.FRM_Editar_Estados();
 
-            }
-            else
-            {
                 OBJ_Estados_DAL.CAccion = 'U';
                 OBJ_Estados_DAL.CIDEstado = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
                 OBJ_Estados_DAL.SDescripcion = dgv_Datos.SelectedRows[0].Cells[1].Value.ToString();
+
                 OBJ_Editar_Estados.OBJ_Editar_Estados = OBJ_Estados_DAL;
-                
+
+                OBJ_Editar_Estados.ShowDialog();
+
+                CargarDatos();
             }
-            
+            else
+            {
+                MessageBox.Show("Debe tener un estado seleccionado", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+            }
+        }
+
+        private void btn_Añadir_Click(object sender, EventArgs e)
+        {
+            Pantallas_Terciarias.FRM_Editar_Estados OBJ_Editar_Estados = new Pantallas_Terciarias.FRM_Editar_Estados();
+
+            OBJ_Estados_DAL.CAccion = 'I';
+
+            OBJ_Editar_Estados.OBJ_Editar_Estados = OBJ_Estados_DAL;
+
             OBJ_Editar_Estados.ShowDialog();
 
             CargarDatos();
@@ -61,7 +73,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             }
             else
             {
-                MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -76,7 +88,8 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
         {
             CargarDatos();
         }
-        
+
+
         private void FRM_TAB_Estados_Load(object sender, EventArgs e)
         {
             CargarDatos();
@@ -101,9 +114,11 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             }
             else
             {
-                MessageBox.Show("No se ha podido cargar los datos. \n\n Error: [ " +OBJ_Estados_DAL.SError+ " ]");
+                MessageBox.Show("No se ha podido cargar los datos. \n\n Error: [ " + OBJ_Estados_DAL.SError + " ]");
             }
         }
-        
+
+
+
     }
 }

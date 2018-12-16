@@ -97,7 +97,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Primarias
 
         private void btn_Tip_Aviones_Click(object sender, EventArgs e)
         {
-            Pantallas_Secundarias.FRM_TAB_Aviones OBJ_TAB_Aviones = new Pantallas_Secundarias.FRM_TAB_Aviones();
+            Pantallas_Secundarias.FRM_TAB_Tipos_Aviones OBJ_TAB_Aviones = new Pantallas_Secundarias.FRM_TAB_Tipos_Aviones();
 
             this.Hide();
 
@@ -150,5 +150,6 @@ namespace Aeropuerto_Munich_UI.Pantallas_Primarias
             Close();
             Application.Exit();
         }
+        
     }
 }

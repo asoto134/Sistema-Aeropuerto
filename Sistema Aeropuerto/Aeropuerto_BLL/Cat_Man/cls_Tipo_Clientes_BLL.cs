@@ -153,7 +153,7 @@ namespace Aeropuerto_BLL.Cat_Man
 
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@TipoCliente", "2", OBJ_Tipo_Clientes_DAL.STipoCliente);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Descripcion", "2", OBJ_Tipo_Clientes_DAL.SDescripcion);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_Tipo_Clientes_DAL);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_Tipo_Clientes_DAL.CIdEstado);
 
                 OBJ_DataBase_BLL.Execute_Scalar(ref OBJ_DataBase_DAL);
 

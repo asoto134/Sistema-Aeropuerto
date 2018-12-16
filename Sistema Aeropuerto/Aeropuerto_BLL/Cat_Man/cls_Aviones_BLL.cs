@@ -111,7 +111,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "sp_Eliminar_Aviones";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_Modificar_Aviones";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdAvion", "2", OBJ_Aviones_DAL.SIdAvion);

@@ -25,10 +25,17 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
+            if (txt_Descripcion.Text == string.Empty || txt_ID.Text == string.Empty)
+            {
+                MessageBox.Show("Debe completar los datos antes de continuar", "Error",MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+                return;
+            }
+
             OBJ_Estados_BLL = new cls_Estados_BLL();
 
             OBJ_Editar_Estados.CIDEstado = Convert.ToChar(txt_ID.Text.ToString());
-            OBJ_Editar_Estados.SDescripcion = txt_Descrip.Text;
+            OBJ_Editar_Estados.SDescripcion = txt_Descripcion.Text;
 
             if (OBJ_Editar_Estados.CAccion == 'I')
             {
@@ -81,52 +88,15 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             {
                 txt_ID.Enabled = true;
                 txt_ID.Text = string.Empty;
-                txt_Descrip.Text = string.Empty;
+                txt_Descripcion.Text = string.Empty;
                 grp_Informacion.Text = "Insertar Estado";
             }
             else
             {
                 txt_ID.Enabled = false;
                 txt_ID.Text = OBJ_Editar_Estados.CIDEstado.ToString();
-                txt_Descrip.Text = string.Empty;
+                txt_Descripcion.Text = string.Empty;
                 grp_Informacion.Text = "Modificar Estado";
-            }
-        }
-
-        private void CamposNumericos_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((char.IsNumber(e.KeyChar)) || (e.KeyChar == 8))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-        private void CamposNoNumericos_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((char.IsLetter(e.KeyChar)) || (e.KeyChar == 8))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void txt_Descrip_TextChanged(object sender, EventArgs e)
-        {
-            if (txt_Descrip.Text == string.Empty || txt_ID.Text == string.Empty)
-            {
-                btn_Guardar.Enabled = false;
-            }
-            else
-            {
-                btn_Guardar.Enabled = true;
             }
         }
         

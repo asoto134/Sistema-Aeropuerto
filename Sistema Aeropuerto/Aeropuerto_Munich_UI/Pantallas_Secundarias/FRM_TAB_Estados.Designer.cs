@@ -157,6 +157,7 @@
             this.btn_Añadir.Size = new System.Drawing.Size(60, 57);
             this.btn_Añadir.TabIndex = 12;
             this.btn_Añadir.UseVisualStyleBackColor = false;
+            this.btn_Añadir.Click += new System.EventHandler(this.btn_Añadir_Click);
             // 
             // panel3
             // 
@@ -230,6 +231,7 @@
             this.btn_Salir.Size = new System.Drawing.Size(59, 59);
             this.btn_Salir.TabIndex = 4;
             this.btn_Salir.UseVisualStyleBackColor = false;
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
             // btn_Eliminar
             // 
@@ -243,6 +245,7 @@
             this.btn_Eliminar.Size = new System.Drawing.Size(65, 69);
             this.btn_Eliminar.TabIndex = 3;
             this.btn_Eliminar.UseVisualStyleBackColor = false;
+            this.btn_Eliminar.Click += new System.EventHandler(this.btn_Eliminar_Click);
             // 
             // btn_Refrescar
             // 
@@ -256,6 +259,7 @@
             this.btn_Refrescar.Size = new System.Drawing.Size(65, 67);
             this.btn_Refrescar.TabIndex = 2;
             this.btn_Refrescar.UseVisualStyleBackColor = false;
+            this.btn_Refrescar.Click += new System.EventHandler(this.btn_Refrescar_Click);
             // 
             // btn_Modificar
             // 
@@ -269,6 +273,7 @@
             this.btn_Modificar.Size = new System.Drawing.Size(50, 59);
             this.btn_Modificar.TabIndex = 1;
             this.btn_Modificar.UseVisualStyleBackColor = false;
+            this.btn_Modificar.Click += new System.EventHandler(this.btn_Modificar_Click);
             // 
             // FRM_TAB_Estados
             // 

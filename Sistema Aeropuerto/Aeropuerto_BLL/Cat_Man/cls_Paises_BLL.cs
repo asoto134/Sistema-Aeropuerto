@@ -18,7 +18,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "sp_Listar_Paises";
+                OBJ_DataBase_DAL.SSP_Nombre = "Sp_Listar_Paises";
                 OBJ_DataBase_DAL.SNombreTabla = "Paises";
 
                 OBJ_DataBase_BLL.Execute_DataAdapter(ref OBJ_DataBase_DAL);
@@ -47,7 +47,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "sp_Filtrar_Paises";
+                OBJ_DataBase_DAL.SSP_Nombre = "Sp_Filtrar_Paises";
                 OBJ_DataBase_DAL.SNombreTabla = "Paises";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
@@ -114,7 +114,7 @@ namespace Aeropuerto_BLL.Cat_Man
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
 
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdPais", "1", OBJ_Paises_DAL.IPaises);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdPais", "1", OBJ_Paises_DAL.IIdPais);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@NombrePais", "2", OBJ_Paises_DAL.SNombrePais);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@CodigoISOPais", "4", OBJ_Paises_DAL.CCodigoISOPais);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@CodigoAreaPais", "4", OBJ_Paises_DAL.CCodigoAreaPais);
@@ -147,10 +147,11 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "sp_Insertar_Pais";
+                OBJ_DataBase_DAL.SSP_Nombre = "Sp_Insertar_Pais";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
 
+                //
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@NombrePais", "2", OBJ_Paises_DAL.SNombrePais);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@CodigoISOPais", "4", OBJ_Paises_DAL.CCodigoISOPais);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@CodigoAreaPais", "4", OBJ_Paises_DAL.CCodigoAreaPais);
@@ -162,7 +163,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 {
                     OBJ_Paises_DAL.SError = string.Empty;
                     OBJ_Paises_DAL.CAccion = 'U';
-                    OBJ_Paises_DAL.IPaises = Convert.ToInt16(OBJ_DataBase_DAL.SScalarValue);
+                    OBJ_Paises_DAL.IIdPais = Convert.ToInt16(OBJ_DataBase_DAL.SScalarValue);
                 }
                 else
                 {
