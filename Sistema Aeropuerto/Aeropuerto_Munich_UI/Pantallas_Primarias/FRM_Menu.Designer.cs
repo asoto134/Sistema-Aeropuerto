@@ -351,11 +351,11 @@
             // btn_Vuelos
             // 
             this.btn_Vuelos.BackColor = System.Drawing.Color.Transparent;
-            this.btn_Vuelos.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btn_Vuelos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Vuelos.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_Vuelos.Location = new System.Drawing.Point(419, 12);
+            this.btn_Vuelos.Location = new System.Drawing.Point(432, 12);
             this.btn_Vuelos.Name = "btn_Vuelos";
-            this.btn_Vuelos.Size = new System.Drawing.Size(183, 26);
+            this.btn_Vuelos.Size = new System.Drawing.Size(170, 26);
             this.btn_Vuelos.TabIndex = 13;
             this.btn_Vuelos.Text = "Ver Vuelos";
             this.btn_Vuelos.UseVisualStyleBackColor = false;
