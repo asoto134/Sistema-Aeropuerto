@@ -26,7 +26,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
         cls_Aerolineas_DAL OBJ_Aerolineas_DAL = new cls_Aerolineas_DAL();
 
         cls_Tipo_Aviones_BLL OBJ_Tipo_Aviones_BLL = new cls_Tipo_Aviones_BLL();
-        cls_Tipo_Aviones_DAL OBJ_Tipo_Aviones_DAL = new cls_Tipo_Aviones_DAL();
+        cls_tipos_aviones_DAL OBJ_Tipo_Aviones_DAL = new cls_tipos_aviones_DAL();
 
 
 

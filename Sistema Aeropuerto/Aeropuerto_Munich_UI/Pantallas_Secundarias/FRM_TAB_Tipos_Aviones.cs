@@ -21,7 +21,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
         }
 
         cls_tipos_aviones_DAL OBJ_Tipos_Aviones_DAL = new cls_tipos_aviones_DAL();
-        cls_tipos_aviones_BLL OBJ_Tipo_Aviones_BLL = new cls_tipos_aviones_BLL();
+        cls_Tipo_Aviones_BLL OBJ_Tipo_Aviones_BLL = new cls_Tipo_Aviones_BLL();
 
 
 

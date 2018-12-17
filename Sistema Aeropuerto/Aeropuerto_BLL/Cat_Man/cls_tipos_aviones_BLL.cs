@@ -12,7 +12,7 @@ namespace Aeropuerto_BLL.Cat_Man
     public class cls_Tipo_Aviones_BLL
     {
 
-        public void Listar_Combo(ref cls_Tipo_Aviones_DAL OBJ_Tipo_Aviones_DAL)
+        public void Listar_Combo(ref cls_tipos_aviones_DAL OBJ_Tipo_Aviones_DAL)
         {
             try
             {
@@ -40,7 +40,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 OBJ_Tipo_Aviones_DAL.SError = Error.Message.ToString();
             }
         }
-        public void Listar(ref cls_Tipo_Aviones_DAL OBJ_Tipo_Aviones_DAL)
+        public void Listar(ref cls_tipos_aviones_DAL OBJ_Tipo_Aviones_DAL)
         {
             try
             {
@@ -69,7 +69,7 @@ namespace Aeropuerto_BLL.Cat_Man
             }
         }
 
-        public void Filtrar(ref cls_Tipo_Aviones_DAL OBJ_Tipo_Aviones_DAL, string sFiltro)
+        public void Filtrar(ref cls_tipos_aviones_DAL OBJ_Tipo_Aviones_DAL, string sFiltro)
         {
             try
             {
@@ -101,7 +101,7 @@ namespace Aeropuerto_BLL.Cat_Man
             }
         }
 
-        public void Eliminar(ref cls_Tipo_Aviones_DAL OBJ_Tipo_Aviones_DAL, string sDato)
+        public void Eliminar(ref cls_tipos_aviones_DAL OBJ_Tipo_Aviones_DAL, string sDato)
         {
             try
             {
@@ -132,7 +132,7 @@ namespace Aeropuerto_BLL.Cat_Man
             }
         }
 
-        public void Modificar(ref cls_Tipo_Aviones_DAL OBJ_Tipo_Aviones_DAL)
+        public void Modificar(ref cls_tipos_aviones_DAL OBJ_Tipo_Aviones_DAL)
         {
             try
             {
@@ -144,10 +144,10 @@ namespace Aeropuerto_BLL.Cat_Man
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
 
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdTipoAvion", "2", OBJ_Tipo_Aviones_DAL.SIdTipoAvion);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@NombreTipoAvion", "2", OBJ_Tipo_Aviones_DAL.SNombreTipoAvion);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@NombreTipoAvion", "2", OBJ_Tipo_Aviones_DAL.SNombreAvion);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@DescTipoAvion", "2", OBJ_Tipo_Aviones_DAL.SDescTipoAvion);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@CapacidadPasajeros", "1", OBJ_Tipo_Aviones_DAL.ICap_Pasajeros);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@CapacidadPeso", "6", OBJ_Tipo_Aviones_DAL.DCapa_Peso);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@CapacidadPasajeros", "1", OBJ_Tipo_Aviones_DAL.ICapacidadPasajeros);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@CapacidadPeso", "6", OBJ_Tipo_Aviones_DAL.DCapacidad_peso);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_Tipo_Aviones_DAL.CIdEstado);
 
                 OBJ_DataBase_BLL.Execute_NonQuery(ref OBJ_DataBase_DAL);
@@ -170,7 +170,7 @@ namespace Aeropuerto_BLL.Cat_Man
             }
         }
 
-        public void Insertar(ref cls_Tipo_Aviones_DAL OBJ_Tipo_Aviones_DAL)
+        public void Insertar(ref cls_tipos_aviones_DAL OBJ_Tipo_Aviones_DAL)
         {
             try
             {
@@ -182,10 +182,10 @@ namespace Aeropuerto_BLL.Cat_Man
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
 
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdTipoAvion", "2", OBJ_Tipo_Aviones_DAL.SIdTipoAvion);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@NombreTipoAvion", "2", OBJ_Tipo_Aviones_DAL.SNombreTipoAvion);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@NombreTipoAvion", "2", OBJ_Tipo_Aviones_DAL.SNombreAvion);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@DescTipoAvion", "2", OBJ_Tipo_Aviones_DAL.SDescTipoAvion);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@CapacidadPasajeros", "1", OBJ_Tipo_Aviones_DAL.ICap_Pasajeros);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@CapacidadPeso", "6", OBJ_Tipo_Aviones_DAL.DCapa_Peso);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@CapacidadPasajeros", "1", OBJ_Tipo_Aviones_DAL.ICapacidadPasajeros);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@CapacidadPeso", "6", OBJ_Tipo_Aviones_DAL.DCapacidad_peso);
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_Tipo_Aviones_DAL.CIdEstado);
 
 
