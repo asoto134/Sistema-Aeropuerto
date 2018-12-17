@@ -60,7 +60,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                 if (OBJ_Editar_Usuarios.CAccion == 'I')
                 {
-                    OBJ_Editar_Usuarios.sPassword = OBJ_Editar_Usuarios.sUsername;
+                    OBJ_Editar_Usuarios.sPassword = "1234";
 
                     OBJ_Usuarios_BLL.Insertar(ref OBJ_Editar_Usuarios);
 

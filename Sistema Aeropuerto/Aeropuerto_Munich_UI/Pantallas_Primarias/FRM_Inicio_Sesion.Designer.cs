@@ -39,6 +39,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txt_NombreUsuario = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btn_Cambiar_Contrasenia = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
@@ -63,6 +64,7 @@
             // splitContainer1.Panel2
             // 
             this.splitContainer1.Panel2.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.splitContainer1.Panel2.Controls.Add(this.btn_Cambiar_Contrasenia);
             this.splitContainer1.Panel2.Controls.Add(this.btn_Salir);
             this.splitContainer1.Panel2.Controls.Add(this.btn_Entrar);
             this.splitContainer1.Panel2.Controls.Add(this.txt_Contraseña);
@@ -135,6 +137,7 @@
             // txt_Contraseña
             // 
             this.txt_Contraseña.Location = new System.Drawing.Point(55, 187);
+            this.txt_Contraseña.MaxLength = 8;
             this.txt_Contraseña.Name = "txt_Contraseña";
             this.txt_Contraseña.PasswordChar = '*';
             this.txt_Contraseña.Size = new System.Drawing.Size(174, 20);
@@ -154,6 +157,7 @@
             // txt_NombreUsuario
             // 
             this.txt_NombreUsuario.Location = new System.Drawing.Point(55, 111);
+            this.txt_NombreUsuario.MaxLength = 15;
             this.txt_NombreUsuario.Name = "txt_NombreUsuario";
             this.txt_NombreUsuario.Size = new System.Drawing.Size(174, 20);
             this.txt_NombreUsuario.TabIndex = 2;
@@ -167,6 +171,20 @@
             this.label3.Size = new System.Drawing.Size(150, 20);
             this.label3.TabIndex = 3;
             this.label3.Text = "Nombre de Usuario:";
+            // 
+            // btn_Cambiar_Contrasenia
+            // 
+            this.btn_Cambiar_Contrasenia.BackColor = System.Drawing.Color.Transparent;
+            this.btn_Cambiar_Contrasenia.Enabled = false;
+            this.btn_Cambiar_Contrasenia.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Cambiar_Contrasenia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+            this.btn_Cambiar_Contrasenia.Location = new System.Drawing.Point(15, 300);
+            this.btn_Cambiar_Contrasenia.Name = "btn_Cambiar_Contrasenia";
+            this.btn_Cambiar_Contrasenia.Size = new System.Drawing.Size(231, 36);
+            this.btn_Cambiar_Contrasenia.TabIndex = 9;
+            this.btn_Cambiar_Contrasenia.Text = "Cambiar Contraseña";
+            this.btn_Cambiar_Contrasenia.UseVisualStyleBackColor = false;
+            this.btn_Cambiar_Contrasenia.Click += new System.EventHandler(this.btn_Cambiar_Contrasenia_Click);
             // 
             // FRM_Inicio_Sesion
             // 
@@ -204,5 +222,6 @@
         private System.Windows.Forms.TextBox txt_NombreUsuario;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btn_Cambiar_Contrasenia;
     }
 }

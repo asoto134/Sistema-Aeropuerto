@@ -172,5 +172,73 @@ namespace Aeropuerto_BLL.Cat_Man
                 OBJ_Usuarios_DAL.sError = Error.Message.ToString();
             }
         }
+
+        public Boolean validarUsuario(string sUsername, string sPassword)
+        {
+            try
+            {
+                cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
+                cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
+
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_Validar_Usuarios";
+                OBJ_DataBase_DAL.SNombreTabla = "Usuarios";
+
+                OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Username", "2", sUsername);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Password", "2", sPassword);
+
+                OBJ_DataBase_BLL.Execute_DataAdapter(ref OBJ_DataBase_DAL);
+
+                if (OBJ_DataBase_DAL.SError == string.Empty)
+                {
+                    if(OBJ_DataBase_DAL.OBJ_DataSet.Tables[0].Rows.Count > 0)
+                        return true;
+                    else
+                        return false;
+                }
+                else
+                {
+                    return false;
+                }
+
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
+
+        public void cambiarContrasenia(ref cls_Usuarios_DAL OBJ_Usuarios_DAL)
+        {
+            try
+            {
+                cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
+                cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
+
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_Cambiar_Contrasenia";
+
+                OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Username", "2", OBJ_Usuarios_DAL.sUsername);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Password", "2", OBJ_Usuarios_DAL.sPassword);
+
+                OBJ_DataBase_BLL.Execute_NonQuery(ref OBJ_DataBase_DAL);
+
+                if (OBJ_DataBase_DAL.SError == string.Empty)
+                {
+                    OBJ_Usuarios_DAL.sError = string.Empty;
+                }
+                else
+                {
+                    OBJ_Usuarios_DAL.sError = OBJ_DataBase_DAL.SError;
+                }
+
+                OBJ_Usuarios_DAL.CAccion = 'U';
+
+            }
+            catch (Exception Error)
+            {
+                OBJ_Usuarios_DAL.sError = Error.Message.ToString();
+            }
+        }
     }
 }
