@@ -124,3 +124,4 @@ C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aer
 C:\Users\kevin herrera b\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\bin\Debug\Aeropuerto_Munich_UI.exe.config
 C:\Users\kevin herrera b\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.exe
 C:\Users\kevin herrera b\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.pdb
+C:\Users\rotdr\Documents\GitHub\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Primarias.FRM_Cambiar_Contrasenia.resources
