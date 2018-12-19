@@ -24,19 +24,19 @@ GO
 IF OBJECT_ID('[dbo].[sp_Filtrar_Estados]') IS NOT NULL DROP PROCEDURE [dbo].sp_Filtrar_Estados
 GO
 
-Create Procedure sp_Filtrar_Estados
-
+Create PROCEDURE [dbo].[sp_Filtrar_Estados]
 (
-	@IdFiltro varchar(25)
+	@Filtro VARCHAR(25)
 )
-As
-Begin
-
-DELETE FROM [dbo].[T_Estados]
-      WHERE Descripcion = @IdFiltro
-	  End
-
+AS
+BEGIN
+SELECT [IdEstado]
+      ,[Descripcion]
+  FROM [dbo].[T_Estados]
+  where [Descripcion] LIKE '%' + @Filtro + '%'
+  end
 GO
+
 
 --Insertar
 
