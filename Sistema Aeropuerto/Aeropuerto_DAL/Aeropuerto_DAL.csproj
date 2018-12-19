@@ -53,6 +53,7 @@
     <Compile Include="Cat_Man\cls_Tipo_Clientes_DAL.cs" />
     <Compile Include="Cat_Man\cls_Tipo_Empleados_DAL.cs" />
     <Compile Include="Cat_Man\cls_Usuarios_DAL.cs" />
+    <Compile Include="Cat_Man\cls_Vuelos_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />
