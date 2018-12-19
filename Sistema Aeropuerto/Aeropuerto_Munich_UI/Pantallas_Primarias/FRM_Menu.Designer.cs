@@ -291,6 +291,8 @@
             // 
             this.btn_Info.BackgroundImage = global::Aeropuerto_Munich_UI.Properties.Resources.img_btn_Informacion;
             this.btn_Info.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Info.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Info.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Info.Location = new System.Drawing.Point(13, 12);
             this.btn_Info.Name = "btn_Info";
             this.btn_Info.Size = new System.Drawing.Size(46, 45);
@@ -302,6 +304,8 @@
             // 
             this.btn_Salir.BackgroundImage = global::Aeropuerto_Munich_UI.Properties.Resources.img_btn_Salir;
             this.btn_Salir.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btn_Salir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_Salir.ForeColor = System.Drawing.Color.Transparent;
             this.btn_Salir.Location = new System.Drawing.Point(593, 12);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(46, 45);
