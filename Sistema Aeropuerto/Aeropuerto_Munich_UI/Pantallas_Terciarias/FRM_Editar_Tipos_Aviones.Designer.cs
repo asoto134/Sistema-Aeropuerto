@@ -94,7 +94,7 @@
             this.btn_Salir.Location = new System.Drawing.Point(295, 28);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(52, 45);
-            this.btn_Salir.TabIndex = 4;
+            this.btn_Salir.TabIndex = 7;
             this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
@@ -108,7 +108,7 @@
             this.btn_Guardar.Location = new System.Drawing.Point(76, 32);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(47, 41);
-            this.btn_Guardar.TabIndex = 5;
+            this.btn_Guardar.TabIndex = 6;
             this.btn_Guardar.UseVisualStyleBackColor = false;
             this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
@@ -142,7 +142,7 @@
             this.txt_CantidadPeso.MaxLength = 90;
             this.txt_CantidadPeso.Name = "txt_CantidadPeso";
             this.txt_CantidadPeso.Size = new System.Drawing.Size(249, 21);
-            this.txt_CantidadPeso.TabIndex = 11;
+            this.txt_CantidadPeso.TabIndex = 4;
             this.txt_CantidadPeso.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_CantidadPeso_KeyPress);
             // 
             // txt_CantidadPasa
@@ -152,7 +152,7 @@
             this.txt_CantidadPasa.MaxLength = 90;
             this.txt_CantidadPasa.Name = "txt_CantidadPasa";
             this.txt_CantidadPasa.Size = new System.Drawing.Size(249, 21);
-            this.txt_CantidadPasa.TabIndex = 10;
+            this.txt_CantidadPasa.TabIndex = 3;
             this.txt_CantidadPasa.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Numeros_KeyPress);
             // 
             // label8
@@ -189,7 +189,7 @@
             this.txt_DescrAvion.MaxLength = 90;
             this.txt_DescrAvion.Name = "txt_DescrAvion";
             this.txt_DescrAvion.Size = new System.Drawing.Size(249, 21);
-            this.txt_DescrAvion.TabIndex = 6;
+            this.txt_DescrAvion.TabIndex = 2;
             // 
             // cmb_Estados
             // 
@@ -215,7 +215,7 @@
             this.txt_ID.MaxLength = 1;
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(100, 21);
-            this.txt_ID.TabIndex = 2;
+            this.txt_ID.TabIndex = 0;
             this.txt_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Numeros_KeyPress);
             // 
             // txt_TipoAvion
@@ -225,7 +225,7 @@
             this.txt_TipoAvion.MaxLength = 90;
             this.txt_TipoAvion.Name = "txt_TipoAvion";
             this.txt_TipoAvion.Size = new System.Drawing.Size(249, 21);
-            this.txt_TipoAvion.TabIndex = 3;
+            this.txt_TipoAvion.TabIndex = 1;
             // 
             // label1
             // 

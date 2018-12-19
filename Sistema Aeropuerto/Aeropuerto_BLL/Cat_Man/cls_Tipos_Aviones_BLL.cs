@@ -47,7 +47,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "sp_Listar_tipos_aviones";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_ListarTiposAviones";
                 OBJ_DataBase_DAL.SNombreTabla = "Tipos Aviones";
 
                 OBJ_DataBase_BLL.Execute_DataAdapter(ref OBJ_DataBase_DAL);
@@ -76,11 +76,11 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "sp_Filtrar_Aerolineas";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_FiltrarTiposAviones";
                 OBJ_DataBase_DAL.SNombreTabla = "Tipos Aviones";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@FILTRO", "2", sFiltro);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@Filtro", "2", sFiltro);
 
                 OBJ_DataBase_BLL.Execute_DataAdapter(ref OBJ_DataBase_DAL);
 
@@ -108,11 +108,11 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "sp_Eliminar_Aerolineas";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_EliminarTiposAviones";
                 OBJ_DataBase_DAL.SNombreTabla = "Tipos Aviones";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@ELIMINAR", "2", sDato);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdTipoAvion", "2", sDato);
 
                 OBJ_DataBase_BLL.Execute_NonQuery(ref OBJ_DataBase_DAL);
 
@@ -139,7 +139,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "sp_Modificar_Aerolineas";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_ModificarTiposAviones";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
 
@@ -177,7 +177,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_BLL OBJ_DataBase_BLL = new cls_DataBase_BLL();
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
-                OBJ_DataBase_DAL.SSP_Nombre = "sp_Insertar_Aerolineas";
+                OBJ_DataBase_DAL.SSP_Nombre = "sp_Insertar_TiposAviones";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
 

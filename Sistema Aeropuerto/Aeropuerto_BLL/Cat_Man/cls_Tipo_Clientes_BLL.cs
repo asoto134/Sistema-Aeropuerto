@@ -81,10 +81,10 @@ namespace Aeropuerto_BLL.Cat_Man
                 cls_DataBase_DAL OBJ_DataBase_DAL = new cls_DataBase_DAL();
 
                 OBJ_DataBase_DAL.SSP_Nombre = "sp_Eliminar_Tipo_Clientes";
-                OBJ_DataBase_DAL.SNombreTabla = "Aerolineas";
+                OBJ_DataBase_DAL.SNombreTabla = "Tipo Cliente";
 
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IDAerolinea", "4", sDato);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdTipoCliente", "4", sDato);
 
                 OBJ_DataBase_BLL.Execute_NonQuery(ref OBJ_DataBase_DAL);
 

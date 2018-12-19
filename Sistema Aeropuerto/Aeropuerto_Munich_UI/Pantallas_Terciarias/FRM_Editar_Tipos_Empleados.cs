@@ -38,18 +38,20 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             if (txt_Descripcion.Text == string.Empty || txt_ID.Text == string.Empty)
             {
                 MessageBox.Show("Debe completar los datos antes de continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
             }
 
             if (cmb_Estados.SelectedValue.ToString() == "-")
             {
                 MessageBox.Show("Debe seleccionar un estado antes de continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
             }
             else
             {
 
                 OBJ_Tipo_Empleados_BLL = new cls_Tipo_Empleados_BLL();
 
-                OBJ_Editar_Tipo_Empleados_DAL.IIdTipoEmpleado = Convert.ToChar(txt_ID.Text.ToString());
+                OBJ_Editar_Tipo_Empleados_DAL.IIdTipoEmpleado = Convert.ToInt32(txt_ID.Text.ToString());
                 OBJ_Editar_Tipo_Empleados_DAL.SDescTipo = txt_Descripcion.Text;
                 OBJ_Editar_Tipo_Empleados_DAL.CIdEstado = Convert.ToChar(cmb_Estados.SelectedValue.ToString());
 
@@ -59,7 +61,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                     if (OBJ_Editar_Tipo_Empleados_DAL.SError == string.Empty)
                     {
-                        MessageBox.Show("Se guardó exitosamente el tipo de empleado", "Guardado de Tipo de Empleado",
+                        MessageBox.Show("Se guardó exitosamente el tipo de empleado", "Éxito",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
@@ -74,7 +76,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                     if (OBJ_Editar_Tipo_Empleados_DAL.SError == string.Empty)
                     {
-                        MessageBox.Show("Se modificó exitosamente el tipo de empleado", "Modificación de Tipo de Empleado",
+                        MessageBox.Show("Se modificó exitosamente el tipo de empleado", "Éxito",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
@@ -145,6 +147,18 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                 MessageBox.Show("Se ha presentado un error al cargar los estados.\n\n Error: [ " + OBJ_Estados_DAL.SError + " ].", "Error al cargar Estados", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
 
+        }
+
+        private void Numeric_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
         }
     }
 }

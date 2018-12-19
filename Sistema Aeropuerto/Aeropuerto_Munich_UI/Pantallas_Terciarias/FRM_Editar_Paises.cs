@@ -54,10 +54,11 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
             if (cmb_Estados.SelectedValue.ToString() == "-")
             {
-                MessageBox.Show("DEBE SELECCIONAR UN ESTADO PARA GUARDAR LA INFORMACIÓN",
-                                "ALERTA",
+                MessageBox.Show("Debe seleccionar un estado antes de continuar",
+                                "Alerta",
                                 MessageBoxButtons.OK,
                                 MessageBoxIcon.Asterisk);
+                return;
             }
             else
             {
@@ -66,8 +67,8 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                 OBJ_Editar_Paises.IIdPais = Convert.ToInt16(txt_ID.Text.ToString());
                 OBJ_Editar_Paises.SNombrePais = txt_Nombre.Text;
-                OBJ_Editar_Paises.CCodigoISOPais = Convert.ToChar(txt_Codigo_Pais.Text.ToString());
-                OBJ_Editar_Paises.CCodigoAreaPais = Convert.ToChar(txt_Codigo_Area.Text.ToString());
+                OBJ_Editar_Paises.SCodigoISOPais = txt_Codigo_Pais.Text.ToString();
+                OBJ_Editar_Paises.SCodigoAreaPais = txt_Codigo_Area.Text.ToString();
                 OBJ_Editar_Paises.CIdEstado = Convert.ToChar(cmb_Estados.SelectedValue.ToString());
 
                 if (OBJ_Editar_Paises.CAccion == 'I')
@@ -76,12 +77,12 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                     if (OBJ_Editar_Paises.SError == string.Empty)
                     {
-                        MessageBox.Show("País se guardo exitosamente ", "EXITO",
+                        MessageBox.Show("El país se guardó exitosamente ", "Éxito",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Se presento un error a la hora de guardar el nuevo País. \n \n Error [ " + OBJ_Editar_Paises.SError + " ].", "ERROR",
+                        MessageBox.Show("Se presentó un error a la hora de guardar el nuevo país. \n \n Error [ " + OBJ_Editar_Paises.SError + " ].", "Error",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
@@ -91,12 +92,12 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                     if (OBJ_Editar_Paises.SError == string.Empty)
                     {
-                        MessageBox.Show("Se modifico exitosamente información del País", "EXITO",
+                        MessageBox.Show("Se modificó exitosamente información del país", "Éxito",
                             MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
-                        MessageBox.Show("Se presento un error a la hora de modificar información del País. \n \n Error [ " + OBJ_Editar_Paises.SError + " ].", "ERROR",
+                        MessageBox.Show("Se presentó un error a la hora de modificar información del país. \n \n Error [ " + OBJ_Editar_Paises.SError + " ].", "Error",
                             MessageBoxButtons.OK, MessageBoxIcon.Error);
                     }
                 }
@@ -115,11 +116,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
         {
             CargarDatosForm();
         }
-
-        private void txt_Descrip_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
         #endregion
 
         #region METODOS
@@ -140,7 +137,9 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             {
                 txt_ID.Enabled = false;
                 txt_ID.Text = OBJ_Editar_Paises.IIdPais.ToString();
-                txt_Nombre.Text = OBJ_Editar_Paises.SNombrePais.ToString();
+                txt_Nombre.Text = OBJ_Editar_Paises.SNombrePais;
+                txt_Codigo_Pais.Text = OBJ_Editar_Paises.SCodigoISOPais;
+                txt_Codigo_Area.Text = OBJ_Editar_Paises.SCodigoAreaPais;
 
                 cmb_Estados.SelectedValue = OBJ_Editar_Paises.CIdEstado.ToString();
                 grp_Informacion.Text = "Modificar País";
@@ -156,7 +155,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                 cmb_Estados.DataSource = null;
                 cmb_Estados.DataSource = OBJ_Estados_DAL.OBJ_DataTable;
 
-                OBJ_Estados_DAL.OBJ_DataTable.Rows.Add("-", "-- SELECCIONAR UN ESTADO --");
+                OBJ_Estados_DAL.OBJ_DataTable.Rows.Add("-", "-- Debe seleccionar un estado --");
 
                 cmb_Estados.DisplayMember = "Descripcion";
                 cmb_Estados.ValueMember = "IdEstado";
@@ -172,7 +171,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
         }
         private void txt_Codigo_Pais_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsNumber(e.KeyChar))
+            if (char.IsNumber(e.KeyChar) || e.KeyChar == 8)
             {
                 e.Handled = false;
             }

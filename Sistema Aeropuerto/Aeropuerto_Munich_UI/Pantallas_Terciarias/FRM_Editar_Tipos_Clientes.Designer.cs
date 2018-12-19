@@ -90,7 +90,7 @@
             this.btn_Salir.Location = new System.Drawing.Point(238, 28);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(52, 45);
-            this.btn_Salir.TabIndex = 4;
+            this.btn_Salir.TabIndex = 5;
             this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
@@ -104,7 +104,7 @@
             this.btn_Guardar.Location = new System.Drawing.Point(31, 32);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(47, 41);
-            this.btn_Guardar.TabIndex = 5;
+            this.btn_Guardar.TabIndex = 4;
             this.btn_Guardar.UseVisualStyleBackColor = false;
             this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
@@ -140,10 +140,10 @@
             // 
             this.txt_Descripcion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_Descripcion.Location = new System.Drawing.Point(127, 97);
-            this.txt_Descripcion.MaxLength = 90;
+            this.txt_Descripcion.MaxLength = 150;
             this.txt_Descripcion.Name = "txt_Descripcion";
             this.txt_Descripcion.Size = new System.Drawing.Size(249, 21);
-            this.txt_Descripcion.TabIndex = 6;
+            this.txt_Descripcion.TabIndex = 2;
             // 
             // cmb_Estados
             // 
@@ -151,7 +151,7 @@
             this.cmb_Estados.Location = new System.Drawing.Point(127, 133);
             this.cmb_Estados.Name = "cmb_Estados";
             this.cmb_Estados.Size = new System.Drawing.Size(249, 24);
-            this.cmb_Estados.TabIndex = 5;
+            this.cmb_Estados.TabIndex = 3;
             // 
             // label3
             // 
@@ -169,16 +169,17 @@
             this.txt_ID.MaxLength = 1;
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(100, 21);
-            this.txt_ID.TabIndex = 2;
+            this.txt_ID.TabIndex = 0;
+            this.txt_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.Numeric_KeyPress);
             // 
             // txt_TipoCliente
             // 
             this.txt_TipoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_TipoCliente.Location = new System.Drawing.Point(127, 60);
-            this.txt_TipoCliente.MaxLength = 90;
+            this.txt_TipoCliente.MaxLength = 50;
             this.txt_TipoCliente.Name = "txt_TipoCliente";
             this.txt_TipoCliente.Size = new System.Drawing.Size(249, 21);
-            this.txt_TipoCliente.TabIndex = 3;
+            this.txt_TipoCliente.TabIndex = 1;
             // 
             // label1
             // 
@@ -209,6 +210,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRM_Editar_Tipos_Clientes";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_Editar_Tipos_Clientes";
             this.Load += new System.EventHandler(this.FRM_Editar_Tipo_Clientes_Load);
             this.groupBox2.ResumeLayout(false);

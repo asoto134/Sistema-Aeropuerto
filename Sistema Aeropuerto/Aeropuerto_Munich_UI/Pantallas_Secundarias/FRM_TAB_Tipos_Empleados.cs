@@ -29,7 +29,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
                 Pantallas_Terciarias.FRM_Editar_Tipos_Empleados OBJ_Editar_Tipo_Empleados = new Pantallas_Terciarias.FRM_Editar_Tipos_Empleados();
 
                 OBJ_Tipo_Empleados_DAL.CAccion = 'U';
-                OBJ_Tipo_Empleados_DAL.IIdTipoEmpleado = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
+                OBJ_Tipo_Empleados_DAL.IIdTipoEmpleado = Convert.ToInt32(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
                 OBJ_Tipo_Empleados_DAL.SDescTipo = dgv_Datos.SelectedRows[0].Cells[1].Value.ToString();
                 OBJ_Tipo_Empleados_DAL.CIdEstado = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[2].Value.ToString());
 
@@ -60,6 +60,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
 
         private void btn_Refrescar_Click(object sender, EventArgs e)
         {
+            txt_Filtrar.Text = string.Empty;
             CargarDatos();
         }
 
@@ -69,12 +70,17 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             {
                 OBJ_Tipo_Empleados_BLL.Eliminar(ref OBJ_Tipo_Empleados_DAL, dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
 
-                MessageBox.Show("El dato que ha seleccionado se ha eliminado exitósamente", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (OBJ_Tipo_Empleados_DAL.SError == string.Empty)
+                {
+                    MessageBox.Show("El dato que ha seleccionado se ha eliminado exitósamente", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+                CargarDatos();
             }
-            else
-            {
-                MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
