@@ -22,6 +22,8 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
         cls_Estados_BLL OBJ_Estados_BLL = new cls_Estados_BLL();
         cls_Estados_DAL OBJ_Estados_DAL = new cls_Estados_DAL();
 
+        cls_Empleados_BLL OBJ_Empleados_BLL = new cls_Empleados_BLL();
+        cls_Empleados_DAL OBJ_Empleados_DAL = new cls_Empleados_DAL();
 
         #endregion
 
@@ -148,6 +150,8 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
         private void CargarCombos()
         {
+
+            //ESTADOS
             OBJ_Estados_BLL.Listar(ref OBJ_Estados_DAL);
 
             if (OBJ_Estados_DAL.SError == string.Empty)
@@ -168,38 +172,27 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                                 MessageBoxIcon.Error);
             }
 
+            //EMPLEADOS
 
-            //            OBJ_Estados_BLL.Listar(ref OBJ_Estados_DAL);
+            OBJ_Empleados_BLL.ListarEmpleados(ref OBJ_Empleados_DAL);
 
-            //            if (OBJ_Estados_DAL.SError == string.Empty)
-            //            {
-            //Pruebas
+            if (OBJ_Empleados_DAL.sMsjError == string.Empty)
+            {
+                cmb_IdEmpleado.DataSource = null;
+                cmb_IdEmpleado.DataSource = OBJ_Empleados_DAL.Obj_DataTable;
 
-            DataTable dt = new DataTable();
-            dt.Columns.Add("ID");
-            dt.Columns.Add("NOMBRE");
-            dt.Rows.Add("-", "-- SELECCIONAR UN USUARIO --");
-            dt.Rows.Add("0000001", "Adrian Soto");
+        OBJ_Empleados_DAL.Obj_DataTable.Rows.Add("-", "-","-- SELECCIONAR UN EMPLEADO --");
 
-
-            cmb_IdEmpleado.DataSource = null;
-            cmb_IdEmpleado.DataSource = dt;  //OBJ_Estados_DAL.OBJ_DataTable;
-
-            //OBJ_Estados_DAL.OBJ_DataTable.Rows.Add("-", "-- SELECCIONAR UN ESTADO --");
-
-
-            cmb_IdEmpleado.DisplayMember = "NOMBRE";
-            cmb_IdEmpleado.ValueMember = "ID";
-//            }
-//            else
-//            {
-//                MessageBox.Show("SE PRESENTO UN ERROR A LA HORA DE CARGAR EL COMBO DE ESTADOS.\n\nERROR: [ " + OBJ_Estados_DAL.SError + " ].",
-//                                "ERROR",
-//                                MessageBoxButtons.OK,
-//                                MessageBoxIcon.Error);
-//            }
-
-
+                cmb_IdEmpleado.DisplayMember = "Nombre";
+                cmb_IdEmpleado.ValueMember = "IdEmpleado";
+            }
+            else
+            {
+                MessageBox.Show("SE PRESENTO UN ERROR A LA HORA DE CARGAR EL COMBO DE EMPLEADOS.\n\nERROR: [ " + OBJ_Estados_DAL.SError + " ].",
+                                "ERROR",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Error);
+            }
         }
 
 
