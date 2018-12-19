@@ -120,3 +120,4 @@ C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aer
 C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Terciarias.FRM_Editar_Vuelos.resources
 C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Properties.Resources.resources
 C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.csproj.GenerateResource.Cache
+C:\Users\Josua M\Source\Repos\asoto134\Sistema-Aeropuerto\Sistema Aeropuerto\Aeropuerto_Munich_UI\obj\Debug\Aeropuerto_Munich_UI.Pantallas_Primarias.FRM_Cambiar_Contrasenia.resources
