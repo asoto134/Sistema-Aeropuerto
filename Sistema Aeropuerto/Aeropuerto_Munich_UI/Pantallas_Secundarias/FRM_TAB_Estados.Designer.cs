@@ -155,7 +155,7 @@
             this.btn_Añadir.Location = new System.Drawing.Point(11, 32);
             this.btn_Añadir.Name = "btn_Añadir";
             this.btn_Añadir.Size = new System.Drawing.Size(60, 57);
-            this.btn_Añadir.TabIndex = 12;
+            this.btn_Añadir.TabIndex = 0;
             this.btn_Añadir.UseVisualStyleBackColor = false;
             this.btn_Añadir.Click += new System.EventHandler(this.btn_Añadir_Click);
             // 

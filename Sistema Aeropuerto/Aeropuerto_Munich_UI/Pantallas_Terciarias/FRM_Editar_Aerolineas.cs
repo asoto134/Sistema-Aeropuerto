@@ -108,12 +108,26 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
         {
             CargarDatosForm();
         }
+        private void txt_Nombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) || (e.KeyChar == 8))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+
+                e.Handled = true;
+
+            }
+
+        }
 
         #endregion
 
         #region METODOS
-        
-            private void CargarDatosForm()
+
+        private void CargarDatosForm()
             {
                 CargarCombos();
 

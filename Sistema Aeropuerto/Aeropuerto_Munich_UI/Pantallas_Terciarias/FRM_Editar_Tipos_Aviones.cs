@@ -39,11 +39,13 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                 txt_CantidadPeso.Text == string.Empty)
             {
                 MessageBox.Show("Debe completar los datos antes de continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
             }
 
             if (cmb_Estados.SelectedValue.ToString() == "-")
             {
                 MessageBox.Show("Debe seleccionar un estado antes de continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
             }
             else
             {
@@ -124,7 +126,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                 txt_ID.Text = OBJ_Tipos_Aviones_DAL.SIdTipoAvion.ToString();
                 txt_TipoAvion.Text = OBJ_Tipos_Aviones_DAL.SNombreAvion.ToString();
                 txt_DescrAvion.Text = OBJ_Tipos_Aviones_DAL.SDescTipoAvion.ToString();
-                txt_CantidadPasa.Text = OBJ_Tipos_Aviones_DAL.SDescTipoAvion.ToString();
+                txt_CantidadPasa.Text = OBJ_Tipos_Aviones_DAL.ICapacidadPasajeros.ToString();
                 txt_CantidadPeso.Text = OBJ_Tipos_Aviones_DAL.DCapacidad_peso.ToString();
                 cmb_Estados.SelectedValue = OBJ_Tipos_Aviones_DAL.CIdEstado.ToString();
                 grp_Informacion.Text = "Modificar un Tipo de Avión";
@@ -154,7 +156,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
         private void txt_Numeros_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsNumber(e.KeyChar))
+            if (char.IsNumber(e.KeyChar) || e.KeyChar == 8)
             {
                 e.Handled = false;
             }
@@ -166,7 +168,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
         private void txt_CantidadPeso_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (char.IsNumber(e.KeyChar)|| e.KeyChar == 44)
+            if (char.IsNumber(e.KeyChar)|| e.KeyChar == 44 || e.KeyChar == 8)
             {
                 e.Handled = false;
             }

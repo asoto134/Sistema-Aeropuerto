@@ -16,6 +16,8 @@ namespace Aeropuerto_Munich_UI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+          //  Application.Run(new Pantallas_Primarias.FRM_Inicio_Sesion());
+
             Application.Run(new Pantallas_Primarias.FRM_Menu());
         }
     }

@@ -130,7 +130,50 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             CargarDatosForm();
         }
 
-        
+        private void txt_Nombre_Avion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) || (e.KeyChar == 8))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+
+                e.Handled = true;
+
+            }
+        }
+
+        private void txt_Desc_Avion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsLetter(e.KeyChar) || (e.KeyChar == 8))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+
+                e.Handled = true;
+
+            }
+        }
+
+        private void txt_ID_avion_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) || (e.KeyChar == 8))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+
+                e.Handled = true;
+
+            }
+
+        }
+
+
         #endregion
 
         #region METODOS

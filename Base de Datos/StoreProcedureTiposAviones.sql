@@ -29,7 +29,7 @@ GO
 
 Create procedure [dbo].[sp_FiltrarTiposAviones]
 (
- @IdTipoAvion varchar(07)
+ @Filtro varchar(07)
 )
 as
 begin
@@ -40,7 +40,7 @@ SELECT [IdTipoAvion]
       ,[CapacidadPeso]
       ,[IdEstado]
   FROM [dbo].[T_TiposAviones]
-  Where IdTipoAvion = @IdTipoAvion
+  Where NombreTipoAvion Like '%'+@Filtro+'%'
 End
 GO
 -- Modificar

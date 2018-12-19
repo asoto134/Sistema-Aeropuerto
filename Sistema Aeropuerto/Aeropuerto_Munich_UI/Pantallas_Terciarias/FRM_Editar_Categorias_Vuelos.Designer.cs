@@ -137,6 +137,7 @@
             this.txt_Desc_Categoria.Name = "txt_Desc_Categoria";
             this.txt_Desc_Categoria.Size = new System.Drawing.Size(249, 21);
             this.txt_Desc_Categoria.TabIndex = 2;
+            this.txt_Desc_Categoria.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Desc_Categoria_KeyPress);
             // 
             // lbl_Id_Categoria
             // 

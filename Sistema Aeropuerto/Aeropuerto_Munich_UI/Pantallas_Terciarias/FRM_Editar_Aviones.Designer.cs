@@ -136,6 +136,7 @@
             this.txt_Desc_Avion.Name = "txt_Desc_Avion";
             this.txt_Desc_Avion.Size = new System.Drawing.Size(231, 21);
             this.txt_Desc_Avion.TabIndex = 3;
+            this.txt_Desc_Avion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Desc_Avion_KeyPress);
             // 
             // lbl_id_Tip_Avion
             // 
@@ -189,6 +190,7 @@
             this.txt_ID_avion.Name = "txt_ID_avion";
             this.txt_ID_avion.Size = new System.Drawing.Size(100, 21);
             this.txt_ID_avion.TabIndex = 1;
+            this.txt_ID_avion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_ID_avion_KeyPress);
             // 
             // txt_Nombre_Avion
             // 
@@ -198,6 +200,7 @@
             this.txt_Nombre_Avion.Name = "txt_Nombre_Avion";
             this.txt_Nombre_Avion.Size = new System.Drawing.Size(231, 21);
             this.txt_Nombre_Avion.TabIndex = 2;
+            this.txt_Nombre_Avion.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Nombre_Avion_KeyPress);
             // 
             // lbl_id_avion
             // 
