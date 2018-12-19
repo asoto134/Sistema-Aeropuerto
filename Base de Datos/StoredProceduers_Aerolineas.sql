@@ -26,19 +26,22 @@ GO
 IF OBJECT_ID('[dbo].[sp_Filtrar_Aerolineas]') IS NOT NULL DROP PROCEDURE [dbo].sp_Filtrar_Aerolineas
 GO
 
-Create Procedure sp_Filtrar_Aerolineas
+create Procedure sp_Filtrar_Aerolineas
 
 (
-	@IdFiltro int
+	@Filtro varchar(90)
 )
 As
 Begin
 
-DELETE FROM [dbo].[T_Aerolineas]
-      WHERE IdAerolinea = @IdFiltro
-	  End
-
+SELECT [IdAerolinea]
+      ,[NombreAerolinea]
+      ,[IdEstado]
+  FROM [dbo].[T_Aerolineas]
+  where [NombreAerolinea] like '%'+ @Filtro + '%'
+  end
 GO
+
 
 --Insertar
 
@@ -105,13 +108,13 @@ GO
 Create Procedure sp_Eliminar_Aerolineas
 
 (
-	@IdAerolinea int
+	@ELIMINAR int
 )
 As
 Begin
 
 DELETE FROM [dbo].[T_Aerolineas]
-      WHERE IdAerolinea = @IdAerolinea
+      WHERE IdAerolinea = @ELIMINAR
 	  End
 
 GO
