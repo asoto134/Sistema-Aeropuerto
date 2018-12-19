@@ -168,6 +168,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FRM_Editar_Categorias_Vuelos";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FRM_Editar_Categorias_Vuelos";
             this.Load += new System.EventHandler(this.FRM_Editar_Categorias_Vuelos_Load);
             this.groupBox2.ResumeLayout(false);

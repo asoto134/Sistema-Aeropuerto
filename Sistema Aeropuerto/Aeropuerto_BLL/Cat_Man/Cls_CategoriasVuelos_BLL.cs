@@ -150,7 +150,7 @@ namespace Aeropuerto_BLL.Cat_Man
                 OBJ_DataBase_BLL.Crear_Parametros(ref OBJ_DataBase_DAL);
 
                 OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@DescCategoria", "2", OBJ_CategoriasVuelos_DAL.SDescCategoria);
-                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_CategoriasVuelos_DAL);
+                OBJ_DataBase_DAL.dt_Parametros.Rows.Add("@IdEstado", "4", OBJ_CategoriasVuelos_DAL.CIdEstado);
 
                 OBJ_DataBase_BLL.Execute_Scalar(ref OBJ_DataBase_DAL);
 
