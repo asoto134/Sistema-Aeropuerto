@@ -70,12 +70,17 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             {
                 OBJ_Aereolineas_BLL.Eliminar(ref OBJ_Aereolineas_DAL, dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
 
-                MessageBox.Show("¿Esta seguro de eliminar los datos seleccionados?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+                if (OBJ_Aereolineas_DAL.SError == string.Empty)
+                {
+                    MessageBox.Show("¿Esta seguro de eliminar los datos seleccionados?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                }
+                else
+                {
+                    MessageBox.Show("El dato que ha seleccionado no pudo ser borrado. \n\n ERROR" + OBJ_Aereolineas_DAL.SError + " ].", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
-            {
-                MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)
