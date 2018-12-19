@@ -75,9 +75,53 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
         private void btn_Salir_Click(object sender, EventArgs e)
         {
             Pantallas_Primarias.FRM_Menu Obj_Menu = new Pantallas_Primarias.FRM_Menu();
-            Obj_Menu.Show();
+            Obj_Menu.ShowDialog();
             this.Close();
         }
-        
+
+        private void btn_Eliminar_Click(object sender, EventArgs e)
+        {
+            if (dgv_Datos.Rows.Count > 0)
+            {
+                Obj_Cliente_BLL.EliminarCliente(ref Obj_Cliente_DAL, dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
+                MessageBox.Show("Se ha eliminado exitósamente", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            }
+            else
+            {
+                MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void btn_Modificar_Click(object sender, EventArgs e)
+        {
+            if (dgv_Datos.Rows.Count >= 1)
+            {
+                Pantallas_Terciarias.FRM_Editar_Cliente Obj_Editar_Cliente = new Pantallas_Terciarias.FRM_Editar_Cliente();
+
+                Obj_Cliente_DAL.cAccion = 'U';
+                Obj_Cliente_DAL.cIdCliente = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
+                Obj_Cliente_DAL.sCedula = dgv_Datos.SelectedRows[0].Cells[1].Value.ToString();
+                Obj_Cliente_DAL.sNombreCliente = dgv_Datos.SelectedRows[0].Cells[2].Value.ToString();
+                Obj_Cliente_DAL.sApellidoCliente = dgv_Datos.SelectedRows[0].Cells[3].Value.ToString();
+                Obj_Cliente_DAL.sTel = dgv_Datos.SelectedRows[0].Cells[4].Value.ToString();
+                Obj_Cliente_DAL.cIdEstado = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[5].Value.ToString());
+                Obj_Cliente_DAL.cIdTipoCliente = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[6].Value.ToString());
+
+                Obj_Editar_Cliente.Obj_Editar_Cliente = Obj_Cliente_DAL;
+
+                Obj_Editar_Cliente.ShowDialog();
+
+                CargarDatos();
+
+            }
+            else
+            {
+                MessageBox.Show("DEBE SELECCIONAR AL MENOS UN ESTADO Y TIPO CLIENTE PARA EDITARLA",
+                                "ALERTA",
+                                MessageBoxButtons.OK,
+                                MessageBoxIcon.Asterisk);
+            }
+
+        }
     }
 }
