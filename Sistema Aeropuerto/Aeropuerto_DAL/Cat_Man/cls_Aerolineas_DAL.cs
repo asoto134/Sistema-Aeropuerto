@@ -9,9 +9,9 @@ namespace Aeropuerto_DAL.Cat_Man
 {
     public class cls_Aerolineas_DAL
     {
-         public DataTable OBJ_DataTable = new DataTable();
+        public DataTable OBJ_DataTable = new DataTable();
 
-        private int _cIdAerolinea;
+        private int _iIdAerolinea;
 
         private char _cAccion, _cIdEstado;
         private string _sError, _sNombreAerolinea;
@@ -69,16 +69,16 @@ namespace Aeropuerto_DAL.Cat_Man
             }
         }
 
-        public int CIdAerolinea
+        public int IIdAerolinea
         {
             get
             {
-                return _cIdAerolinea;
+                return _iIdAerolinea;
             }
 
             set
             {
-                _cIdAerolinea = value;
+                _iIdAerolinea = value;
             }
         }
     }

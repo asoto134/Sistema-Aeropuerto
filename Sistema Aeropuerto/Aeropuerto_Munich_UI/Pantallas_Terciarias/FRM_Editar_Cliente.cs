@@ -164,7 +164,14 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             {
                 e.Handled = true;
             }
-
+            if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            if (e.KeyChar == '-')
+            {
+                e.Handled = false;
+            }
             if (char.IsControl(e.KeyChar))
             {
                 e.Handled = false;
@@ -177,7 +184,10 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             {
                 e.Handled = true;
             }
-
+            if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
             if (char.IsControl(e.KeyChar))
             {
                 e.Handled = false;
@@ -203,8 +213,120 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             {
                 e.Handled = true;
             }
+            if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void txt_ID_Cliente_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
 
             if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void txt_Cedula_cliente_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+            if (e.KeyChar == '-')
+            {
+                e.Handled = false;
+            }
+
+            if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+
+            if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void txt_Nombre_Cliente_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+
+            if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void txt_Apellidos_Cliente_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsLetter(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+
+            if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void txt_Tel_Cliente_KeyPress_1(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsNumber(e.KeyChar))
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+            if (e.KeyChar == '-')
+            {
+                e.Handled = false;
+            }
+            if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            if (char.IsSeparator(e.KeyChar))
             {
                 e.Handled = false;
             }

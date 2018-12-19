@@ -52,7 +52,7 @@
             this.groupBox2.Location = new System.Drawing.Point(10, 207);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(415, 105);
-            this.groupBox2.TabIndex = 7;
+            this.groupBox2.TabIndex = 0;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Controles";
             // 
@@ -66,9 +66,9 @@
             this.btn_Salir.Location = new System.Drawing.Point(217, 30);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(52, 45);
-            this.btn_Salir.TabIndex = 4;
+            this.btn_Salir.TabIndex = 2;
             this.btn_Salir.UseVisualStyleBackColor = false;
-            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
+            this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click_1);
             // 
             // btn_Guardar
             // 
@@ -80,7 +80,7 @@
             this.btn_Guardar.Location = new System.Drawing.Point(113, 32);
             this.btn_Guardar.Name = "btn_Guardar";
             this.btn_Guardar.Size = new System.Drawing.Size(47, 41);
-            this.btn_Guardar.TabIndex = 5;
+            this.btn_Guardar.TabIndex = 1;
             this.btn_Guardar.UseVisualStyleBackColor = false;
             this.btn_Guardar.Click += new System.EventHandler(this.btn_Guardar_Click);
             // 
@@ -97,7 +97,7 @@
             this.grp_Informacion.Location = new System.Drawing.Point(10, 12);
             this.grp_Informacion.Name = "grp_Informacion";
             this.grp_Informacion.Size = new System.Drawing.Size(415, 189);
-            this.grp_Informacion.TabIndex = 8;
+            this.grp_Informacion.TabIndex = 0;
             this.grp_Informacion.TabStop = false;
             this.grp_Informacion.Text = "Datos";
             // 
@@ -107,7 +107,7 @@
             this.cmb_Estados.Location = new System.Drawing.Point(127, 115);
             this.cmb_Estados.Name = "cmb_Estados";
             this.cmb_Estados.Size = new System.Drawing.Size(249, 24);
-            this.cmb_Estados.TabIndex = 5;
+            this.cmb_Estados.TabIndex = 3;
             // 
             // label3
             // 
@@ -115,17 +115,18 @@
             this.label3.Location = new System.Drawing.Point(51, 121);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(61, 16);
-            this.label3.TabIndex = 4;
+            this.label3.TabIndex = 0;
             this.label3.Text = "Estado:";
             // 
             // txt_ID
             // 
             this.txt_ID.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_ID.Location = new System.Drawing.Point(127, 46);
-            this.txt_ID.MaxLength = 1;
+            this.txt_ID.MaxLength = 40;
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(100, 21);
-            this.txt_ID.TabIndex = 2;
+            this.txt_ID.TabIndex = 1;
+            this.txt_ID.Tag = "Número autogenerado por el sistema";
             // 
             // txt_Nombre
             // 
@@ -134,7 +135,7 @@
             this.txt_Nombre.MaxLength = 90;
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(249, 21);
-            this.txt_Nombre.TabIndex = 3;
+            this.txt_Nombre.TabIndex = 2;
             // 
             // label1
             // 
@@ -151,7 +152,7 @@
             this.label2.Location = new System.Drawing.Point(51, 83);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(67, 16);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 0;
             this.label2.Text = "Nombre:";
             // 
             // FRM_Editar_Aerolineas

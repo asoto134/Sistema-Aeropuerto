@@ -23,7 +23,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
         // Variables e instanciaciones
 
-        cls_tipos_aviones_BLL OBJ_Tipos_Aviones_BLL = new cls_tipos_aviones_BLL();
+        cls_Tipo_Aviones_BLL OBJ_Tipos_Aviones_BLL = new cls_Tipo_Aviones_BLL();
         public cls_tipos_aviones_DAL OBJ_Tipos_Aviones_DAL;
 
         cls_Estados_BLL OBJ_Estados_BLL = new cls_Estados_BLL();
@@ -47,7 +47,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             }
             else
             {
-                OBJ_Tipos_Aviones_BLL = new cls_tipos_aviones_BLL();
+                OBJ_Tipos_Aviones_BLL = new cls_Tipo_Aviones_BLL();
 
                 OBJ_Tipos_Aviones_DAL.SIdTipoAvion = txt_ID.Text.ToString();
                 OBJ_Tipos_Aviones_DAL.SNombreAvion = txt_TipoAvion.Text;

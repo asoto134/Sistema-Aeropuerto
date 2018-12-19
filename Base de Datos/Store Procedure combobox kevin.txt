@@ -1,0 +1,43 @@
+USE [DB_AEROPUERTO_PROGRA_III]
+GO
+CREATE PROCEDURE sp_combo_Aerolineas
+AS
+BEGIN
+SELECT [IdAerolinea]
+      ,[NombreAerolinea]
+      
+  FROM [dbo].[T_Aerolineas]
+  END
+GO
+
+*************************************************
+USE [DB_AEROPUERTO_PROGRA_III]
+GO
+
+CREATE PROCEDURE sp_combo_Estados
+AS
+BEGIN
+SELECT [IdEstado]
+      ,[Descripcion]
+  FROM [dbo].[T_Estados]
+  END
+GO
+
+
+**************************************************
+
+
+USE [DB_AEROPUERTO_PROGRA_III]
+GO
+
+CREATE PROCEDURE sp_combo_Tipos_Aviones
+AS
+BEGIN
+
+SELECT [IdTipoAvion]
+      ,[NombreTipoAvion]
+    
+  FROM [dbo].[T_TiposAviones]
+  END
+GO
+

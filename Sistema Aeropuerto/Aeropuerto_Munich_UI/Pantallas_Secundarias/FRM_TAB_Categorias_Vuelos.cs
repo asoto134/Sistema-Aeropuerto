@@ -29,7 +29,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
                 Pantallas_Terciarias.FRM_Editar_Categorias_Vuelos OBJ_Editar_Categorias_Vuelos = new Pantallas_Terciarias.FRM_Editar_Categorias_Vuelos();
 
                 OBJ_CategoriasVuelos_DAL.CAccion = 'U';
-                OBJ_CategoriasVuelos_DAL.CIdCategoria = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
+                OBJ_CategoriasVuelos_DAL.IIdCategoria = Convert.ToInt32(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
                 OBJ_CategoriasVuelos_DAL.SDescCategoria = dgv_Datos.SelectedRows[0].Cells[1].Value.ToString();
                 OBJ_CategoriasVuelos_DAL.CIdEstado = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[2].Value.ToString());
 
@@ -49,6 +49,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
         {
             Pantallas_Terciarias.FRM_Editar_Categorias_Vuelos OBJ_Editar_Categorias_Vuelos = new Pantallas_Terciarias.FRM_Editar_Categorias_Vuelos();
 
+            
             OBJ_CategoriasVuelos_DAL.CAccion = 'I';
 
             OBJ_Editar_Categorias_Vuelos.OBJ_Editar_CategoriasVuelos = OBJ_CategoriasVuelos_DAL;
@@ -69,18 +70,12 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             {
                 OBJ_CategoriasVuelos_BLL.Eliminar(ref OBJ_CategoriasVuelos_DAL, dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
 
-                if (OBJ_CategoriasVuelos_DAL.SError == string.Empty)
-                {
-                    MessageBox.Show("Se ha eliminado exitósamente", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
-
-                    CargarDatos();
-                }
-                else
-                {
-                    MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                }
+                MessageBox.Show("¿Esta seguro de eliminar los datos seleccionados?", "Eliminar", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
             }
-            
+            else
+            {
+                MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)

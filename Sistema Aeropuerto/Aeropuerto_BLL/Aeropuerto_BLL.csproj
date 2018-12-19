@@ -47,11 +47,13 @@
     <Compile Include="Cat_Man\cls_CategoriasVuelos_BLL.cs" />
     <Compile Include="Cat_Man\cls_Cliente_BLL.cs" />
     <Compile Include="Cat_Man\cls_Destinos_BLL.cs" />
+    <Compile Include="Cat_Man\cls_Empleados_BLL.cs" />
     <Compile Include="Cat_Man\cls_Estados_BLL.cs" />
     <Compile Include="Cat_Man\cls_Paises_BLL.cs" />
     <Compile Include="Cat_Man\cls_Tipos_Aviones_BLL.cs" />
     <Compile Include="Cat_Man\cls_Tipo_Clientes_BLL.cs" />
     <Compile Include="Cat_Man\cls_Tipo_Empleados_BLL.cs" />
+    <Compile Include="Cat_Man\cls_Usuarios_BLL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

@@ -32,20 +32,19 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
         private void btn_Guardar_Click(object sender, EventArgs e)
         {
-            if (txt_Nombre.Text == string.Empty)
-            {
-                MessageBox.Show("Debe completar la información para poder continuar", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
             if (cmb_Estados.SelectedValue.ToString() == "-")
             {
-                MessageBox.Show("DEBE SELECCIONAR UN ESTADO PARA GUARDAR LA INFORMACIÓN", "ALERTA",MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                MessageBox.Show("DEBE SELECCIONAR UN ESTADO PARA GUARDAR LA INFORMACIÓN", 
+                                "ALERTA",
+                                MessageBoxButtons.OK, 
+                                MessageBoxIcon.Asterisk);
             }
             else
             {
 
                 OBJ_Aerolineas_BLL = new cls_Aerolineas_BLL();
 
-                OBJ_Editar_Aerolineas.CIdAerolinea = Convert.ToInt32(txt_ID.Text.ToString());
+                OBJ_Editar_Aerolineas.IIdAerolinea = Convert.ToInt32(txt_ID.Text.ToString());
                 OBJ_Editar_Aerolineas.SNombreAerolinea = txt_Nombre.Text;
                 OBJ_Editar_Aerolineas.CIdEstado = Convert.ToChar(cmb_Estados.SelectedValue.ToString());
 
@@ -95,7 +94,15 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             CargarDatosForm();
         }
 
-        
+
+       
+
+    
+
+        private void btn_Salir_Click_1(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
         private void FRM_Editar_Aerolineas_Load(object sender, EventArgs e)
         {
@@ -121,7 +128,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                 else
                 {
                     txt_ID.Enabled = false;
-                    txt_ID.Text = OBJ_Editar_Aerolineas.CIdAerolinea.ToString();
+                    txt_ID.Text = OBJ_Editar_Aerolineas.IIdAerolinea.ToString();
                     txt_Nombre.Text = OBJ_Editar_Aerolineas.SNombreAerolinea.ToString();
                     cmb_Estados.SelectedValue = OBJ_Editar_Aerolineas.CIdEstado.ToString();
                     grp_Informacion.Text = "Modificar Aerolínea";
@@ -130,7 +137,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
             private void CargarCombos()
             {
-                OBJ_Estados_BLL.Listar(ref OBJ_Estados_DAL);
+                OBJ_Estados_BLL.Listar_Combo(ref OBJ_Estados_DAL);
 
                 if (OBJ_Estados_DAL.SError == string.Empty)
                 {

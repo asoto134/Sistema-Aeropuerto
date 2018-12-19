@@ -233,7 +233,10 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             {
                 e.Handled = true;
             }
-
+            else
+            {
+                e.Handled = false;
+            }
             if (char.IsControl(e.KeyChar))
             {
                 e.Handled = false;
@@ -245,6 +248,14 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             if (!char.IsLetter(e.KeyChar))
             {
                 e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+            if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
             }
 
             if (char.IsControl(e.KeyChar))

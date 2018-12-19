@@ -3,6 +3,9 @@
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
 
+IF OBJECT_ID('[dbo].[sp_Listar_Estados]') IS NOT NULL DROP PROCEDURE [dbo].sp_Listar_Estados
+GO
+
 Create Procedure sp_Listar_Estados
 As
 Begin
@@ -16,6 +19,9 @@ GO
 --Filtrar
 
 USE [DB_AEROPUERTO_PROGRA_III]
+GO
+
+IF OBJECT_ID('[dbo].[sp_Filtrar_Estados]') IS NOT NULL DROP PROCEDURE [dbo].sp_Filtrar_Estados
 GO
 
 Create Procedure sp_Filtrar_Estados
@@ -35,6 +41,9 @@ GO
 --Insertar
 
 USE [DB_AEROPUERTO_PROGRA_III]
+GO
+
+IF OBJECT_ID('[dbo].[sp_Insertar_Estados]') IS NOT NULL DROP PROCEDURE [dbo].sp_Insertar_Estados
 GO
 
 Create Procedure sp_Insertar_Estados
@@ -59,6 +68,9 @@ GO
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
 
+IF OBJECT_ID('[dbo].[sp_Modificar_Estados]') IS NOT NULL DROP PROCEDURE [dbo].sp_Modificar_Estados
+GO
+
 Create Procedure sp_Modificar_Estados
 (
 	@IdEstado char(1),
@@ -81,6 +93,9 @@ GO
 --Eliminar
 
 USE [DB_AEROPUERTO_PROGRA_III]
+GO
+
+IF OBJECT_ID('[dbo].[sp_Eliminar_Estados]') IS NOT NULL DROP PROCEDURE [dbo].sp_Eliminar_Estados
 GO
 
 Create Procedure sp_Eliminar_Estados

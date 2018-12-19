@@ -253,7 +253,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(663, 524);
+            this.ClientSize = new System.Drawing.Size(657, 524);
             this.Controls.Add(this.dgv_Datos);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txt_Filtrar);

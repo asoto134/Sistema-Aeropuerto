@@ -10,8 +10,9 @@ namespace Aeropuerto_DAL.Cat_Man
     public class cls_Aviones_DAL
     {
         public DataTable OBJ_DataTable = new DataTable();
+        private int _iIdAerolinea;
 
-        private char _cAccion, _cIdAerolinea, _cIdEstado;
+        private char _cAccion, _cIdEstado;
         private string _sError, _sNombreAerolinea, _sNomAvion, _sIdAvion,
                          _sDescAvion, _sIdTipoAvion;
 
@@ -28,18 +29,7 @@ namespace Aeropuerto_DAL.Cat_Man
             }
         }
 
-        public char CIdAerolinea
-        {
-            get
-            {
-                return _cIdAerolinea;
-            }
-
-            set
-            {
-                _cIdAerolinea = value;
-            }
-        }
+ 
 
         public char CIdEstado
         {
@@ -129,6 +119,19 @@ namespace Aeropuerto_DAL.Cat_Man
             set
             {
                 _sNombreAerolinea = value;
+            }
+        }
+
+        public int IIdAerolinea
+        {
+            get
+            {
+                return _iIdAerolinea;
+            }
+
+            set
+            {
+                _iIdAerolinea = value;
             }
         }
     }

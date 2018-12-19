@@ -44,7 +44,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                 OBJ_CategoriasVuelos_BLL = new cls_CategoriasVuelos_BLL();
 
-                OBJ_Editar_CategoriasVuelos.CIdCategoria = Convert.ToChar(txt_ID_Categoria.Text.ToString());
+                OBJ_Editar_CategoriasVuelos.IIdCategoria = Convert.ToInt32(txt_ID_Categoria.Text.ToString());
                 OBJ_Editar_CategoriasVuelos.SDescCategoria = txt_Desc_Categoria.Text;
                 OBJ_Editar_CategoriasVuelos.CIdEstado = Convert.ToChar(cmb_Estados.SelectedValue.ToString());
 
@@ -92,42 +92,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
         
 
 
-        private void CamposNumericos_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((char.IsNumber(e.KeyChar)) || (e.KeyChar == 8))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-        private void CamposNoNumericos_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if ((char.IsLetter(e.KeyChar)) || (e.KeyChar == 8))
-            {
-                e.Handled = false;
-            }
-            else
-            {
-                e.Handled = true;
-            }
-
-        }
-
-        private void txt_Descrip_TextChanged(object sender, EventArgs e)
-        {
-            if (txt_Desc_Categoria.Text == string.Empty || txt_ID_Categoria.Text == string.Empty)
-            {
-                btn_Guardar.Enabled = false;
-            }
-            else
-            {
-                btn_Guardar.Enabled = true;
-            }
-        }
+    
 
         private void btn_Salir_Click_1(object sender, EventArgs e)
         {
@@ -158,7 +123,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             else
             {
                 txt_ID_Categoria.Enabled = false;
-                txt_ID_Categoria.Text = OBJ_Editar_CategoriasVuelos.CIdCategoria.ToString();
+                txt_ID_Categoria.Text = OBJ_Editar_CategoriasVuelos.IIdCategoria.ToString();
                 txt_Desc_Categoria.Text = OBJ_Editar_CategoriasVuelos.SDescCategoria.ToString();
                 cmb_Estados.SelectedValue = OBJ_Editar_CategoriasVuelos.CIdEstado.ToString();
                 grp_Informacion.Text = "Modificar Categoria";
@@ -167,7 +132,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
         private void CargarCombos()
         {
-            OBJ_Estados_BLL.Listar(ref OBJ_Estados_DAL);
+            OBJ_Estados_BLL.Listar_Combo(ref OBJ_Estados_DAL);
 
             if (OBJ_Estados_DAL.SError == string.Empty)
             {

@@ -184,7 +184,7 @@
             // 
             this.txt_ID_Destino.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_ID_Destino.Location = new System.Drawing.Point(131, 24);
-            this.txt_ID_Destino.MaxLength = 1;
+            this.txt_ID_Destino.MaxLength = 2;
             this.txt_ID_Destino.Name = "txt_ID_Destino";
             this.txt_ID_Destino.Size = new System.Drawing.Size(250, 21);
             this.txt_ID_Destino.TabIndex = 2;

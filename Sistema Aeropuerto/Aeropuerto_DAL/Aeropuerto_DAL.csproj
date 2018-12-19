@@ -46,11 +46,13 @@
     <Compile Include="Cat_Man\cls_CategoriasVuelos_DAL.cs" />
     <Compile Include="Cat_Man\cls_Cliente_DAL.cs" />
     <Compile Include="Cat_Man\cls_Destinos_DAL.cs" />
+    <Compile Include="Cat_Man\cls_Empleados_DAL.cs" />
     <Compile Include="Cat_Man\cls_Estados_DAL.cs" />
     <Compile Include="Cat_Man\cls_Paises_DAL.cs" />
     <Compile Include="Cat_Man\cls_Tipo_Aviones_DAL.cs" />
     <Compile Include="Cat_Man\cls_Tipo_Clientes_DAL.cs" />
     <Compile Include="Cat_Man\cls_Tipo_Empleados_DAL.cs" />
+    <Compile Include="Cat_Man\cls_Usuarios_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup />

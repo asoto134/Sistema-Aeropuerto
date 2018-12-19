@@ -3,6 +3,9 @@
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
 
+IF OBJECT_ID('[dbo].[sp_Listar_Tipo_Empleado]') IS NOT NULL DROP PROCEDURE [dbo].sp_Listar_Tipo_Empleado
+GO
+
 create procedure sp_Listar_Tipo_Empleado
 As
 Begin
@@ -21,6 +24,9 @@ GO
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
 
+IF OBJECT_ID('[dbo].[sp_Filtrar_Tipo_Empleado]') IS NOT NULL DROP PROCEDURE [dbo].sp_Filtrar_Tipo_Empleado
+GO
+
 create procedure sp_Filtrar_Tipo_Empleado
 (
 	@Filtro varchar(150)
@@ -36,6 +42,9 @@ GO
 -- Insertar
 
 USE [DB_AEROPUERTO_PROGRA_III]
+GO
+
+IF OBJECT_ID('[dbo].[sp_Insertar_Tipo_Empleado]') IS NOT NULL DROP PROCEDURE [dbo].sp_Insertar_Tipo_Empleado
 GO
 
 Create Procedure sp_Insertar_Tipo_Empleado
@@ -62,6 +71,9 @@ GO
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
 
+IF OBJECT_ID('[dbo].[sp_Modificar_Tipo_Empleado]') IS NOT NULL DROP PROCEDURE [dbo].sp_Modificar_Tipo_Empleado
+GO
+
 Create Procedure sp_Modificar_Tipo_Empleado
 (
 	@IdTipoEmpleado int, @DescTipo varchar(150), @IdEstado char(1)
@@ -84,6 +96,9 @@ GO
 USE [DB_AEROPUERTO_PROGRA_III]
 GO
 
+IF OBJECT_ID('[dbo].[sp_Eliminar_Tipo_Empleado]') IS NOT NULL DROP PROCEDURE [dbo].sp_Eliminar_Tipo_Empleado
+GO
+
 Create Procedure sp_Eliminar_Tipo_Empleado
 (
 	@IdTipoEmpleado int
@@ -95,5 +110,3 @@ DELETE FROM [dbo].[T_TiposEmpleados]
       WHERE IdTipoEmpleado = @IdTipoEmpleado
 	  End
 GO
-
-
