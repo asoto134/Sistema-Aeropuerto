@@ -60,6 +60,8 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
 
         private void btn_Refrescar_Click(object sender, EventArgs e)
         {
+            txt_Filtrar.Text = string.Empty;
+
             CargarDatos();
         }
 
@@ -69,12 +71,17 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             {
                 OBJ_Estados_BLL.Eliminar(ref OBJ_Estados_DAL, dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
 
-                MessageBox.Show("Se ha eliminado exitósamente", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (OBJ_Estados_DAL.SError == string.Empty)
+                {
+                    MessageBox.Show("Se ha eliminado exitósamente", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
-            {
-                MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
+            CargarDatos();
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)

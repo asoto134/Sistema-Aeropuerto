@@ -37,11 +37,13 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             if (txt_TipoCliente.Text == string.Empty || txt_ID.Text == string.Empty)
             {
                 MessageBox.Show("Debe completar los datos antes de continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
             }
 
             if (cmb_Estados.SelectedValue.ToString() == "-")
             {
-                MessageBox.Show("Debe seleccionar un estado antes de continuar", "Alerta",MessageBoxButtons.OK,MessageBoxIcon.Asterisk);
+                MessageBox.Show("Debe seleccionar un estado antes de continuar", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
+                return;
             }
             else
             {
@@ -59,7 +61,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                     if (OBJ_Editar_Tipo_Clientes_DAL.SError == string.Empty)
                     {
-                        MessageBox.Show("Se guardó exitosamente el tipo de cliente", "Guardado de tipo de cliente", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Se guardó exitosamente el tipo de cliente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
@@ -72,7 +74,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                     if (OBJ_Editar_Tipo_Clientes_DAL.SError == string.Empty)
                     {
-                        MessageBox.Show("Se modificó exitosamente el tipo de cliente", "EXITO", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        MessageBox.Show("Se modificó exitosamente el tipo de cliente", "Éxito", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     }
                     else
                     {
@@ -142,6 +144,19 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                 MessageBox.Show("Se ha presentado un error al cargar los estados.\n\n Error: [ " + OBJ_Estados_DAL.SError + " ].", "Error",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
 
+        }
+
+
+        private void Numeric_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
         }
     }
 }

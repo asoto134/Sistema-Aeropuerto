@@ -30,10 +30,10 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
                 Pantallas_Terciarias.FRM_Editar_Paises OBJ_Editar_Paises = new Pantallas_Terciarias.FRM_Editar_Paises();
 
                 OBJ_Paises_DAL.CAccion = 'U';
-                OBJ_Paises_DAL.IIdPais = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
+                OBJ_Paises_DAL.IIdPais = Convert.ToInt32(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
                 OBJ_Paises_DAL.SNombrePais = dgv_Datos.SelectedRows[0].Cells[1].Value.ToString();
-                OBJ_Paises_DAL.CCodigoISOPais = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[2].Value.ToString());
-                OBJ_Paises_DAL.CCodigoAreaPais = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[3].Value.ToString());
+                OBJ_Paises_DAL.SCodigoISOPais = dgv_Datos.SelectedRows[0].Cells[2].Value.ToString();
+                OBJ_Paises_DAL.SCodigoAreaPais = dgv_Datos.SelectedRows[0].Cells[3].Value.ToString();
                 OBJ_Paises_DAL.CIdEstado = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[4].Value.ToString());
 
                 OBJ_Editar_Paises.OBJ_Editar_Paises = OBJ_Paises_DAL;
@@ -63,6 +63,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
 
         private void btn_Refrescar_Click(object sender, EventArgs e)
         {
+            txt_Filtrar.Text = string.Empty;
             CargarDatos();
         }
 
@@ -72,12 +73,17 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             {
                 OBJ_Paises_BLL.Eliminar(ref OBJ_Paises_DAL, dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
 
-                MessageBox.Show("Se ha eliminado exitósamente", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if (OBJ_Paises_DAL.SError == string.Empty)
+                {
+                    MessageBox.Show("Se ha eliminado exitósamente", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
-            {
-                MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
+            CargarDatos();
         }
 
         private void btn_Salir_Click(object sender, EventArgs e)

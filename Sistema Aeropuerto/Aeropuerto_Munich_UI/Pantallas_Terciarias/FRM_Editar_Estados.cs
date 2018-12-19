@@ -43,12 +43,12 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                 if (OBJ_Editar_Estados.SError == string.Empty)
                 {
-                    MessageBox.Show("Se guardo exitosamente el nuevo estado", "EXITO",
+                    MessageBox.Show("Se guardó exitosamente el nuevo estado", "Éxito",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Se presento un error a la hora de guardar el nuevo estado. \n \n Error [ "+ OBJ_Editar_Estados.SError + " ].", "ERROR",
+                    MessageBox.Show("Se presentó un error a la hora de guardar el nuevo estado. \n \n Error [ "+ OBJ_Editar_Estados.SError + " ].", "Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -58,12 +58,12 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
 
                 if (OBJ_Editar_Estados.SError == string.Empty)
                 {
-                    MessageBox.Show("Se modifico exitosamente el nuevo estado", "EXITO",
+                    MessageBox.Show("Se modifico exitosamente el nuevo estado", "Éxito",
                         MessageBoxButtons.OK, MessageBoxIcon.Information);
                 }
                 else
                 {
-                    MessageBox.Show("Se presento un error a la hora de modificar el nuevo estado. \n \n Error [ "+ OBJ_Editar_Estados.SError + " ].", "ERROR",
+                    MessageBox.Show("Se presento un error a la hora de modificar el nuevo estado. \n \n Error [ "+ OBJ_Editar_Estados.SError + " ].", "Error",
                         MessageBoxButtons.OK, MessageBoxIcon.Error);
                 }
             }
@@ -95,10 +95,21 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
             {
                 txt_ID.Enabled = false;
                 txt_ID.Text = OBJ_Editar_Estados.CIDEstado.ToString();
-                txt_Descripcion.Text = string.Empty;
+                txt_Descripcion.Text = OBJ_Editar_Estados.SDescripcion;
                 grp_Informacion.Text = "Modificar Estado";
             }
         }
-        
+
+        private void txt_ID_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (char.IsNumber(e.KeyChar) || e.KeyChar == 8)
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+            }
+        }
     }
 }

@@ -69,7 +69,7 @@
             this.btn_Salir.Location = new System.Drawing.Point(217, 30);
             this.btn_Salir.Name = "btn_Salir";
             this.btn_Salir.Size = new System.Drawing.Size(52, 45);
-            this.btn_Salir.TabIndex = 4;
+            this.btn_Salir.TabIndex = 6;
             this.btn_Salir.UseVisualStyleBackColor = false;
             this.btn_Salir.Click += new System.EventHandler(this.btn_Salir_Click);
             // 
@@ -133,7 +133,7 @@
             this.txt_Codigo_Area.MaxLength = 5;
             this.txt_Codigo_Area.Name = "txt_Codigo_Area";
             this.txt_Codigo_Area.Size = new System.Drawing.Size(249, 21);
-            this.txt_Codigo_Area.TabIndex = 7;
+            this.txt_Codigo_Area.TabIndex = 3;
             this.txt_Codigo_Area.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Codigo_Pais_KeyPress);
             // 
             // txt_Codigo_Pais
@@ -143,7 +143,7 @@
             this.txt_Codigo_Pais.MaxLength = 4;
             this.txt_Codigo_Pais.Name = "txt_Codigo_Pais";
             this.txt_Codigo_Pais.Size = new System.Drawing.Size(249, 21);
-            this.txt_Codigo_Pais.TabIndex = 6;
+            this.txt_Codigo_Pais.TabIndex = 2;
             this.txt_Codigo_Pais.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Codigo_Pais_KeyPress);
             // 
             // cmb_Estados
@@ -152,7 +152,7 @@
             this.cmb_Estados.Location = new System.Drawing.Point(127, 134);
             this.cmb_Estados.Name = "cmb_Estados";
             this.cmb_Estados.Size = new System.Drawing.Size(249, 24);
-            this.cmb_Estados.TabIndex = 5;
+            this.cmb_Estados.TabIndex = 4;
             // 
             // label3
             // 
@@ -170,18 +170,17 @@
             this.txt_ID.MaxLength = 1;
             this.txt_ID.Name = "txt_ID";
             this.txt_ID.Size = new System.Drawing.Size(100, 21);
-            this.txt_ID.TabIndex = 2;
+            this.txt_ID.TabIndex = 0;
             this.txt_ID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_Codigo_Pais_KeyPress);
             // 
             // txt_Nombre
             // 
             this.txt_Nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.txt_Nombre.Location = new System.Drawing.Point(127, 53);
-            this.txt_Nombre.MaxLength = 90;
+            this.txt_Nombre.MaxLength = 85;
             this.txt_Nombre.Name = "txt_Nombre";
             this.txt_Nombre.Size = new System.Drawing.Size(249, 21);
-            this.txt_Nombre.TabIndex = 3;
-            this.txt_Nombre.TextChanged += new System.EventHandler(this.txt_Descrip_TextChanged);
+            this.txt_Nombre.TabIndex = 1;
             // 
             // label1
             // 

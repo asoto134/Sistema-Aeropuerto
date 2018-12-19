@@ -58,6 +58,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
 
         private void btn_Refrescar_Click(object sender, EventArgs e)
         {
+            txt_Filtrar.Text = string.Empty;
             CargarDatos();
         }
 
@@ -79,6 +80,8 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
                 OBJ_Tipos_Aviones_DAL.SDescTipoAvion = dgv_Datos.SelectedRows[0].Cells[2].Value.ToString();
                 OBJ_Tipos_Aviones_DAL.ICapacidadPasajeros = Convert.ToInt32(dgv_Datos.SelectedRows[0].Cells[3].Value.ToString());
                 OBJ_Tipos_Aviones_DAL.DCapacidad_peso = Convert.ToDecimal(dgv_Datos.SelectedRows[0].Cells[4].Value.ToString());
+                OBJ_Tipos_Aviones_DAL.CIdEstado = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[5].Value.ToString());
+
 
                 OBJ_Editar_TiposAviones.OBJ_Tipos_Aviones_DAL = OBJ_Tipos_Aviones_DAL;
 
@@ -98,12 +101,16 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
             {
                 OBJ_Tipo_Aviones_BLL.Eliminar(ref OBJ_Tipos_Aviones_DAL, dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
 
-                MessageBox.Show("Se ha eliminado exitósamente", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                if(OBJ_Tipos_Aviones_DAL.SError == string.Empty)
+                {
+                    MessageBox.Show("Se ha eliminado exitósamente", "Borrado", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
-            else
-            {
-                MessageBox.Show("El dato que ha seleccionado no pudo ser borrado", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+            CargarDatos();
         }
 
         private void btn_Añadir_Click(object sender, EventArgs e)

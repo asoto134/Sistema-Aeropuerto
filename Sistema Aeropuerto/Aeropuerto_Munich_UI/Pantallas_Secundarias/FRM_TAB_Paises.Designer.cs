@@ -75,7 +75,7 @@
             this.btn_Filtrar.Location = new System.Drawing.Point(393, 482);
             this.btn_Filtrar.Name = "btn_Filtrar";
             this.btn_Filtrar.Size = new System.Drawing.Size(111, 28);
-            this.btn_Filtrar.TabIndex = 19;
+            this.btn_Filtrar.TabIndex = 5;
             this.btn_Filtrar.Text = "Buscar";
             this.btn_Filtrar.UseVisualStyleBackColor = false;
             this.btn_Filtrar.Click += new System.EventHandler(this.btn_Filtrar_Click);
@@ -128,7 +128,7 @@
             this.btn_Añadir.Location = new System.Drawing.Point(11, 32);
             this.btn_Añadir.Name = "btn_Añadir";
             this.btn_Añadir.Size = new System.Drawing.Size(60, 57);
-            this.btn_Añadir.TabIndex = 12;
+            this.btn_Añadir.TabIndex = 0;
             this.btn_Añadir.UseVisualStyleBackColor = false;
             this.btn_Añadir.Click += new System.EventHandler(this.btn_Añadir_Click);
             // 

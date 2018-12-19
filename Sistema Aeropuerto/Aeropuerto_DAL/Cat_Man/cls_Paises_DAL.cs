@@ -12,8 +12,8 @@ namespace Aeropuerto_DAL.Cat_Man
         public DataTable OBJ_DataTable = new DataTable();
 
         private int _iIdPais;
-        private char _cAccion, _cCodigoISOPais, _cCodigoAreaPais, _cIdEstado;
-        private string _sError, _sNombrePais;
+        private char _cAccion, _cIdEstado;
+        private string _sError, _sNombrePais, _sCodigoISOPais, _sCodigoAreaPais;
 
         public int IIdPais
         {
@@ -40,33 +40,7 @@ namespace Aeropuerto_DAL.Cat_Man
                 _cAccion = value;
             }
         }
-
-        public char CCodigoISOPais
-        {
-            get
-            {
-                return _cCodigoISOPais;
-            }
-
-            set
-            {
-                _cCodigoISOPais = value;
-            }
-        }
-
-        public char CCodigoAreaPais
-        {
-            get
-            {
-                return _cCodigoAreaPais;
-            }
-
-            set
-            {
-                _cCodigoAreaPais = value;
-            }
-        }
-
+        
         public char CIdEstado
         {
             get
@@ -103,6 +77,32 @@ namespace Aeropuerto_DAL.Cat_Man
             set
             {
                 _sNombrePais = value;
+            }
+        }
+
+        public string SCodigoISOPais
+        {
+            get
+            {
+                return _sCodigoISOPais;
+            }
+
+            set
+            {
+                _sCodigoISOPais = value;
+            }
+        }
+
+        public string SCodigoAreaPais
+        {
+            get
+            {
+                return _sCodigoAreaPais;
+            }
+
+            set
+            {
+                _sCodigoAreaPais = value;
             }
         }
     }
