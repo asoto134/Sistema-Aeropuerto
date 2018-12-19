@@ -92,7 +92,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                 if (OBJ_Editar_Vuelos.cAccion == 'I')
                 {
 
-                    //OBJ_Vuelos_BLL.Insertar(ref OBJ_Editar_Usuarios);
+                    OBJ_Vuelos_BLL.Insertar(ref OBJ_Editar_Vuelos);
 
                     if (OBJ_Editar_Vuelos.sError == string.Empty)
                     {
@@ -107,7 +107,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Terciarias
                 }
                 else
                 {
-                    //OBJ_Vuelos_BLL.Modificar(ref OBJ_Editar_Vuelos);
+                    OBJ_Vuelos_BLL.Modificar(ref OBJ_Editar_Vuelos);
 
                     if (OBJ_Editar_Vuelos.sError == string.Empty)
                     {
