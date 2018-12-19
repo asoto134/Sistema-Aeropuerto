@@ -108,13 +108,13 @@ GO
 Create Procedure sp_Eliminar_Aerolineas
 
 (
-	@IdAerolinea int
+	@ELIMINAR int
 )
 As
 Begin
 
 DELETE FROM [dbo].[T_Aerolineas]
-      WHERE IdAerolinea = @IdAerolinea
+      WHERE IdAerolinea = @ELIMINAR
 	  End
 
 GO
