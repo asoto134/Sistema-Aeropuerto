@@ -56,7 +56,7 @@ namespace Aeropuerto_Munich_UI.Pantallas_Secundarias
 
                 Obj_Destinos_DAL.cAccion = 'U';
                 Obj_Destinos_DAL.cIdDestino = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[0].Value.ToString());
-                Obj_Destinos_DAL.cIdAerolinea = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[1].Value.ToString());
+                Obj_Destinos_DAL.cIdAerolinea = Convert.ToInt32(dgv_Datos.SelectedRows[0].Cells[1].Value.ToString());
                 Obj_Destinos_DAL.sNombreDestino = dgv_Datos.SelectedRows[0].Cells[2].Value.ToString();
                 Obj_Destinos_DAL.cPaisSalida = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[3].Value.ToString());
                 Obj_Destinos_DAL.cPaisEntrada = Convert.ToChar(dgv_Datos.SelectedRows[0].Cells[4].Value.ToString());
